@@ -24,22 +24,16 @@ public class Configurator
     private int totalBudget;
     private StoreFrontService storefront = new StoreFrontService();
 
+
     public void gatherUserInput()
     {
 
     }
 
-    public void createComputerBuild()
-    {
 
-    }
+    //Steam application-related
 
-    public void createProduct()
-    {
-
-    }
-
-    public File cacheBasicSteamData()
+    public File saveBasicSteamData()
     {
         String workingDir = System.getProperty("user.dir"); //Review note: On the author's personal machine, Java was not properly finding the CWD, so its explicitly set here
         File basicSteamAppData = new File(workingDir + "/cache/basicsteamdata.txt");
@@ -79,6 +73,15 @@ public class Configurator
         }
 
         return basicSteamAppData;
+    }
+    
+    public SteamApplication createSteamApplication(String[] curApp)
+    {                       
+        SteamApplication newSteamApp = new SteamApplication(storefront,curApp[0],curApp[1]);
+        newSteamApp.gatherRequirements();
+        this.appList.add(newSteamApp);
+
+        return newSteamApp;
     }
 
     public String[][] parseBasicSteamData(File inputFile)
@@ -148,25 +151,6 @@ public class Configurator
         }
     }
 
-    public void saveBuilds(String userKey)
-    {
-
-    }
-
-    public ComputerBuild[] loadBuilds(String userKey)
-    {
-        return new ComputerBuild[0];
-    }
-
-    public SteamApplication createSteamApplication(String[] curApp)
-    {                       
-        SteamApplication newSteamApp = new SteamApplication(storefront,curApp[0],curApp[1]);
-        newSteamApp.gatherRequirements();
-        this.appList.add(newSteamApp);
-
-        return newSteamApp;
-    }
-
     public String loadSteamAppImage(String appID)
     {
         String workingDir = System.getProperty("user.dir");
@@ -209,7 +193,7 @@ public class Configurator
         return "";
     }
 
-    public void cacheSteamAppImage(String appID, String appImageLoc)
+    public void saveSteamAppImage(String appID, String appImageLoc)
     {
         String workingDir = System.getProperty("user.dir");
         File cachedImageList = new File(workingDir + "/cache/steam_app_images.txt");
@@ -297,12 +281,39 @@ public class Configurator
         return newSteamApp;
     }
 
-    public void cacheProduct(Product product)
+
+    //web-scraped application
+
+    public void parseWebData(String appName, String webData)
+    {
+        WebScrapedApplication webApp = new WebScrapedApplication(appName);
+        
+        if (webApp.gatherRequirements(webData) == true)
+        {
+            this.appList.add(webApp);
+            this.saveWebScrapedApplicationData();
+        }
+    }
+
+    public void saveWebScrapedApplicationData()
     {
 
     }
 
-    public void loadCachedProduct(String productID)
+    public void loadWebScrapedApplicationData()
+    {
+
+    }
+
+
+    //Product & overall computer build
+
+    public void saveProduct(Product product)
+    {
+
+    }
+
+    public void loadProduct(String productID)
     {
 
     }
@@ -311,6 +322,29 @@ public class Configurator
     {
 
     }
+
+    public void createProduct()
+    {
+
+    }
+
+    public void createComputerBuild()
+    {
+
+    }
+
+    public void saveBuilds(String userKey)
+    {
+
+    }
+
+    public ComputerBuild[] loadBuilds(String userKey)
+    {
+        return new ComputerBuild[0];
+    }
+
+
+    //Setters & getters
 
     public StoreFrontService getStoreFront()
     {

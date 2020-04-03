@@ -9,9 +9,10 @@
 //************************************************************
 
 
-//GUI imports
+//GUI
 import javafx.scene.Cursor;
 import javafx.scene.Scene;
+import javafx.scene.control.Button;
 import javafx.scene.text.*;
 import javafx.geometry.Pos;
 import javafx.scene.shape.Rectangle;
@@ -23,12 +24,19 @@ import javafx.scene.layout.VBox;
 import javafx.scene.layout.StackPane;
 import javafx.scene.control.TextField;
 import javafx.scene.image.*;
+import javafx.scene.layout.Priority;
 
-//Steam API imports
+//Steam API
 import pl.l7ssha.javasteam.*;
 
-//General imports
+//General
 import com.google.gson.JsonSyntaxException;
+
+//Web-scraping
+import com.jaunt.JauntException;
+import com.jaunt.ResponseException;
+import com.jaunt.UserAgent;
+
 
 public class ApplicationInputGUI extends VBox
 {
@@ -79,7 +87,7 @@ public class ApplicationInputGUI extends VBox
             }
             else if (applicationOptions.getValue() == "Website")
             {
-                VBox websiteApplicationInputPanel = this.createWebsiteInputPanel();
+                VBox websiteApplicationInputPanel = this.createWebsiteInputPanel(scene, configurator);
                 this.getChildren().set(1,websiteApplicationInputPanel);
             }
             else if (applicationOptions.getValue() == "Enter Data Manually")
@@ -122,7 +130,7 @@ public class ApplicationInputGUI extends VBox
     {
         //Preliminary Steam API setup
         SteamAPI.initialize("8C903FFFA438516B3096134D21E4B43B"); //Web API Key, used to access the Steam API
-        this.basicSteamAppData = configurator.parseBasicSteamData(configurator.cacheBasicSteamData()); //Data for nearly all applications across Steam
+        this.basicSteamAppData = configurator.parseBasicSteamData(configurator.saveBasicSteamData()); //Data for nearly all applications across Steam
         String workingDir = System.getProperty("user.dir"); //Review note: On the author's personal machine, Java was not properly finding the CWD, so its explicitly set here
 
         //Preliminary GUI setup
@@ -194,7 +202,7 @@ public class ApplicationInputGUI extends VBox
                         if (appImageLoc.length() == 0)
                         {
                             appImageLoc = "https://steamcdn-a.akamaihd.net/steam/apps/" + curatedApplicableApps[i][1] + "/header.jpg";
-                            configurator.cacheSteamAppImage(curatedApplicableApps[i][1],appImageLoc);
+                            configurator.saveSteamAppImage(curatedApplicableApps[i][1],appImageLoc);
                         }
                         else
                         {
@@ -209,7 +217,7 @@ public class ApplicationInputGUI extends VBox
                         {
                             RichSteamGame curatedApp = storefront.getFullInfoOfApp(curatedApplicableApps[i][1]);
                             appImageLoc = curatedApp.getHeaderImage();
-                            configurator.cacheSteamAppImage(curatedApplicableApps[i][1],appImageLoc);
+                            configurator.saveSteamAppImage(curatedApplicableApps[i][1],appImageLoc);
                         }
                         else
                         {
@@ -336,12 +344,56 @@ public class ApplicationInputGUI extends VBox
         return inputPanel;
     }
 
-    public VBox createWebsiteInputPanel()
+    public VBox createWebsiteInputPanel(Scene scene, Configurator configurator)
     {
+        //Preliminary GUI setup
         VBox inputPanel = new VBox();
-        Text text = new Text("Website Input Panel!");
+        inputPanel.prefWidthProperty().bind(scene.widthProperty());
+        inputPanel.prefHeightProperty().bind(scene.heightProperty().multiply(0.85));
+        inputPanel.setAlignment(Pos.BASELINE_CENTER);
 
-        inputPanel.getChildren().add(text);
+        //GUI node creation
+        Text text = new Text("Input webpage URL that contains the requirements for the application you want to enter.");
+        HBox urlForm = new HBox();
+        TextField enterApplicationURL = new TextField();
+        TextField enterApplicationName = new TextField();
+        Button submitURLButton = new Button("Search");
+
+        //GUI node setup
+        urlForm.prefWidthProperty().bind(inputPanel.widthProperty());
+        urlForm.setAlignment(Pos.BASELINE_CENTER);
+        urlForm.spacingProperty().bind(scene.widthProperty().multiply(0.007));
+        urlForm.setHgrow(enterApplicationURL,Priority.ALWAYS);
+        text.translateYProperty().bind(scene.heightProperty().multiply(0.32));
+        enterApplicationURL.maxWidthProperty().bind(scene.widthProperty().multiply(0.85));
+        enterApplicationURL.setAlignment(Pos.BASELINE_CENTER);
+        enterApplicationURL.translateYProperty().bind(scene.heightProperty().multiply(0.35));
+        enterApplicationName.maxWidthProperty().bind(scene.widthProperty().multiply(0.85));
+        enterApplicationName.setAlignment(Pos.BASELINE_CENTER);
+        enterApplicationName.translateYProperty().bind(scene.heightProperty().multiply(0.35));
+        submitURLButton.translateYProperty().bind(enterApplicationURL.translateYProperty());
+        submitURLButton.setAlignment(Pos.BASELINE_RIGHT);
+
+        urlForm.getChildren().addAll(enterApplicationURL, submitURLButton);
+        inputPanel.getChildren().addAll(text, enterApplicationName, urlForm);
+
+        submitURLButton.setOnMouseClicked(e ->
+        {
+            try
+            {
+                UserAgent userAgent = new UserAgent();
+                userAgent.sendGET(enterApplicationURL.getText());
+                Text currentStatusText = new Text("Connection successful. Looking for requirements...");
+                this.currentStatusContainer.getChildren().set(0,currentStatusText);
+                
+                configurator.parseWebData(enterApplicationName.getText(),userAgent.getSource());
+            }
+            catch (ResponseException f)
+            {
+                Text currentStatusText = new Text("Failed to connect");
+                this.currentStatusContainer.getChildren().set(0,currentStatusText);  
+            }
+        });
 
         return inputPanel;
     }
