@@ -251,13 +251,14 @@ public class Configurator
         String workingDir = System.getProperty("user.dir");
         File cachedApplicationList = new File(workingDir + "/cache/applications/" + appID + ".txt");
         SteamApplication newSteamApp = new SteamApplication(storefront, appName, appID);
-        this.appList.add(newSteamApp);
         List<String> appRequirementList = new ArrayList<String>();
 
         if (cachedApplicationList.exists() == false)
         {
             return null;
         }
+
+        this.appList.add(newSteamApp);
 
         try
         {
@@ -302,7 +303,7 @@ public class Configurator
 
         webApp.name = appName;
         webApp.reqList = reqList;
-        webApp.saveRequirements();
+        webApp.saveRequirements(appName);
         this.appList.add(webApp);
     }
 
@@ -311,13 +312,14 @@ public class Configurator
         String workingDir = System.getProperty("user.dir");
         File cachedApplicationList = new File(workingDir + "/cache/applications/" + appName + ".txt");
         WebScrapedApplication webApp = new WebScrapedApplication(appName);
-        this.appList.add(webApp);
         List<String> appRequirementList = new ArrayList<String>();
 
         if (cachedApplicationList.exists() == false)
         {
             return null;
         }
+
+        this.appList.add(webApp);
 
         try
         {
@@ -339,6 +341,54 @@ public class Configurator
         
         webApp.parseCachedRequirements(appRequirementList.toArray(new String[0]));
         return webApp;
+    }
+
+    
+    //manual application
+
+    public void saveManualApplication(String appName, String[][] reqList)
+    {
+        GenericApplication manualApp = new GenericApplication(appName);
+        manualApp.name = appName;
+        manualApp.reqList = reqList;
+        this.appList.add(manualApp);
+        manualApp.saveRequirements(appName);
+    }
+
+    public GenericApplication loadManualApplicationData(String appName)
+    {
+        String workingDir = System.getProperty("user.dir");
+        File cachedApplicationList = new File(workingDir + "/cache/applications/" + appName + ".txt");
+        GenericApplication manualApp = new GenericApplication(appName);
+        List<String> appRequirementList = new ArrayList<String>();
+
+        if (cachedApplicationList.exists() == false)
+        {
+            return null;
+        }
+
+        this.appList.add(manualApp);
+
+        try
+        {
+            FileReader fr = new FileReader(cachedApplicationList);
+            BufferedReader br = new BufferedReader(fr);
+
+            String curLine = br.readLine();
+            while (curLine != null)
+            {
+                appRequirementList.add(curLine);
+                curLine = br.readLine();
+            }
+            br.close();
+        }
+        catch (IOException g)
+        {
+            g.printStackTrace();
+        }
+        
+        manualApp.parseCachedRequirements(appRequirementList.toArray(new String[0]));
+        return manualApp;
     }
 
 

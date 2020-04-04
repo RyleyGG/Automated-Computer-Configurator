@@ -96,7 +96,7 @@ public class ApplicationInputGUI extends VBox
             }
             else if (applicationOptions.getValue() == "Enter Data Manually")
             {
-                VBox manualApplicationInputPanel = this.createManualInputPanel();
+                VBox manualApplicationInputPanel = this.createManualInputPanel(scene, configurator);
                 this.getChildren().set(1,manualApplicationInputPanel);
             }
         });
@@ -402,7 +402,7 @@ public class ApplicationInputGUI extends VBox
             //This local class is used at various points to attempt to find cached requirements if the program is unable to grab new data for any reason
             class FindCachedRequirements
             {
-                public FindCachedRequirements(HBox currentStatusContainer)
+                public FindCachedRequirements(HBox currentStatusContainer, int applicationCount, HBox totalApplicationCountContainer)
                 {
                     WebScrapedApplication tempApp = configurator.loadWebScrapedApplicationData(enterApplicationName.getText());
             
@@ -430,11 +430,17 @@ public class ApplicationInputGUI extends VBox
                             configurator.saveWebScrapedApplication(enterApplicationName.getText(), tempRequirements);
                             Text currentStatusText = new Text("Requirements confirmed & saved.");
                             currentStatusContainer.getChildren().set(0,currentStatusText);
+                            applicationCount++;
+                            Text applicationCountText = new Text("Total Applications Saved: " + applicationCount);
+                            totalApplicationCountContainer.getChildren().set(0,applicationCountText);
                         }
                         else
                         {
                             Text currentStatusText = new Text("Requirements deemed invalid. Consider using the manual application entry.");
                             currentStatusContainer.getChildren().set(0,currentStatusText);
+                            applicationCount++;
+                            Text applicationCountText = new Text("Total Applications Saved: " + applicationCount);
+                            totalApplicationCountContainer.getChildren().set(0,applicationCountText);
                         }
                     }
                     else
@@ -480,6 +486,9 @@ public class ApplicationInputGUI extends VBox
                         configurator.saveWebScrapedApplication(enterApplicationName.getText(), tempRequirements);
                         currentStatusText = new Text("Requirements confirmed & saved.");
                         this.currentStatusContainer.getChildren().set(0,currentStatusText);
+                        this.applicationCount++;
+                        Text applicationCountText = new Text("Total Applications Saved: " + this.applicationCount);
+                        this.totalApplicationCountContainer.getChildren().set(0,applicationCountText);
                     }
                     else
                     {
@@ -487,7 +496,7 @@ public class ApplicationInputGUI extends VBox
                         {
                             currentStatusText = new Text("Requirements deemed invalid. Attempting to find cached requirement data...");
                             this.currentStatusContainer.getChildren().set(0,currentStatusText);
-                            new FindCachedRequirements(this.currentStatusContainer);
+                            new FindCachedRequirements(this.currentStatusContainer, this.applicationCount, this.totalApplicationCountContainer);
                         }
                         else
                         {
@@ -502,7 +511,7 @@ public class ApplicationInputGUI extends VBox
                     {
                         currentStatusText = new Text("Unable to find requirements. Attempting to find cached requirement data...");
                         this.currentStatusContainer.getChildren().set(0,currentStatusText);
-                        new FindCachedRequirements(this.currentStatusContainer);
+                        new FindCachedRequirements(this.currentStatusContainer, this.applicationCount, this.totalApplicationCountContainer);
                     }
                     else
                     {
@@ -515,13 +524,13 @@ public class ApplicationInputGUI extends VBox
             {
                 if (enterApplicationName.getText().length() != 0)
                 {
-                    Text currentStatusText = new Text("Failed to connect. Attempting to find cached requirement data...");
+                    currentStatusText = new Text("Failed to connect. Attempting to find cached requirement data...");
                     this.currentStatusContainer.getChildren().set(0,currentStatusText);
-                    new FindCachedRequirements(this.currentStatusContainer);
+                    new FindCachedRequirements(this.currentStatusContainer, this.applicationCount, this.totalApplicationCountContainer);
                 }
                 else
                 {
-                    Text currentStatusText = new Text("Failed to connect.");
+                    currentStatusText = new Text("Failed to connect.");
                     this.currentStatusContainer.getChildren().set(0,currentStatusText);
                 }
             }
@@ -530,13 +539,172 @@ public class ApplicationInputGUI extends VBox
         return inputPanel;
     }
 
-    public VBox createManualInputPanel()
+    public VBox createManualInputPanel(Scene scene, Configurator configurator)
     {
         VBox inputPanel = new VBox();
-        Text text = new Text("Manual Input Panel!");
+        inputPanel.prefWidthProperty().bind(scene.widthProperty());
+        inputPanel.prefHeightProperty().bind(scene.heightProperty().multiply(0.85));
+        inputPanel.spacingProperty().bind(scene.widthProperty().multiply(0.007));
 
-        inputPanel.getChildren().add(text);
+        //GUI node creation
+        Text appNameText = new Text("Application name:");
+        Text cpuText = new Text("CPU:");
+        Text gpuText = new Text("GPU:");
+        Text ramText = new Text("RAM:");
+        Text storageText = new Text("Storage:");
+        TextField appNameField = new TextField();
+        TextField cpuField = new TextField();
+        TextField gpuField = new TextField();
+        TextField ramField = new TextField();
+        TextField storageField = new TextField();
+        HBox appNameForm = new HBox();
+        HBox cpuForm = new HBox();
+        HBox gpuForm = new HBox();
+        HBox ramForm = new HBox();
+        HBox storageForm = new HBox();
+        HBox buttonForm = new HBox();
+        Button submitButton = new Button("Submit");
+        Button searchCacheButton = new Button("Search Cache");
 
+        //GUI Node setup
+        appNameForm.maxWidthProperty().bind(scene.widthProperty());
+        cpuForm.maxWidthProperty().bind(scene.widthProperty());
+        gpuForm.maxWidthProperty().bind(scene.widthProperty());
+        ramForm.maxWidthProperty().bind(scene.widthProperty());
+        storageForm.maxWidthProperty().bind(scene.widthProperty());
+        buttonForm.maxWidthProperty().bind(scene.widthProperty());
+
+        HBox.setHgrow(appNameField, Priority.ALWAYS);
+        HBox.setHgrow(cpuField, Priority.ALWAYS);
+        HBox.setHgrow(gpuField, Priority.ALWAYS);
+        HBox.setHgrow(ramField, Priority.ALWAYS);
+        HBox.setHgrow(storageField, Priority.ALWAYS);
+
+        appNameForm.spacingProperty().bind(scene.widthProperty().multiply(0.015));
+        cpuForm.spacingProperty().bind(scene.widthProperty().multiply(0.015));
+        gpuForm.spacingProperty().bind(scene.widthProperty().multiply(0.015));
+        ramForm.spacingProperty().bind(scene.widthProperty().multiply(0.015));
+        storageForm.spacingProperty().bind(scene.widthProperty().multiply(0.015));
+        buttonForm.spacingProperty().bind(scene.widthProperty().multiply(0.015));
+
+        appNameField.maxWidthProperty().bind(scene.widthProperty().multiply(0.55));
+        cpuField.maxWidthProperty().bind(scene.widthProperty().multiply(0.55));
+        gpuField.maxWidthProperty().bind(scene.widthProperty().multiply(0.55));
+        ramField.maxWidthProperty().bind(scene.widthProperty().multiply(0.55));
+        storageField.maxWidthProperty().bind(scene.widthProperty().multiply(0.55));
+
+
+        submitButton.setOnMouseReleased(e ->
+        {
+            Text currentStatusText = new Text("Confirming input validity...");
+            this.currentStatusContainer.getChildren().set(0,currentStatusText);
+
+            String nameData = appNameField.getText();
+            String cpuData = cpuField.getText();
+            String gpuData = gpuField.getText();
+            String ramData = ramField.getText();
+            String storageData = storageField.getText();
+
+            Alert requirementAlert = new Alert(AlertType.CONFIRMATION);
+            requirementAlert.setTitle("Requirement Confirmation");
+            requirementAlert.setHeaderText("Are these correct?");
+            ((Button) requirementAlert.getDialogPane().lookupButton(ButtonType.OK)).setText("Yes");
+            ((Button) requirementAlert.getDialogPane().lookupButton(ButtonType.CANCEL)).setText("No");
+            requirementAlert.getDialogPane().setMinHeight(Region.USE_PREF_SIZE); //Ensures alert window always fits the full text
+            requirementAlert.setContentText("Title: " + nameData+"\n"+"CPU: " + cpuData+"\n"+"GPU: " + gpuData+"\n"+"RAM: " + ramData+"\n"+"Storage: " + storageData);
+            requirementAlert.showAndWait();
+
+            if (requirementAlert.getResult() == ButtonType.OK)
+            {
+                currentStatusText = new Text("Validity confirmed. Saving & caching data...");
+                this.currentStatusContainer.getChildren().set(0,currentStatusText);
+
+                String[][] dataCollection = new String[4][2];
+                dataCollection[0][0] = "CPU";
+                dataCollection[1][0] = "GPU";
+                dataCollection[2][0] = "RAM";
+                dataCollection[3][0] = "Storage";
+                dataCollection[0][1] = cpuData;
+                dataCollection[1][1] = gpuData;
+                dataCollection[2][1] = ramData;
+                dataCollection[3][1] = storageData;
+
+                configurator.saveManualApplication(nameData, dataCollection);
+                currentStatusText = new Text("Application saved.");
+                this.currentStatusContainer.getChildren().set(0,currentStatusText);
+                this.applicationCount++;
+                Text applicationCountText = new Text("Total Applications Saved: " + this.applicationCount);
+                this.totalApplicationCountContainer.getChildren().set(0,applicationCountText);
+            }
+            else
+            {
+                currentStatusText = new Text("Input deemed invalid. Waiting further input...");
+                this.currentStatusContainer.getChildren().set(0,currentStatusText);
+            }
+        });
+
+        searchCacheButton.setOnMouseReleased(e ->
+        {
+            if (appNameField.getText().length() == 0)
+            {
+                Text currentStatusText = new Text("You must enter an application name first.");
+                this.currentStatusContainer.getChildren().set(0,currentStatusText);
+            }
+            else
+            {
+                Text currentStatusText = new Text("Searching the cache...");
+                this.currentStatusContainer.getChildren().set(0,currentStatusText);
+                GenericApplication manualApp = configurator.loadManualApplicationData(appNameField.getText());
+
+                if (manualApp == null)
+                {
+                    currentStatusText = new Text("No cached items match your search.");
+                    this.currentStatusContainer.getChildren().set(0,currentStatusText);
+                }
+                else
+                {
+                    Alert requirementAlert = new Alert(AlertType.CONFIRMATION);
+                    requirementAlert.setTitle("Requirement Confirmation");
+                    requirementAlert.setHeaderText("The following cached data was retrieved. Is it correct?");
+                    ((Button) requirementAlert.getDialogPane().lookupButton(ButtonType.OK)).setText("Yes");
+                    ((Button) requirementAlert.getDialogPane().lookupButton(ButtonType.CANCEL)).setText("No");
+                    requirementAlert.getDialogPane().setMinHeight(Region.USE_PREF_SIZE); //Ensures alert window always fits the full text
+
+                    String alertString = "";
+                    for (int i = 0; i < manualApp.reqList.length; i++)
+                    {
+                        alertString += manualApp.reqList[i][0] + ": " + manualApp.reqList[i][1] + "\n";
+                    }
+
+                    requirementAlert.setContentText(alertString);
+                    currentStatusText = new Text("Cached data found. Confirming validity...");
+                    this.currentStatusContainer.getChildren().set(0,currentStatusText);
+                    requirementAlert.showAndWait();
+                    
+                    if (requirementAlert.getResult() == ButtonType.OK)
+                    {
+                        currentStatusText = new Text("Data validated! Saving application...");
+                        this.currentStatusContainer.getChildren().set(0,currentStatusText);
+                        configurator.saveManualApplication(manualApp.name, manualApp.reqList);
+                        currentStatusText = new Text("Application saved.");
+                        this.currentStatusContainer.getChildren().set(0,currentStatusText);
+                        this.applicationCount++;
+                        Text applicationCountText = new Text("Total Applications Saved: " + this.applicationCount);
+                        this.totalApplicationCountContainer.getChildren().set(0,applicationCountText);
+                    }
+                    
+                }
+            }
+        });
+
+
+        appNameForm.getChildren().addAll(appNameText,appNameField);
+        cpuForm.getChildren().addAll(cpuText,cpuField);
+        gpuForm.getChildren().addAll(gpuText,gpuField);
+        ramForm.getChildren().addAll(ramText,ramField);
+        storageForm.getChildren().addAll(storageText,storageField);
+        buttonForm.getChildren().addAll(searchCacheButton,submitButton);
+        inputPanel.getChildren().addAll(appNameForm,cpuForm,gpuForm,ramForm,storageForm,buttonForm);
         return inputPanel;
     }
 }
