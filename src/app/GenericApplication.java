@@ -7,4 +7,9 @@ public class GenericApplication
     {
         System.out.println("gatherRequirements method was called, but is currently blank");
     }
+
+    public void saveRequirements()
+    {
+        
+    }
 }

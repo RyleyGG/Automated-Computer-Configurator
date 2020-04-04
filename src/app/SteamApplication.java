@@ -56,7 +56,7 @@ public class SteamApplication extends GenericApplication
                 }
             }
 
-            this.cacheRequirements();
+            this.saveRequirements();
         }
     }
 
@@ -88,7 +88,8 @@ public class SteamApplication extends GenericApplication
         }
     }
 
-    public void cacheRequirements()
+    @Override
+    public void saveRequirements()
     {
         String workingDir = System.getProperty("user.dir"); //Review note: On the author's personal machine, Java was not properly finding the CWD, so its explicitly set here
         File cachedRequirements = new File(workingDir + "/cache/applications/" + this.appID + ".txt");

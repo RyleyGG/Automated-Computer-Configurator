@@ -1,7 +1,7 @@
 //**********************************************************
 // Class: ApplicationInputGUI
 // Author: Ryley G.
-// Date Modified: March 27, 2020
+// Date Modified: April 3, 2020
 //
 // Purpose: Manage the application input window in the GUI
 //
@@ -351,31 +351,44 @@ public class ApplicationInputGUI extends VBox
         inputPanel.prefWidthProperty().bind(scene.widthProperty());
         inputPanel.prefHeightProperty().bind(scene.heightProperty().multiply(0.85));
         inputPanel.setAlignment(Pos.BASELINE_CENTER);
+        inputPanel.spacingProperty().bind(scene.heightProperty().multiply(0.025));
 
         //GUI node creation
-        Text text = new Text("Input webpage URL that contains the requirements for the application you want to enter.");
+        Text urlText = new Text("Webpage URL that hosts the application requirements:");
+        Text nameText = new Text("Application name:");
         HBox urlForm = new HBox();
-        TextField enterApplicationURL = new TextField();
+        HBox nameForm = new HBox();
         TextField enterApplicationName = new TextField();
+        TextField enterApplicationURL = new TextField();
         Button submitURLButton = new Button("Search");
+        Button spacerButton = new Button("Search");
 
         //GUI node setup
-        urlForm.prefWidthProperty().bind(inputPanel.widthProperty());
-        urlForm.setAlignment(Pos.BASELINE_CENTER);
-        urlForm.spacingProperty().bind(scene.widthProperty().multiply(0.007));
-        urlForm.setHgrow(enterApplicationURL,Priority.ALWAYS);
-        text.translateYProperty().bind(scene.heightProperty().multiply(0.32));
+
+        urlForm.translateYProperty().bind(scene.heightProperty().multiply(0.32));
+        urlText.translateYProperty().bind(urlForm.translateYProperty());
+        nameForm.translateYProperty().bind(scene.heightProperty().multiply(0.27));
+        nameText.translateYProperty().bind(nameForm.translateYProperty());
+        urlForm.maxWidthProperty().bind(inputPanel.widthProperty());
+        nameForm.maxWidthProperty().bind(inputPanel.widthProperty());
         enterApplicationURL.maxWidthProperty().bind(scene.widthProperty().multiply(0.85));
-        enterApplicationURL.setAlignment(Pos.BASELINE_CENTER);
-        enterApplicationURL.translateYProperty().bind(scene.heightProperty().multiply(0.35));
         enterApplicationName.maxWidthProperty().bind(scene.widthProperty().multiply(0.85));
+        urlForm.spacingProperty().bind(scene.widthProperty().multiply(0.007));
+        nameForm.spacingProperty().bind(scene.widthProperty().multiply(0.007));
+        HBox.setHgrow(enterApplicationURL,Priority.ALWAYS);
+        HBox.setHgrow(enterApplicationName,Priority.ALWAYS);
         enterApplicationName.setAlignment(Pos.BASELINE_CENTER);
-        enterApplicationName.translateYProperty().bind(scene.heightProperty().multiply(0.35));
-        submitURLButton.translateYProperty().bind(enterApplicationURL.translateYProperty());
+        enterApplicationURL.setAlignment(Pos.BASELINE_CENTER);
         submitURLButton.setAlignment(Pos.BASELINE_RIGHT);
+        spacerButton.setAlignment(Pos.BASELINE_RIGHT);
+        nameForm.setAlignment(Pos.BASELINE_CENTER);
+        urlForm.setAlignment(Pos.BASELINE_CENTER);
+        spacerButton.setVisible(false);
+        spacerButton.setDisable(true);
 
         urlForm.getChildren().addAll(enterApplicationURL, submitURLButton);
-        inputPanel.getChildren().addAll(text, enterApplicationName, urlForm);
+        nameForm.getChildren().addAll(enterApplicationName, spacerButton);
+        inputPanel.getChildren().addAll(nameText, nameForm, urlText, urlForm);
 
         submitURLButton.setOnMouseClicked(e ->
         {
@@ -386,7 +399,16 @@ public class ApplicationInputGUI extends VBox
                 Text currentStatusText = new Text("Connection successful. Looking for requirements...");
                 this.currentStatusContainer.getChildren().set(0,currentStatusText);
                 
-                configurator.parseWebData(enterApplicationName.getText(),userAgent.getSource());
+                if (configurator.parseWebData(enterApplicationName.getText(),userAgent.getSource()) == true)
+                {
+                    currentStatusText = new Text("Requirements found. Confirming validity...");
+                    this.currentStatusContainer.getChildren().set(0,currentStatusText);
+                }
+                else
+                {
+                    currentStatusText = new Text("Unable to find requirements. Consider using the manual application entry.");
+                    this.currentStatusContainer.getChildren().set(0,currentStatusText);
+                }
             }
             catch (ResponseException f)
             {

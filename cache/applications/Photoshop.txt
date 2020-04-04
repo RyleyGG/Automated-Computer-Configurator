@@ -1,0 +1,4 @@
+Title: Photoshop
+CPU: Intel or AMD processor with 64-bit support, 2 GHz or faster processor
+GPU: NVIDIA GeForce GTX 1050 or equivalent
+RAM: 2 GB

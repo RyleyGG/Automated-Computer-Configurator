@@ -1,7 +1,7 @@
 //**********************************************************
 // Class: Configurator
 // Author: Ryley G.
-// Date Modified: March 27, 2020
+// Date Modified: April 3, 2020
 //
 // Purpose: Primary connection between the GUI and rest of the model, and handles much of the high-level model activity that includes more than one object type
 //
@@ -284,20 +284,18 @@ public class Configurator
 
     //web-scraped application
 
-    public void parseWebData(String appName, String webData)
+    public boolean parseWebData(String appName, String webData)
     {
         WebScrapedApplication webApp = new WebScrapedApplication(appName);
         
         if (webApp.gatherRequirements(webData) == true)
         {
             this.appList.add(webApp);
-            this.saveWebScrapedApplicationData();
+            webApp.saveRequirements();
+            return true;
         }
-    }
 
-    public void saveWebScrapedApplicationData()
-    {
-
+        return false;
     }
 
     public void loadWebScrapedApplicationData()

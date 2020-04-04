@@ -212,3 +212,8 @@
 19500: https://steamcdn-a.akamaihd.net/steam/apps/19500/header.jpg
 46840: https://steamcdn-a.akamaihd.net/steam/apps/46840/header.jpg
 219640: https://steamcdn-a.akamaihd.net/steam/apps/219640/header.jpg
+3920: https://steamcdn-a.akamaihd.net/steam/apps/3920/header.jpg
+17570: https://steamcdn-a.akamaihd.net/steam/apps/17570/header.jpg
+39660: https://steamcdn-a.akamaihd.net/steam/apps/39660/header.jpg
+46450: https://steamcdn-a.akamaihd.net/steam/apps/46450/header.jpg
+46570: https://steamcdn-a.akamaihd.net/steam/apps/46570/header.jpg
