@@ -26,7 +26,7 @@ import javafx.scene.layout.StackPane;
 import javafx.scene.control.TextField;
 import javafx.scene.image.*;
 import javafx.scene.layout.Priority;
-
+import javafx.scene.layout.Region;
 //Steam API
 import pl.l7ssha.javasteam.*;
 
@@ -396,11 +396,60 @@ public class ApplicationInputGUI extends VBox
 
         submitURLButton.setOnMouseClicked(e ->
         {
+            Text currentStatusText = new Text("URL submitted. Connecting...");
+            this.currentStatusContainer.getChildren().set(0,currentStatusText);
+
+            //This local class is used at various points to attempt to find cached requirements if the program is unable to grab new data for any reason
+            class FindCachedRequirements
+            {
+                public FindCachedRequirements(HBox currentStatusContainer)
+                {
+                    WebScrapedApplication tempApp = configurator.loadWebScrapedApplicationData(enterApplicationName.getText());
+            
+                    if (tempApp != null)
+                    {
+                        String[][] tempRequirements = tempApp.reqList;
+
+                        String alertString = "";
+                        for (int i = 0; i < tempRequirements.length; i++)
+                        {
+                            alertString += tempRequirements[i][0] + ": " + tempRequirements[i][1] + "\n";
+                        }
+
+                        Alert requirementAlert = new Alert(AlertType.CONFIRMATION);
+                        requirementAlert.setTitle("Requirement Confirmation");
+                        requirementAlert.setHeaderText("These were previously saved. Are they correct?");
+                        ((Button) requirementAlert.getDialogPane().lookupButton(ButtonType.OK)).setText("Yes");
+                        ((Button) requirementAlert.getDialogPane().lookupButton(ButtonType.CANCEL)).setText("No");
+                        requirementAlert.getDialogPane().setMinHeight(Region.USE_PREF_SIZE); //Ensures alert window always fits the full text
+                        requirementAlert.setContentText(alertString);
+                        requirementAlert.showAndWait();
+    
+                        if (requirementAlert.getResult() == ButtonType.OK)
+                        {
+                            configurator.saveWebScrapedApplication(enterApplicationName.getText(), tempRequirements);
+                            Text currentStatusText = new Text("Requirements confirmed & saved.");
+                            currentStatusContainer.getChildren().set(0,currentStatusText);
+                        }
+                        else
+                        {
+                            Text currentStatusText = new Text("Requirements deemed invalid. Consider using the manual application entry.");
+                            currentStatusContainer.getChildren().set(0,currentStatusText);
+                        }
+                    }
+                    else
+                    {
+                        Text currentStatusText = new Text("No cached data available. Consider using the manual application entry.");
+                        currentStatusContainer.getChildren().set(0,currentStatusText);
+                    }
+                }
+            }
+
             try
             {
                 UserAgent userAgent = new UserAgent();
                 userAgent.sendGET(enterApplicationURL.getText());
-                Text currentStatusText = new Text("Connection successful. Looking for requirements...");
+                currentStatusText = new Text("Connection successful. Looking for requirements...");
                 this.currentStatusContainer.getChildren().set(0,currentStatusText);
                 String[][] tempRequirements = configurator.parseWebData(enterApplicationName.getText(),userAgent.getSource());
 
@@ -409,9 +458,13 @@ public class ApplicationInputGUI extends VBox
                     currentStatusText = new Text("Requirements found. Confirming validity...");
                     this.currentStatusContainer.getChildren().set(0,currentStatusText);
 
-                    Alert testAlert = new Alert(AlertType.CONFIRMATION);
-                    testAlert.setTitle("Requirement Confirmation");
-                    testAlert.setHeaderText("Are the following requirements correct?");
+                    Alert requirementAlert = new Alert(AlertType.CONFIRMATION);
+                    requirementAlert.setTitle("Requirement Confirmation");
+                    requirementAlert.setHeaderText("Are these correct?");
+                    ((Button) requirementAlert.getDialogPane().lookupButton(ButtonType.OK)).setText("Yes");
+                    ((Button) requirementAlert.getDialogPane().lookupButton(ButtonType.CANCEL)).setText("No");
+                    requirementAlert.getDialogPane().setMinHeight(Region.USE_PREF_SIZE); //Ensures alert window always fits the full text
+
 
                     String alertString = "";
                     for (int i = 0; i < tempRequirements.length; i++)
@@ -419,10 +472,10 @@ public class ApplicationInputGUI extends VBox
                         alertString += tempRequirements[i][0] + ": " + tempRequirements[i][1] + "\n";
                     }
 
-                    testAlert.setContentText(alertString);
-                    testAlert.showAndWait();
+                    requirementAlert.setContentText(alertString);
+                    requirementAlert.showAndWait();
 
-                    if (testAlert.getResult() == ButtonType.OK)
+                    if (requirementAlert.getResult() == ButtonType.OK)
                     {
                         configurator.saveWebScrapedApplication(enterApplicationName.getText(), tempRequirements);
                         currentStatusText = new Text("Requirements confirmed & saved.");
@@ -430,20 +483,47 @@ public class ApplicationInputGUI extends VBox
                     }
                     else
                     {
-                        currentStatusText = new Text("Requirements deemed invalid. Consider using the manual application entry.");
-                        this.currentStatusContainer.getChildren().set(0,currentStatusText);
+                        if (enterApplicationName.getText().length() != 0)
+                        {
+                            currentStatusText = new Text("Requirements deemed invalid. Attempting to find cached requirement data...");
+                            this.currentStatusContainer.getChildren().set(0,currentStatusText);
+                            new FindCachedRequirements(this.currentStatusContainer);
+                        }
+                        else
+                        {
+                            currentStatusText = new Text("Requirements deemed invalid. Add a title if you wish to attempt to search cached data.");
+                            this.currentStatusContainer.getChildren().set(0,currentStatusText);
+                        }
                     }
                 }
                 else
                 {
-                    currentStatusText = new Text("Unable to find requirements. Consider using the manual application entry.");
-                    this.currentStatusContainer.getChildren().set(0,currentStatusText);
+                    if (enterApplicationName.getText().length() != 0)
+                    {
+                        currentStatusText = new Text("Unable to find requirements. Attempting to find cached requirement data...");
+                        this.currentStatusContainer.getChildren().set(0,currentStatusText);
+                        new FindCachedRequirements(this.currentStatusContainer);
+                    }
+                    else
+                    {
+                        currentStatusText = new Text("Unable to find requirements. Add a title if you wish to attempt to search cached data.");
+                        this.currentStatusContainer.getChildren().set(0,currentStatusText);
+                    }
                 }
             }
             catch (ResponseException f)
             {
-                Text currentStatusText = new Text("Failed to connect");
-                this.currentStatusContainer.getChildren().set(0,currentStatusText);  
+                if (enterApplicationName.getText().length() != 0)
+                {
+                    Text currentStatusText = new Text("Failed to connect. Attempting to find cached requirement data...");
+                    this.currentStatusContainer.getChildren().set(0,currentStatusText);
+                    new FindCachedRequirements(this.currentStatusContainer);
+                }
+                else
+                {
+                    Text currentStatusText = new Text("Failed to connect.");
+                    this.currentStatusContainer.getChildren().set(0,currentStatusText);
+                }
             }
         });
 

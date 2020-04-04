@@ -42,14 +42,16 @@ public class WebScrapedApplication extends GenericApplication
         keyTerms[3] = "graphics card:";
         keyTerms[4] = "gpu:";
         keyTerms[5] = "graphics processor:";
-        keyTerms[6] = "ram:";
-        keyTerms[7] = "memory:";
+        keyTerms[6] = "graphics:";
+        keyTerms[7] = "ram:";
         keyTerms[8] = "storage:";
         keyTerms[9] = "harddrive:";
         keyTerms[10] = "hard drive:";
-        //here create list of valid terms to look for. Once term has been used, remove it so same requiement is not grabbed twice
 
         //Grabs the data from the HTML and parses the data out from the HTML
+        //P5 review note: This currently only finds the first instance of the key terms in HTML.
+        //In a lot of cases, this means that minimal requirements are grabbed rather than the recommended-level specifications.
+        //It may be worth it to implement a distinction.
         for (int y = 0; y < keyTerms.length; y++)
         {
             for (int i = 0; i < splitWebData.length; i++)
@@ -171,4 +173,5 @@ public class WebScrapedApplication extends GenericApplication
             g.printStackTrace();
         }
     }
+
 }

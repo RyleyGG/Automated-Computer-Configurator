@@ -306,9 +306,39 @@ public class Configurator
         this.appList.add(webApp);
     }
 
-    public void loadWebScrapedApplicationData()
+    public WebScrapedApplication loadWebScrapedApplicationData(String appName)
     {
+        String workingDir = System.getProperty("user.dir");
+        File cachedApplicationList = new File(workingDir + "/cache/applications/" + appName + ".txt");
+        WebScrapedApplication webApp = new WebScrapedApplication(appName);
+        this.appList.add(webApp);
+        List<String> appRequirementList = new ArrayList<String>();
 
+        if (cachedApplicationList.exists() == false)
+        {
+            return null;
+        }
+
+        try
+        {
+            FileReader fr = new FileReader(cachedApplicationList);
+            BufferedReader br = new BufferedReader(fr);
+
+            String curLine = br.readLine();
+            while (curLine != null)
+            {
+                appRequirementList.add(curLine);
+                curLine = br.readLine();
+            }
+            br.close();
+        }
+        catch (IOException g)
+        {
+            g.printStackTrace();
+        }
+        
+        webApp.parseCachedRequirements(appRequirementList.toArray(new String[0]));
+        return webApp;
     }
 
 
