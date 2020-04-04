@@ -441,4 +441,9 @@ public class Configurator
     {
         this.appList.add(webApp);
     }
+
+    public List<GenericApplication> getAppList()
+    {
+        return this.appList;
+    }
 }

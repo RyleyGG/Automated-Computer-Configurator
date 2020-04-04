@@ -88,4 +88,11 @@ public class GenericApplication
             }
         }
     }
+
+    //Setters & getters
+
+    public String getName()
+    {
+        return this.name;
+    }
 }

@@ -27,6 +27,7 @@ import javafx.scene.control.TextField;
 import javafx.scene.image.*;
 import javafx.scene.layout.Priority;
 import javafx.scene.layout.Region;
+
 //Steam API
 import pl.l7ssha.javasteam.*;
 
@@ -35,6 +36,8 @@ import com.google.gson.JsonSyntaxException;
 import javafx.scene.control.Alert;
 import javafx.scene.control.Alert.AlertType;
 import java.util.Arrays;
+import java.util.List;
+import java.util.ArrayList;
 
 //Web-scraping
 import com.jaunt.JauntException;
@@ -56,6 +59,7 @@ public class ApplicationInputGUI extends VBox
         //GUI node creation
         HBox preliminaryPanel = new HBox();
         Text applicationTypeText = new Text("Application Source:");
+        Button continueButton = new Button("Continue");
 
         String[] applicationList =  new String[3];
         applicationList[0] = "Steam Marketplace";
@@ -67,7 +71,7 @@ public class ApplicationInputGUI extends VBox
         preliminaryPanel.spacingProperty().bind(scene.widthProperty().multiply(0.01));
         preliminaryPanel.prefWidthProperty().bind(scene.widthProperty());
         preliminaryPanel.prefHeightProperty().bind(scene.heightProperty().multiply(0.1));
-        preliminaryPanel.getChildren().addAll(applicationTypeText,applicationOptions);
+        preliminaryPanel.getChildren().addAll(applicationTypeText,applicationOptions, continueButton);
 
 
         //Center, main input section
@@ -101,6 +105,39 @@ public class ApplicationInputGUI extends VBox
             }
         });
         
+        continueButton.setOnMouseReleased(e ->
+        {                
+            Text currentStatusText = new Text("Confirming application submission...");
+            this.currentStatusContainer.getChildren().set(0,currentStatusText);
+            String alertString = "";
+            GenericApplication[] appList = configurator.getAppList().toArray(new GenericApplication[0]);
+
+            for (int i = 0; i < appList.length; i++)
+            {
+                alertString += appList[i].getName() + "\n";
+            }
+
+            Alert confirmationAlert = new Alert(AlertType.CONFIRMATION);
+            confirmationAlert.setTitle("Application Submission");
+            confirmationAlert.setHeaderText("Confirm that these are the applications you wish to submit.");
+            ((Button) confirmationAlert.getDialogPane().lookupButton(ButtonType.OK)).setText("Yes");
+            ((Button) confirmationAlert.getDialogPane().lookupButton(ButtonType.CANCEL)).setText("No");
+            confirmationAlert.getDialogPane().setMinHeight(Region.USE_PREF_SIZE); //Ensures alert window always fits the full text
+            confirmationAlert.setContentText(alertString);
+            confirmationAlert.showAndWait();  
+            
+            if (confirmationAlert.getResult() == ButtonType.OK)
+            {
+                //move to other input window
+                System.out.println("OK");
+            }
+            else
+            {
+                System.out.println("Do nothing");
+            }
+        });
+
+
         defaultPanel.prefHeightProperty().bind(scene.heightProperty().multiply(0.86));
         defaultPanel.getChildren().add(defaultText);
 

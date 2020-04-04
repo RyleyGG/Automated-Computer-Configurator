@@ -1,6 +1,0 @@
-Title: afasfaf
-Title: afasfaf
-CPU: asfasfasf
-GPU: asfafasf
-RAM: asfasfas
-Storage: asfasfasf
