@@ -23,7 +23,7 @@ public class WebScrapedApplication extends GenericApplication
         String extractedRequirement = ""; //The requirement after it's been parsed from the HTML data
         String temp = ""; //Temporary holder of potentially valid requirement information during the parsing process
         int index = 0; //Multiple loops need to use the same index
-        List<String[][]> requirements = new ArrayList<String[][]>();
+        List<String[]> requirements = new ArrayList<String[]>();
         
         String[] keyTerms = new String[11];
         keyTerms[0] = "cpu:";
@@ -40,69 +40,80 @@ public class WebScrapedApplication extends GenericApplication
         //here create list of valid terms to look for. Once term has been used, remove it so same requiement is not grabbed twice
 
         //Grabs the data from the HTML and parses the data out from the HTML
-        for (int i = 0; i < splitWebData.length; i++)
+        for (int y = 0; y < keyTerms.length; y++)
         {
-            splitWebData[i] = splitWebData[i].split("</li>")[0];
-
-            for (int y = 0; y < keyTerms.length; y++)
+            for (int i = 0; i < splitWebData.length; i++)
             {
+                splitWebData[i] = splitWebData[i].split("</li>")[0];
+
                 if (splitWebData[i].toLowerCase().contains(keyTerms[y]))
                 {
-                while (index < splitWebData[i].toCharArray().length-1)
-                {
-                    while (htmlTagCheck == false)
+                    while (index < splitWebData[i].toCharArray().length-1)
                     {
-                        for (int x = index; x < splitWebData[i].toCharArray().length; x++)
+                        while (htmlTagCheck == false)
                         {
-                            if (splitWebData[i].toCharArray()[x] == '<')
+                            for (int x = index; x < splitWebData[i].toCharArray().length; x++)
                             {
-                                htmlTagCheck = true;
+                                if (splitWebData[i].toCharArray()[x] == '<')
+                                {
+                                    htmlTagCheck = true;
+                                    index++;
+                                    break;
+                                }
+                                else if (splitWebData[i].toCharArray()[x] == '>' && splitWebData[i].indexOf("<") > x)
+                                {
+                                    temp = "";
+                                }
+                                else
+                                {
+                                    temp += splitWebData[i].toCharArray()[x];
+                                }
+                                
                                 index++;
-                                break;
                             }
-                            else if (splitWebData[i].toCharArray()[x] == '>' && splitWebData[i].indexOf("<") > x)
+                        }
+
+                        while (htmlTagCheck == true)
+                        {
+                            for (int x = index; x < splitWebData[i].toCharArray().length; x++)
                             {
-                                temp = "";
+                                if (splitWebData[i].toCharArray()[x] == '>')
+                                {
+                                    htmlTagCheck = false;
+                                    index++;
+                                    break;
+                                }
+                                
+                                index++;
                             }
-                            else
-                            {
-                                temp += splitWebData[i].toCharArray()[x];
-                            }
-                            
-                            index++;
+                            htmlTagCheck = false;
                         }
                     }
 
-                    while (htmlTagCheck == true)
-                    {
-                        for (int x = index; x < splitWebData[i].toCharArray().length; x++)
-                        {
-                            if (splitWebData[i].toCharArray()[x] == '>')
-                            {
-                                htmlTagCheck = false;
-                                index++;
-                                break;
-                            }
-                            
-                            index++;
-                        }
-                        htmlTagCheck = false;
-                    }
+                    extractedRequirement = temp;
+                    
+                    //System.out.println(Arrays.toString(extractedRequirement.split(":")));
+
+                    String[] tempArr = new String[2];
+                    tempArr[0] = extractedRequirement.split(":")[0];
+                    tempArr[1] = extractedRequirement.split(":")[1];
+                    requirements.add(tempArr);
+                    y++; //Only want each key term to be used one, so force update here
                 }
-
-                extractedRequirement = temp;
-
-                String[][] tempArr = new String[1][2];
-                tempArr[0][0] = extractedRequirement.split(":")[0];
-                tempArr[0][1] = extractedRequirement.split(":")[1];
-                requirements.add(tempArr);
-                System.out.println(Arrays.deepToString(tempArr));
             }
-            }
+
+            index = 0;
+            temp = "";
         }
 
-        
+        this.reqList = new String[requirements.size()][2];
+        for (int n = 0; n < requirements.size(); n++)
+        {
+            this.reqList[n][0] = requirements.get(n)[0];
+            this.reqList[n][1] = requirements.get(n)[1];
+        }
 
+        System.out.println(Arrays.deepToString(this.reqList));
         return false;
     }
 }
