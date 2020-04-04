@@ -284,18 +284,26 @@ public class Configurator
 
     //web-scraped application
 
-    public boolean parseWebData(String appName, String webData)
+    public String[][] parseWebData(String appName, String webData)
     {
         WebScrapedApplication webApp = new WebScrapedApplication(appName);
         
         if (webApp.gatherRequirements(webData) == true)
         {
-            this.appList.add(webApp);
-            webApp.saveRequirements();
-            return true;
+            return webApp.reqList;
         }
 
-        return false;
+        return null;
+    }
+
+    public void saveWebScrapedApplication(String appName, String[][] reqList)
+    {
+        WebScrapedApplication webApp = new WebScrapedApplication(appName);
+
+        webApp.name = appName;
+        webApp.reqList = reqList;
+        webApp.saveRequirements();
+        this.appList.add(webApp);
     }
 
     public void loadWebScrapedApplicationData()
@@ -347,5 +355,10 @@ public class Configurator
     public StoreFrontService getStoreFront()
     {
         return this.storefront;
+    }
+
+    public void addToAppList(GenericApplication webApp)
+    {
+        this.appList.add(webApp);
     }
 }

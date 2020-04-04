@@ -13,6 +13,7 @@
 import javafx.scene.Cursor;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
+import javafx.scene.control.ButtonType;
 import javafx.scene.text.*;
 import javafx.geometry.Pos;
 import javafx.scene.shape.Rectangle;
@@ -31,6 +32,9 @@ import pl.l7ssha.javasteam.*;
 
 //General
 import com.google.gson.JsonSyntaxException;
+import javafx.scene.control.Alert;
+import javafx.scene.control.Alert.AlertType;
+import java.util.Arrays;
 
 //Web-scraping
 import com.jaunt.JauntException;
@@ -398,11 +402,37 @@ public class ApplicationInputGUI extends VBox
                 userAgent.sendGET(enterApplicationURL.getText());
                 Text currentStatusText = new Text("Connection successful. Looking for requirements...");
                 this.currentStatusContainer.getChildren().set(0,currentStatusText);
-                
-                if (configurator.parseWebData(enterApplicationName.getText(),userAgent.getSource()) == true)
+                String[][] tempRequirements = configurator.parseWebData(enterApplicationName.getText(),userAgent.getSource());
+
+                if (tempRequirements != null)
                 {
                     currentStatusText = new Text("Requirements found. Confirming validity...");
                     this.currentStatusContainer.getChildren().set(0,currentStatusText);
+
+                    Alert testAlert = new Alert(AlertType.CONFIRMATION);
+                    testAlert.setTitle("Requirement Confirmation");
+                    testAlert.setHeaderText("Are the following requirements correct?");
+
+                    String alertString = "";
+                    for (int i = 0; i < tempRequirements.length; i++)
+                    {
+                        alertString += tempRequirements[i][0] + ": " + tempRequirements[i][1] + "\n";
+                    }
+
+                    testAlert.setContentText(alertString);
+                    testAlert.showAndWait();
+
+                    if (testAlert.getResult() == ButtonType.OK)
+                    {
+                        configurator.saveWebScrapedApplication(enterApplicationName.getText(), tempRequirements);
+                        currentStatusText = new Text("Requirements confirmed & saved.");
+                        this.currentStatusContainer.getChildren().set(0,currentStatusText);
+                    }
+                    else
+                    {
+                        currentStatusText = new Text("Requirements deemed invalid. Consider using the manual application entry.");
+                        this.currentStatusContainer.getChildren().set(0,currentStatusText);
+                    }
                 }
                 else
                 {
