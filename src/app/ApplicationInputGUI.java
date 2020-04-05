@@ -71,7 +71,9 @@ public class ApplicationInputGUI extends VBox
         preliminaryPanel.spacingProperty().bind(scene.widthProperty().multiply(0.01));
         preliminaryPanel.prefWidthProperty().bind(scene.widthProperty());
         preliminaryPanel.prefHeightProperty().bind(scene.heightProperty().multiply(0.1));
+        preliminaryPanel.translateXProperty().bind(scene.widthProperty().multiply(0.01));
         preliminaryPanel.getChildren().addAll(applicationTypeText,applicationOptions, continueButton);
+        continueButton.setId("continueButton");
 
 
         //Center, main input section
@@ -104,39 +106,6 @@ public class ApplicationInputGUI extends VBox
                 this.getChildren().set(1,manualApplicationInputPanel);
             }
         });
-        
-        continueButton.setOnMouseReleased(e ->
-        {                
-            Text currentStatusText = new Text("Confirming application submission...");
-            this.currentStatusContainer.getChildren().set(0,currentStatusText);
-            String alertString = "";
-            GenericApplication[] appList = configurator.getAppList().toArray(new GenericApplication[0]);
-
-            for (int i = 0; i < appList.length; i++)
-            {
-                alertString += appList[i].getName() + "\n";
-            }
-
-            Alert confirmationAlert = new Alert(AlertType.CONFIRMATION);
-            confirmationAlert.setTitle("Application Submission");
-            confirmationAlert.setHeaderText("Confirm that these are the applications you wish to submit.");
-            ((Button) confirmationAlert.getDialogPane().lookupButton(ButtonType.OK)).setText("Yes");
-            ((Button) confirmationAlert.getDialogPane().lookupButton(ButtonType.CANCEL)).setText("No");
-            confirmationAlert.getDialogPane().setMinHeight(Region.USE_PREF_SIZE); //Ensures alert window always fits the full text
-            confirmationAlert.setContentText(alertString);
-            confirmationAlert.showAndWait();  
-            
-            if (confirmationAlert.getResult() == ButtonType.OK)
-            {
-                //move to other input window
-                System.out.println("OK");
-            }
-            else
-            {
-                System.out.println("Do nothing");
-            }
-        });
-
 
         defaultPanel.prefHeightProperty().bind(scene.heightProperty().multiply(0.86));
         defaultPanel.getChildren().add(defaultText);
@@ -159,6 +128,8 @@ public class ApplicationInputGUI extends VBox
         this.currentStatusContainer.prefHeightProperty().bind(scene.heightProperty().multiply(0.05));
         this.totalApplicationCountContainer.setAlignment(Pos.CENTER_LEFT);
         this.currentStatusContainer.setAlignment(Pos.CENTER_RIGHT);
+        this.totalApplicationCountContainer.translateXProperty().bind(scene.widthProperty().multiply(0.01));
+        this.currentStatusContainer.translateXProperty().bind(scene.widthProperty().multiply(0.01).divide(-1));
 
         this.totalApplicationCountContainer.getChildren().add(totalApplicationCountText);
         this.currentStatusContainer.getChildren().add(currentStatusText);
@@ -629,6 +600,8 @@ public class ApplicationInputGUI extends VBox
         gpuField.maxWidthProperty().bind(scene.widthProperty().multiply(0.55));
         ramField.maxWidthProperty().bind(scene.widthProperty().multiply(0.55));
         storageField.maxWidthProperty().bind(scene.widthProperty().multiply(0.55));
+        
+        inputPanel.translateXProperty().bind(scene.widthProperty().multiply(0.01));
 
 
         submitButton.setOnMouseReleased(e ->
@@ -744,4 +717,10 @@ public class ApplicationInputGUI extends VBox
         inputPanel.getChildren().addAll(appNameForm,cpuForm,gpuForm,ramForm,storageForm,buttonForm);
         return inputPanel;
     }
+
+    public HBox getCurrentStatusContainer()
+    {
+        return this.currentStatusContainer;
+    }
+
 }
