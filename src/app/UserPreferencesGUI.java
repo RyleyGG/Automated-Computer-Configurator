@@ -23,6 +23,11 @@ import javafx.scene.control.Alert;
 import javafx.scene.control.Alert.AlertType;
 import javafx.scene.layout.Region;
 import javafx.scene.control.CheckBox;
+import javafx.scene.control.ComboBox;
+import javafx.collections.FXCollections;
+import javafx.scene.control.TextFormatter;
+import javafx.util.converter.IntegerStringConverter;
+
 
 class UserPreferencesGUI extends VBox
 {
@@ -32,12 +37,16 @@ class UserPreferencesGUI extends VBox
         Text overallInformationText = new Text("Go through each of the following options and enter the information that applies to you. You can right click the configuration options to see more details. Once you are done, click the submit button at the bottom of the window.\n");
         Button submitButton = new Button("Submit");
 
-        Text budgetText = new Text("Overall budget (including monitor(s), but not other peripherals):");
+        Text budgetText = new Text("Overall budget (including no peripherals [i.e. pointer mouse, keyboard, monitor, etc.]):");
         TextField budgetField = new TextField();
         HBox budgetForm = new HBox();
 
         Text preferredMonitorResText = new Text("Preferred monitor resolution:");
-        TextField preferredMonitorResField = new TextField();
+        String[] resolutionList =  new String[3];
+        resolutionList[0] = "1920 x 1080 (1080p)";
+        resolutionList[1] = "2560 x 1440 (1440p)";
+        resolutionList[2] = "4096 x 2160 (4K)";
+        ComboBox<String> preferredMonitorResField = new ComboBox<String>(FXCollections.observableArrayList(resolutionList));
         HBox preferredMonitorResForm = new HBox();
 
         Text configurationVariationText = new Text("Select the configuration(s) you are interested in:");
@@ -52,15 +61,27 @@ class UserPreferencesGUI extends VBox
         moreInfoAlert.getDialogPane().setMinHeight(Region.USE_PREF_SIZE); //Ensures alert window always fits the full text
 
         //GUI node setup
-        overallInformationText.wrappingWidthProperty().bind(scene.widthProperty()));
+        overallInformationText.wrappingWidthProperty().bind(scene.widthProperty());
         budgetForm.prefWidthProperty().bind(scene.widthProperty());
         budgetForm.spacingProperty().bind(scene.widthProperty().multiply(0.007));
         preferredMonitorResForm.prefWidthProperty().bind(scene.widthProperty());
         preferredMonitorResForm.spacingProperty().bind(scene.widthProperty().multiply(0.007));
         configurationVariationOptions.spacingProperty().bind(scene.heightProperty().multiply(0.007));
-        submitButton.translateYProperty().bind(scene.heightProperty().subtract(submitButton.layoutYProperty()).subtract(submitButton.heightProperty()).multiply(0.95));        this.spacingProperty().bind(scene.widthProperty().multiply(0.015));
+        submitButton.translateYProperty().bind(scene.heightProperty().subtract(submitButton.layoutYProperty()).subtract(submitButton.heightProperty()).multiply(0.95));
+        this.spacingProperty().bind(scene.widthProperty().multiply(0.015));
         this.translateXProperty().bind(scene.widthProperty().multiply(0.01));
 
+
+        budgetField.setTextFormatter(new TextFormatter<>(new IntegerStringConverter()));
+        budgetField.setOnKeyReleased(e ->
+        {
+            //The text formatter ensures that only integers are typed into the budget field.
+            //However, it only applies when the field itself loses focus. So, another node was arbitrarily chosen to receive focus before the budget field gets it back.
+            //The general speed of this operation coupled with the selectEnd() method means that the user will never tell that this switch of GUI focus ever occurs.
+            optimalConfigCB.requestFocus();
+            budgetField.requestFocus();
+            budgetField.selectEnd();
+        });
         optimalConfigCB.setOnContextMenuRequested(e ->
         {
             moreInfoAlert.getDialogPane().setContentText("The optimal configuration represents the best balance between price and performance based on your input, including your budget and application preferences.");
