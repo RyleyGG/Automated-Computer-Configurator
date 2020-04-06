@@ -21,6 +21,9 @@ import javafx.scene.layout.VBox;
 import javafx.scene.control.Alert;
 import javafx.scene.control.Alert.AlertType;
 import javafx.scene.layout.Region;
+import java.util.Arrays;
+import java.util.List;
+import java.util.ArrayList;
 
 public class GUIController extends Application
 {
@@ -63,6 +66,49 @@ public class GUIController extends Application
                 {
                     UserPreferencesGUI userPreferencesGUI = new UserPreferencesGUI(scene, configurator);
                     rootPane.getChildren().set(0,userPreferencesGUI);
+                    
+                    
+                    userPreferencesGUI.lookup("#userPreferencesSubmitButton").setOnMouseReleased(g ->
+                    {
+                        int userBudget = userPreferencesGUI.getBudget();
+                        int monitorCount = userPreferencesGUI.getMonitorCount();
+                        String monitorRes = userPreferencesGUI.getMonitorRes();
+                        List<String> selectedConfigs = userPreferencesGUI.getSelectedConfigs();
+                        String[] selectedConfigsArr = selectedConfigs.toArray(new String[0]);
+                        String configString = "";
+
+                        if (selectedConfigsArr.length > 0 && monitorRes != null && monitorCount > -1 && userBudget > -1)
+                        {
+                            for (int i = 0; i < selectedConfigsArr.length; i++)
+                            {
+                                configString += selectedConfigsArr[i]+"\n";
+                            }
+
+                            confirmationAlert.setTitle("Preference Confirmation");
+                            confirmationAlert.setHeaderText("Please confirm that the preferences below are correct");
+                            confirmationAlert.setContentText("Budget: " + userBudget + "\nMonitor Count: " + monitorCount + "\nPreferred Monitor Resolution: " + monitorRes + "\n\nSelected Configuration(s):\n" + configString);
+                            confirmationAlert.showAndWait();
+
+                            if (confirmationAlert.getResult() == ButtonType.OK)
+                            {
+                                configurator.setUserBudget(userBudget);
+                                configurator.setMonitorCount(monitorCount);
+                                configurator.setMonitorRes(monitorRes);
+                                configurator.setSelectedConfigs(selectedConfigs);
+                                System.out.println("Proceeding onto product GUI");
+                            }
+                        }
+                        else
+                        {
+                            Alert configAlert = new Alert(AlertType.INFORMATION);
+                            configAlert.setTitle("Action needed");
+                            configAlert.setHeaderText("Warning: not all fields completed");
+                            configAlert.getDialogPane().setContentText("At least one of the fields haven't been completed. Make sure that each field has a value before proceeding.");
+                            configAlert.getDialogPane().setMinHeight(Region.USE_PREF_SIZE); //Ensures alert window always fits the full text
+                            configAlert.showAndWait();
+                        }
+                    });
+                    
                 }
             });
         });

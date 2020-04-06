@@ -21,7 +21,10 @@ import java.util.ArrayList;
 public class Configurator
 {
     private List<GenericApplication> appList = new ArrayList<GenericApplication>();
-    private int totalBudget;
+    private int userBudget;
+    private int monitorCount;
+    private String monitorRes;
+    private List<String> selectedConfigs;
     private StoreFrontService storefront = new StoreFrontService();
 
 
@@ -446,4 +449,26 @@ public class Configurator
     {
         return this.appList;
     }
+
+    public void setUserBudget(int budget)
+    {
+        this.userBudget = budget;
+    }
+
+    public void setMonitorCount(int monitorCount)
+    {
+        this.monitorCount = monitorCount;
+    }
+
+    public void setMonitorRes(String monitorRes)
+    {
+        this.monitorRes = monitorRes;
+    }
+
+    public void setSelectedConfigs(List<String> selectedConfigs)
+    {
+        this.selectedConfigs = selectedConfigs;
+    }
+
+
 }
