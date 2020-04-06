@@ -144,12 +144,15 @@ public class ApplicationInputGUI extends VBox
         SteamAPI.initialize("8C903FFFA438516B3096134D21E4B43B"); //Web API Key, used to access the Steam API
         this.basicSteamAppData = configurator.parseBasicSteamData(configurator.saveBasicSteamData()); //Data for nearly all applications across Steam
         String workingDir = System.getProperty("user.dir"); //Review note: On the author's personal machine, Java was not properly finding the CWD, so its explicitly set here
+        Text defaultStatusText = new Text("Waiting for user input...");
+        this.currentStatusContainer.getChildren().set(0,defaultStatusText);
 
         //Preliminary GUI setup
         VBox inputPanel = new VBox();
         inputPanel.prefWidthProperty().bind(scene.widthProperty());
         inputPanel.prefHeightProperty().bind(scene.heightProperty().multiply(0.85));
         inputPanel.setAlignment(Pos.BASELINE_CENTER);
+
 
         //GUI node creation
         Text text = new Text("Enter applications below");
@@ -302,7 +305,7 @@ public class ApplicationInputGUI extends VBox
                                 Text currentStatusText = new Text("Application data saved successfully.");
                                 this.currentStatusContainer.getChildren().set(0,currentStatusText);
                             }
-                            else if (configurator.loadCachedSteamApplication(curatedApplicableApps[tempIndex][0], curatedApplicableApps[tempIndex][1]) != null)
+                            else if (configurator.loadCachedSteamApplication(curatedApplicableApps[tempIndex][0], curatedApplicableApps[tempIndex][1]).reqList != null)
                             {
                                 this.applicationCount++;
                                 Text applicationCountText = new Text("Total Applications Saved: " + this.applicationCount);
@@ -363,7 +366,9 @@ public class ApplicationInputGUI extends VBox
         inputPanel.prefWidthProperty().bind(scene.widthProperty());
         inputPanel.prefHeightProperty().bind(scene.heightProperty().multiply(0.85));
         inputPanel.setAlignment(Pos.BASELINE_CENTER);
-        inputPanel.spacingProperty().bind(scene.heightProperty().multiply(0.025));
+        inputPanel.spacingProperty().bind(scene.heightProperty().multiply(0.025));        
+        Text defaultStatusText = new Text("Waiting for user input...");
+        this.currentStatusContainer.getChildren().set(0,defaultStatusText);
 
         //GUI node creation
         Text urlText = new Text("Webpage URL that hosts the application requirements:");
@@ -553,7 +558,9 @@ public class ApplicationInputGUI extends VBox
         inputPanel.prefWidthProperty().bind(scene.widthProperty());
         inputPanel.prefHeightProperty().bind(scene.heightProperty().multiply(0.85));
         inputPanel.spacingProperty().bind(scene.widthProperty().multiply(0.007));
-
+        Text defaultStatusText = new Text("Waiting for user input...");
+        this.currentStatusContainer.getChildren().set(0,defaultStatusText);
+        
         //GUI node creation
         Text appNameText = new Text("Application name:");
         Text cpuText = new Text("CPU:");
