@@ -76,7 +76,7 @@ class ProductGUI extends VBox
             });
             
             boolean cachedDataMissing = true;
-            while (cachedDataMissing = true)
+            while (cachedDataMissing == true)
             {
                 
                 configurator.cacheHardwareData();
@@ -84,6 +84,7 @@ class ProductGUI extends VBox
                 if (cachedCPUData.exists() && cachedGPUData.exists())
                 {
                     cachedDataMissing = false;
+                    
                     //CPU
                     try
                     {
