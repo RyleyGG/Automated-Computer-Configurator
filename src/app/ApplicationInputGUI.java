@@ -296,26 +296,43 @@ public class ApplicationInputGUI extends VBox
                     {
                         try
                         {
-                            //Application count here currently allows for the same application to be selected and incremented more than once -- will be updated later
-                            if (configurator.createSteamApplication(curatedApplicableApps[tempIndex]).reqList != null)
+                            boolean appAlreadyEntered = false;
+
+                            for (int x = 0; x < configurator.getAppList().size(); x++)
                             {
-                                this.applicationCount++;
-                                Text applicationCountText = new Text("Total Applications Saved: " + this.applicationCount);
-                                this.totalApplicationCountContainer.getChildren().set(0,applicationCountText);
-                                Text currentStatusText = new Text("Application data saved successfully.");
-                                this.currentStatusContainer.getChildren().set(0,currentStatusText);
+                                if (configurator.getAppList().get(x).name == curatedApplicableApps[tempIndex][0])
+                                {
+                                    appAlreadyEntered = true;
+                                }
                             }
-                            else if (configurator.loadCachedSteamApplication(curatedApplicableApps[tempIndex][0], curatedApplicableApps[tempIndex][1]) == true)
+
+                            if (appAlreadyEntered == false)
                             {
-                                this.applicationCount++;
-                                Text applicationCountText = new Text("Total Applications Saved: " + this.applicationCount);
-                                this.totalApplicationCountContainer.getChildren().set(0,applicationCountText);
-                                Text currentStatusText = new Text("Cached application data used successfully.");
-                                this.currentStatusContainer.getChildren().set(0,currentStatusText);
+                                if (configurator.createSteamApplication(curatedApplicableApps[tempIndex]).reqList != null)
+                                {
+                                    this.applicationCount++;
+                                    Text applicationCountText = new Text("Total Applications Saved: " + this.applicationCount);
+                                    this.totalApplicationCountContainer.getChildren().set(0,applicationCountText);
+                                    Text currentStatusText = new Text("Application data saved successfully.");
+                                    this.currentStatusContainer.getChildren().set(0,currentStatusText);
+                                }
+                                else if (configurator.loadCachedSteamApplication(curatedApplicableApps[tempIndex][0], curatedApplicableApps[tempIndex][1]) == true)
+                                {
+                                    this.applicationCount++;
+                                    Text applicationCountText = new Text("Total Applications Saved: " + this.applicationCount);
+                                    this.totalApplicationCountContainer.getChildren().set(0,applicationCountText);
+                                    Text currentStatusText = new Text("Cached application data used successfully.");
+                                    this.currentStatusContainer.getChildren().set(0,currentStatusText);
+                                }
+                                else
+                                {
+                                    Text currentStatusText = new Text("Failed to save application data.");
+                                    this.currentStatusContainer.getChildren().set(0,currentStatusText);
+                                }
                             }
                             else
                             {
-                                Text currentStatusText = new Text("Failed to save application data.");
+                                Text currentStatusText = new Text("Application already entered");
                                 this.currentStatusContainer.getChildren().set(0,currentStatusText);
                             }
                         }
