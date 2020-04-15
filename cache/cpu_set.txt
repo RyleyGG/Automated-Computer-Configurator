@@ -1,0 +1,2836 @@
+2520: AMD A10 Micro-6700T APU
+2271: AMD A10 PRO-7350B APU
+2407: AMD A10 PRO-7800B APU
+2416: AMD A10 PRO-7850B APU
+10: AMD A10-4600M APU
+11: AMD A10-4655M APU
+1906: AMD A10-4657M APU
+12: AMD A10-5700 APU
+1962: AMD A10-5745M APU
+1920: AMD A10-5750M APU
+1992: AMD A10-5757M APU
+1990: AMD A10-5800B APU
+1446: AMD A10-5800K APU
+1936: AMD A10-6700 APU
+2254: AMD A10-6700T APU
+2117: AMD A10-6790K APU
+2155: AMD A10-6800B APU
+1935: AMD A10-6800K APU
+2287: AMD A10-7300 APU
+2451: AMD A10-7400P
+2146: AMD A10-7700K APU
+2262: AMD A10-7800 APU
+2133: AMD A10-7850K APU
+2722: AMD A10-7860K
+2531: AMD A10-7870K
+2744: AMD A10-7890K
+2542: AMD A10-8700P
+2603: AMD A10-8750
+2776: AMD A10-8850
+2793: AMD A10-9600P
+3060: AMD A10-9620P
+2857: AMD A10-9630P
+2900: AMD A10-9700
+3133: AMD A10-9700E
+2848: AMD A12-9700P
+3043: AMD A12-9720P
+3040: AMD A12-9730P
+2861: AMD A12-9800
+3083: AMD A12-9800E
+2413: AMD A4 Micro-6400T APU
+2653: AMD A4 PRO-3340B
+2439: AMD A4 PRO-7300B APU
+2450: AMD A4 PRO-7350B
+2049: AMD A4-1200 APU
+1970: AMD A4-1250 APU
+13: AMD A4-3300 APU
+14: AMD A4-3300M APU
+15: AMD A4-3305M APU
+16: AMD A4-3310MX APU
+17: AMD A4-3320M APU
+1871: AMD A4-3330MX APU
+18: AMD A4-3400 APU
+19: AMD A4-3420 APU
+1913: AMD A4-4000 APU
+2305: AMD A4-4020 APU
+1813: AMD A4-4300M APU
+1820: AMD A4-4355M APU
+2005: AMD A4-5000 APU
+3009: AMD A4-5050 APU
+2547: AMD A4-5100 APU
+1974: AMD A4-5150M APU
+1447: AMD A4-5300 APU
+1810: AMD A4-5300B APU
+2307: AMD A4-6210 APU
+2454: AMD A4-6250J APU
+2083: AMD A4-6300 APU
+2112: AMD A4-6300B APU
+2212: AMD A4-6320 APU
+2549: AMD A4-7210 APU
+2357: AMD A4-7300 APU
+3093: AMD A4-9120
+3531: AMD A4-9120C
+3362: AMD A4-9125
+2698: AMD A6 Micro-6500T APU
+2353: AMD A6 PRO-7050B APU
+2436: AMD A6 PRO-7400B
+1908: AMD A6-1450 APU
+20: AMD A6-3400M APU
+21: AMD A6-3410MX APU
+22: AMD A6-3420M APU
+23: AMD A6-3430MX APU
+24: AMD A6-3500 APU
+25: AMD A6-3600 APU
+26: AMD A6-3620 APU
+27: AMD A6-3650 APU
+28: AMD A6-3670 APU
+29: AMD A6-4400M APU
+30: AMD A6-4455M APU
+1975: AMD A6-5200 APU
+2198: AMD A6-5345M APU
+1987: AMD A6-5350M APU
+2048: AMD A6-5357M APU
+2085: AMD A6-5400B APU
+1494: AMD A6-5400K APU
+2290: AMD A6-6310 APU
+2157: AMD A6-6400B APU
+1960: AMD A6-6400K APU
+2433: AMD A6-6420B APU
+2372: AMD A6-6420K APU
+2488: AMD A6-7000
+2535: AMD A6-7310 APU
+2392: AMD A6-7400K APU
+2771: AMD A6-7470K
+3436: AMD A6-7480
+2781: AMD A6-8500P
+2657: AMD A6-8550
+3221: AMD A6-9200
+2825: AMD A6-9210
+3072: AMD A6-9220
+3455: AMD A6-9220C
+3198: AMD A6-9220e
+3315: AMD A6-9225
+3063: AMD A6-9230
+3609: AMD A6-9400
+2903: AMD A6-9500
+3330: AMD A6-9500E
+2289: AMD A8 PRO-7150B APU
+2352: AMD A8 PRO-7600B APU
+31: AMD A8-3500M APU
+32: AMD A8-3510MX APU
+33: AMD A8-3520M APU
+34: AMD A8-3530MX APU
+35: AMD A8-3550MX APU
+36: AMD A8-3800 APU
+37: AMD A8-3820 APU
+38: AMD A8-3850 APU
+39: AMD A8-3870K APU
+40: AMD A8-4500M APU
+1448: AMD A8-4555M APU
+41: AMD A8-5500 APU
+1868: AMD A8-5500B APU
+1971: AMD A8-5545M APU
+1976: AMD A8-5550M APU
+1986: AMD A8-5557M APU
+1449: AMD A8-5600K APU
+2266: AMD A8-6410 APU
+1998: AMD A8-6500 APU
+2210: AMD A8-6500B APU
+2179: AMD A8-6500T APU
+1946: AMD A8-6600K APU
+2688: AMD A8-7050
+2318: AMD A8-7100 APU
+2550: AMD A8-7200P
+2537: AMD A8-7410 APU
+2817: AMD A8-7500
+2311: AMD A8-7600 APU
+2489: AMD A8-7650K
+2595: AMD A8-7670K
+3384: AMD A8-7680
+2580: AMD A8-8600P
+2649: AMD A8-8650
+3004: AMD A8-9600
+2901: AMD A9-9400
+2841: AMD A9-9410
+3059: AMD A9-9420
+3226: AMD A9-9420e
+3278: AMD A9-9425
+3143: AMD A9-9430
+1496: AMD Athlon 1500+
+183: AMD Athlon 1640B
+3325: AMD Athlon 200GE
+3416: AMD Athlon 220GE
+3394: AMD Athlon 240GE
+184: AMD Athlon 2650e
+53: AMD Athlon 2800+
+185: AMD Athlon 2850e
+3614: AMD Athlon 3000G
+3629: AMD Athlon 300GE
+3503: AMD Athlon 300U
+55: AMD Athlon 5000 Dual-Core
+2208: AMD Athlon 5150 APU
+56: AMD Athlon 5200 Dual-Core
+2195: AMD Athlon 5350 APU
+2763: AMD Athlon 5370 APU
+2096: AMD Athlon 64 2000+
+2097: AMD Athlon 64 2600+
+65: AMD Athlon 64 2800+
+66: AMD Athlon 64 3000+
+2481: AMD Athlon 64 3100+
+67: AMD Athlon 64 3200+
+68: AMD Athlon 64 3300+
+69: AMD Athlon 64 3400+
+70: AMD Athlon 64 3500+
+71: AMD Athlon 64 3700+
+72: AMD Athlon 64 3800+
+73: AMD Athlon 64 4000+
+59: AMD Athlon 64 FX-55
+60: AMD Athlon 64 FX-57
+1902: AMD Athlon 64 FX-59
+61: AMD Athlon 64 FX-60 Dual Core
+62: AMD Athlon 64 FX-62 Dual Core
+64: AMD Athlon 64 FX-74
+1511: AMD Athlon 64 X2 3800+
+75: AMD Athlon 64 X2 Dual Core 3400+
+76: AMD Athlon 64 X2 Dual Core 3600+
+77: AMD Athlon 64 X2 Dual Core 3800+
+78: AMD Athlon 64 X2 Dual Core 4000+
+79: AMD Athlon 64 X2 Dual Core 4200+
+80: AMD Athlon 64 X2 Dual Core 4400+
+81: AMD Athlon 64 X2 Dual Core 4600+
+82: AMD Athlon 64 X2 Dual Core 4800+
+83: AMD Athlon 64 X2 Dual Core 5000+
+84: AMD Athlon 64 X2 Dual Core 5200+
+85: AMD Athlon 64 X2 Dual Core 5400+
+86: AMD Athlon 64 X2 Dual Core 5600+
+87: AMD Athlon 64 X2 Dual Core 5800+
+88: AMD Athlon 64 X2 Dual Core 6000+
+89: AMD Athlon 64 X2 Dual Core 6400+
+90: AMD Athlon 64 X2 Dual Core BE-2300
+91: AMD Athlon 64 X2 Dual Core BE-2350
+92: AMD Athlon 64 X2 Dual Core TK-53
+1509: AMD Athlon 64 X2 Dual Core TK-55
+93: AMD Athlon 64 X2 Dual-Core TK-42
+94: AMD Athlon 64 X2 Dual-Core TK-53
+95: AMD Athlon 64 X2 Dual-Core TK-55
+96: AMD Athlon 64 X2 Dual-Core TK-57
+43: AMD Athlon 64 X2 QL-60
+44: AMD Athlon 64 X2 QL-62
+45: AMD Athlon 64 X2 QL-64
+46: AMD Athlon 64 X2 QL-65
+240: AMD Athlon 64 X2 QL-66
+210: AMD Athlon 64 X2 QL-67
+98: AMD Athlon 7450 Dual-Core
+99: AMD Athlon 7550 Dual-Core
+100: AMD Athlon 7750 Dual-Core
+101: AMD Athlon 7850 Dual-Core
+102: AMD Athlon Dual Core 4050e
+103: AMD Athlon Dual Core 4450B
+104: AMD Athlon Dual Core 4450e
+105: AMD Athlon Dual Core 4850B
+106: AMD Athlon Dual Core 4850e
+107: AMD Athlon Dual Core 5000B
+108: AMD Athlon Dual Core 5050e
+109: AMD Athlon Dual Core 5200B
+110: AMD Athlon Dual Core 5400B
+111: AMD Athlon Dual Core 5600B
+112: AMD Athlon II 160u
+113: AMD Athlon II 170u
+114: AMD Athlon II Dual-Core M300
+115: AMD Athlon II Dual-Core M320
+116: AMD Athlon II Dual-Core M340
+117: AMD Athlon II N330 Dual-Core
+118: AMD Athlon II N350 Dual-Core
+119: AMD Athlon II N370 Dual-Core
+120: AMD Athlon II Neo K125
+121: AMD Athlon II Neo K145
+122: AMD Athlon II Neo K325 Dual-Core
+123: AMD Athlon II Neo K345 Dual-Core
+124: AMD Athlon II Neo N36L Dual-Core
+125: AMD Athlon II P320 Dual-Core
+126: AMD Athlon II P340 Dual-Core
+127: AMD Athlon II P360 Dual-Core
+1450: AMD Athlon II X2 210e
+128: AMD Athlon II X2 215
+129: AMD Athlon II X2 220
+131: AMD Athlon II X2 235e
+132: AMD Athlon II X2 240
+133: AMD Athlon II X2 240e
+134: AMD Athlon II X2 245
+135: AMD Athlon II X2 245e
+136: AMD Athlon II X2 250
+137: AMD Athlon II X2 250e
+138: AMD Athlon II X2 250u
+139: AMD Athlon II X2 255
+140: AMD Athlon II X2 260
+141: AMD Athlon II X2 260u
+142: AMD Athlon II X2 265
+143: AMD Athlon II X2 270
+144: AMD Athlon II X2 270u
+1887: AMD Athlon II X2 280
+145: AMD Athlon II X2 4300e
+146: AMD Athlon II X2 4400e
+147: AMD Athlon II X2 4450e
+148: AMD Athlon II X2 B22
+149: AMD Athlon II X2 B24
+150: AMD Athlon II X2 B26
+151: AMD Athlon II X2 B28
+152: AMD Athlon II X3 400e
+153: AMD Athlon II X3 405e
+154: AMD Athlon II X3 415e
+1517: AMD Athlon II X3 420e
+155: AMD Athlon II X3 425
+156: AMD Athlon II X3 435
+157: AMD Athlon II X3 440
+158: AMD Athlon II X3 445
+159: AMD Athlon II X3 450
+160: AMD Athlon II X3 455
+161: AMD Athlon II X3 460
+1518: AMD Athlon II X4 553
+1519: AMD Athlon II X4 555
+2024: AMD Athlon II X4 559
+162: AMD Athlon II X4 600e
+163: AMD Athlon II X4 605e
+164: AMD Athlon II X4 610e
+165: AMD Athlon II X4 615e
+166: AMD Athlon II X4 620
+168: AMD Athlon II X4 630
+169: AMD Athlon II X4 631 Quad-Core
+170: AMD Athlon II X4 635
+2508: AMD Athlon II X4 638 Quad-Core
+171: AMD Athlon II X4 640
+173: AMD Athlon II X4 641 Quad-Core
+174: AMD Athlon II X4 645
+175: AMD Athlon II X4 650
+176: AMD Athlon II X4 651 Quad-Core
+2127: AMD Athlon II X4 655
+186: AMD Athlon L110
+187: AMD Athlon LE-1600
+188: AMD Athlon LE-1620
+189: AMD Athlon LE-1640
+190: AMD Athlon LE-1660
+179: AMD Athlon Neo MV-40
+180: AMD Athlon Neo X2 Dual Core 6850e
+181: AMD Athlon Neo X2 Dual Core L325
+182: AMD Athlon Neo X2 Dual Core L335
+3269: AMD Athlon PRO 200GE
+3571: AMD Athlon PRO 300GE
+191: AMD Athlon TF-20
+192: AMD Athlon TF-36
+195: AMD Athlon X2 215
+196: AMD Athlon X2 240
+1526: AMD Athlon X2 240e
+198: AMD Athlon X2 250
+1527: AMD Athlon X2 255
+2177: AMD Athlon X2 280
+1994: AMD Athlon X2 340 Dual Core
+2076: AMD Athlon X2 370K Dual Core
+200: AMD Athlon X2 Dual Core 3250e
+1529: AMD Athlon X2 Dual Core 6850e
+201: AMD Athlon X2 Dual Core BE-2300
+202: AMD Athlon X2 Dual Core BE-2350
+203: AMD Athlon X2 Dual Core BE-2400
+204: AMD Athlon X2 Dual Core L310
+1531: AMD Athlon X3 425
+211: AMD Athlon X3 435
+1532: AMD Athlon X3 440
+1453: AMD Athlon X3 455
+212: AMD Athlon X4 620
+215: AMD Athlon X4 640
+1789: AMD Athlon X4 740 Quad Core
+2500: AMD Athlon X4 750 Quad Core
+1801: AMD Athlon X4 750K Quad Core
+1997: AMD Athlon X4 760K Quad Core
+3190: AMD Athlon X4 830
+2463: AMD Athlon X4 840
+2721: AMD Athlon X4 845
+2362: AMD Athlon X4 860K
+2724: AMD Athlon X4 870K
+2747: AMD Athlon X4 880K
+3078: AMD Athlon X4 950
+218: AMD Athlon XP 1500+
+219: AMD Athlon XP 1600+
+49: AMD Athlon XP 1700+
+221: AMD Athlon XP 1800+
+222: AMD Athlon XP 1900+
+223: AMD Athlon XP 2000+
+224: AMD Athlon XP 2100+
+225: AMD Athlon XP 2200+
+226: AMD Athlon XP 2400+
+227: AMD Athlon XP 2500+
+228: AMD Athlon XP 2600+
+229: AMD Athlon XP 2700+
+230: AMD Athlon XP 2800+
+1539: AMD Athlon XP 2900+
+231: AMD Athlon XP 3000+
+232: AMD Athlon XP 3100+
+233: AMD Athlon XP 3200+
+234: AMD Athlon XP1600+
+1549: AMD Athlon XP2400+
+1551: AMD Athlon64 X2 Dual Core 4600+
+241: AMD C-30
+242: AMD C-50
+243: AMD C-60
+244: AMD C-60 APU
+1817: AMD C-70 APU
+247: AMD E-240
+248: AMD E-300 APU
+249: AMD E-350
+1777: AMD E-350 APU
+1869: AMD E-350D APU
+250: AMD E-450 APU
+2379: AMD E1 Micro-6200T APU
+1427: AMD E1-1200 APU
+1885: AMD E1-1500 APU
+1968: AMD E1-2100 APU
+2391: AMD E1-2200 APU
+2019: AMD E1-2500 APU
+2308: AMD E1-6010 APU
+2552: AMD E1-6015 APU
+2736: AMD E1-6050J APU
+2820: AMD E1-7010 APU
+251: AMD E2-1800 APU
+1867: AMD E2-2000 APU
+2159: AMD E2-3000 APU
+252: AMD E2-3000M APU
+253: AMD E2-3200 APU
+2160: AMD E2-3800 APU
+2373: AMD E2-6110 APU
+2628: AMD E2-7110 APU
+3018: AMD E2-9000
+3048: AMD E2-9000e
+2915: AMD E2-9010
+3390: AMD E2-9030
+3076: AMD Embedded G-Series GX-215JJ Radeon R2E
+3125: AMD Embedded G-Series GX-224IJ Radeon R4E
+3077: AMD Embedded G-Series GX-420GI Radeon R7E
+3022: AMD Embedded R-Series RX-216GD
+3218: AMD Embedded R-Series RX-418GD Radeon R6
+2655: AMD Embedded R-Series RX-421BD
+3480: AMD EPYC 3201
+3583: AMD EPYC 3251
+3196: AMD EPYC 7251
+3636: AMD EPYC 7262
+3427: AMD EPYC 7301
+3610: AMD EPYC 7302P
+3411: AMD EPYC 7351
+3124: AMD EPYC 7351P
+3387: AMD EPYC 7371
+3118: AMD EPYC 7401P
+3591: AMD EPYC 7402P
+3164: AMD EPYC 7451
+3600: AMD EPYC 7452
+3153: AMD EPYC 7501
+3538: AMD EPYC 7502P
+3089: AMD EPYC 7551
+3215: AMD EPYC 7551P
+3543: AMD EPYC 7571
+3555: AMD EPYC 7702P
+3547: AMD EPYC 7742
+2849: AMD FirePro A320 APU
+255: AMD FX-4100 Quad-Core
+1807: AMD FX-4130 Quad-Core
+2108: AMD FX-4150 Quad-Core
+256: AMD FX-4170 Quad-Core
+2118: AMD FX-4200 Quad-Core
+1814: AMD FX-4300 Quad-Core
+2687: AMD FX-4320
+2665: AMD FX-4330
+1929: AMD FX-4350 Quad-Core
+257: AMD FX-6100 Six-Core
+258: AMD FX-6120 Six-Core
+1886: AMD FX-6130 Six-Core
+259: AMD FX-6200 Six-Core
+1781: AMD FX-6300 Six-Core
+2896: AMD FX-6330 Six-Core
+1910: AMD FX-6350 Six-Core
+2199: AMD FX-670K Quad-Core
+2375: AMD FX-7500 APU
+2475: AMD FX-7600P
+2402: AMD FX-7600P APU
+2438: AMD FX-770K Quad-Core
+260: AMD FX-8100 Eight-Core
+261: AMD FX-8120 Eight-Core
+262: AMD FX-8140 Eight-Core
+263: AMD FX-8150 Eight-Core
+1825: AMD FX-8300 Eight-Core
+2393: AMD FX-8310 Eight-Core
+1782: AMD FX-8320 Eight-Core
+2374: AMD FX-8320E Eight-Core
+1780: AMD FX-8350 Eight-Core
+2347: AMD FX-8370 Eight-Core
+2367: AMD FX-8370E Eight-Core
+2858: AMD FX-870K Quad Core
+2567: AMD FX-8800P
+1989: AMD FX-9370 Eight-Core
+2014: AMD FX-9590 Eight-Core
+2823: AMD FX-9800P
+2911: AMD FX-9830P
+1843: AMD FX-B4150 Quad-Core
+264: AMD G-T40E
+3328: AMD G-T40R
+266: AMD G-T44R
+1999: AMD G-T48E
+267: AMD G-T52R
+1965: AMD G-T56E
+268: AMD G-T56N
+2859: AMD Geode NX 2400+
+2536: AMD GX-210JA SOC
+2288: AMD GX-212JC SOC
+2138: AMD GX-217GA SOC
+2976: AMD GX-218GL SOC
+2837: AMD GX-222GC SOC
+2473: AMD GX-412HC
+2081: AMD GX-415GA SOC
+2121: AMD GX-420CA SOC
+2291: AMD GX-424CC SOC
+526: AMD Opteron 1212
+528: AMD Opteron 1214
+2644: AMD Opteron 1214 HE
+529: AMD Opteron 1216
+530: AMD Opteron 1216 HE
+531: AMD Opteron 1218
+533: AMD Opteron 1220
+534: AMD Opteron 1222
+1403: AMD Opteron 1352
+1404: AMD Opteron 1354
+1405: AMD Opteron 1356
+1406: AMD Opteron 1381
+1562: AMD Opteron 144
+270: AMD Opteron 146
+271: AMD Opteron 148
+1563: AMD Opteron 150
+272: AMD Opteron 152
+273: AMD Opteron 154
+516: AMD Opteron 165
+517: AMD Opteron 170
+518: AMD Opteron 175
+519: AMD Opteron 180
+520: AMD Opteron 185
+537: AMD Opteron 2218
+1616: AMD Opteron 2220
+1460: AMD Opteron 2220 SE
+1911: AMD Opteron 2222
+2031: AMD Opteron 2354
+1746: AMD Opteron 2356
+3187: AMD Opteron 2373 EE
+1407: AMD Opteron 2378
+1750: AMD Opteron 2384
+1894: AMD Opteron 2393 SE
+1408: AMD Opteron 2427
+1753: AMD Opteron 2431
+1875: AMD Opteron 2435
+1806: AMD Opteron 254
+1436: AMD Opteron 270
+521: AMD Opteron 275
+522: AMD Opteron 280
+523: AMD Opteron 285
+524: AMD Opteron 290
+3445: AMD Opteron 3250 HE
+1795: AMD Opteron 3260 HE
+276: AMD Opteron 3280
+2791: AMD Opteron 3320 EE
+1931: AMD Opteron 3350 HE
+2426: AMD Opteron 3365
+1892: AMD Opteron 3380
+2477: AMD Opteron 4162 EE
+1565: AMD Opteron 4170 HE
+278: AMD Opteron 4184
+279: AMD Opteron 4274 HE
+2148: AMD Opteron 4280
+1862: AMD Opteron 4284
+2593: AMD Opteron 4332 HE
+2733: AMD Opteron 4334
+2991: AMD Opteron 4365 EE
+2264: AMD Opteron 4386
+280: AMD Opteron 6128
+1941: AMD Opteron 6136
+1948: AMD Opteron 6164 HE
+282: AMD Opteron 6172
+1916: AMD Opteron 6174
+1568: AMD Opteron 6176 SE
+1905: AMD Opteron 6212
+1980: AMD Opteron 6220
+283: AMD Opteron 6234
+2445: AMD Opteron 6238
+1569: AMD Opteron 6272
+284: AMD Opteron 6274
+1880: AMD Opteron 6276
+1846: AMD Opteron 6282 SE
+2469: AMD Opteron 6287 SE
+1982: AMD Opteron 6328
+1978: AMD Opteron 6344
+1903: AMD Opteron 6348
+2204: AMD Opteron 6366 HE
+2000: AMD Opteron 6376
+2482: AMD Opteron 6378
+2498: AMD Opteron 6380
+2294: AMD Opteron 6386 SE
+1851: AMD Opteron 8439 SE
+3321: AMD Opteron X2170 APU
+3069: AMD Opteron X3216 APU
+3422: AMD Opteron X3418 APU
+3026: AMD Opteron X3421 APU
+285: AMD Phenom 8250 Triple-Core
+286: AMD Phenom 8250e Triple-Core
+287: AMD Phenom 8400 Triple-Core
+288: AMD Phenom 8450 Triple-Core
+289: AMD Phenom 8450e Triple-Core
+291: AMD Phenom 8600 Triple-Core
+292: AMD Phenom 8600B Triple-Core
+293: AMD Phenom 8650 Triple-Core
+294: AMD Phenom 8750 Triple-Core
+295: AMD Phenom 8750B Triple-Core
+1572: AMD Phenom 8850 Triple-Core
+296: AMD Phenom 8850B Triple-Core
+297: AMD Phenom 9100e Quad-Core
+298: AMD Phenom 9150e Quad-Core
+299: AMD Phenom 9350e Quad-Core
+300: AMD Phenom 9450e Quad-Core
+301: AMD Phenom 9500 Quad-Core
+302: AMD Phenom 9550 Quad-Core
+303: AMD Phenom 9600 Quad-Core
+304: AMD Phenom 9600B Quad-Core
+305: AMD Phenom 9650 Quad-Core
+306: AMD Phenom 9750 Quad-Core
+1573: AMD Phenom 9750B Quad-Core
+307: AMD Phenom 9850 Quad-Core
+1574: AMD Phenom 9850B Quad-Core
+308: AMD Phenom 9950 Quad-Core
+309: AMD Phenom FX-5000 Quad-Core
+310: AMD Phenom FX-5200 Quad-Core
+313: AMD Phenom II N620 Dual-Core
+314: AMD Phenom II N640 Dual-Core
+315: AMD Phenom II N660 Dual-Core
+2320: AMD Phenom II N830 3+1
+316: AMD Phenom II N830 Triple-Core
+317: AMD Phenom II N850 Triple-Core
+318: AMD Phenom II N870 Triple-Core
+319: AMD Phenom II N930 Quad-Core
+320: AMD Phenom II N950 Quad-Core
+321: AMD Phenom II N970 Quad-Core
+322: AMD Phenom II P650 Dual-Core
+323: AMD Phenom II P820 Triple-Core
+324: AMD Phenom II P840 Triple-Core
+325: AMD Phenom II P860 Triple-Core
+326: AMD Phenom II P920 Quad-Core
+327: AMD Phenom II P940 Quad-Core
+328: AMD Phenom II P960 Quad-Core
+329: AMD Phenom II X2 511
+330: AMD Phenom II X2 521
+331: AMD Phenom II X2 545
+332: AMD Phenom II X2 550
+333: AMD Phenom II X2 555
+334: AMD Phenom II X2 560
+335: AMD Phenom II X2 565
+2675: AMD Phenom II X2 570
+336: AMD Phenom II X2 B53
+337: AMD Phenom II X2 B55
+1575: AMD Phenom II X2 B57
+338: AMD Phenom II X2 B59
+339: AMD Phenom II X3 700e
+340: AMD Phenom II X3 705e
+341: AMD Phenom II X3 710
+343: AMD Phenom II X3 720
+344: AMD Phenom II X3 740
+345: AMD Phenom II X3 B73
+346: AMD Phenom II X3 B75
+347: AMD Phenom II X3 B77
+353: AMD Phenom II X4 805
+354: AMD Phenom II X4 810
+355: AMD Phenom II X4 820
+356: AMD Phenom II X4 830
+357: AMD Phenom II X4 840
+358: AMD Phenom II X4 840T
+359: AMD Phenom II X4 850
+361: AMD Phenom II X4 900e
+362: AMD Phenom II X4 905e
+363: AMD Phenom II X4 910
+364: AMD Phenom II X4 910e
+365: AMD Phenom II X4 920
+366: AMD Phenom II X4 925
+367: AMD Phenom II X4 940
+7: AMD Phenom II X4 945
+368: AMD Phenom II X4 955
+369: AMD Phenom II X4 960T
+370: AMD Phenom II X4 965
+371: AMD Phenom II X4 970
+372: AMD Phenom II X4 973
+373: AMD Phenom II X4 975
+1808: AMD Phenom II X4 977
+374: AMD Phenom II X4 980
+1456: AMD Phenom II X4 B05e
+375: AMD Phenom II X4 B15e
+376: AMD Phenom II X4 B25
+377: AMD Phenom II X4 B35
+378: AMD Phenom II X4 B40
+379: AMD Phenom II X4 B45
+380: AMD Phenom II X4 B50
+381: AMD Phenom II X4 B55
+382: AMD Phenom II X4 B60
+383: AMD Phenom II X4 B65
+2803: AMD Phenom II X4 B70
+384: AMD Phenom II X4 B93
+385: AMD Phenom II X4 B95
+386: AMD Phenom II X4 B97
+387: AMD Phenom II X4 B99
+388: AMD Phenom II X6 1035T
+389: AMD Phenom II X6 1045T
+390: AMD Phenom II X6 1055T
+391: AMD Phenom II X6 1065T
+392: AMD Phenom II X6 1075T
+393: AMD Phenom II X6 1090T
+394: AMD Phenom II X6 1100T
+3165: AMD Phenom II X6 1405T
+1852: AMD Phenom II X620 Dual-Core
+395: AMD Phenom II X640 Dual-Core
+396: AMD Phenom II X920 Quad-Core
+2324: AMD Phenom II X940 Quad-Core
+2844: AMD Phenom X2 Dual-Core GE-5060
+1812: AMD Phenom X2 Dual-Core GE-6060
+1877: AMD Phenom X2 Dual-Core GE-7060
+397: AMD Phenom X2 Dual-Core GP-7730
+290: AMD Phenom X3 8550
+1580: AMD Phenom X4 Quad-Core GP-9500
+2878: AMD Phenom X4 Quad-Core GP-9530
+1581: AMD Phenom X4 Quad-Core GP-9600
+2862: AMD Phenom X4 Quad-Core GP-9730
+2559: AMD Phenom X4 Quad-Core GS-6560
+2648: AMD PRO A10-8700B
+2909: AMD PRO A10-8730B
+2647: AMD PRO A10-8750B
+2945: AMD PRO A10-8770
+2946: AMD PRO A10-8770E
+2694: AMD PRO A10-8850B
+2883: AMD PRO A10-9700
+3168: AMD PRO A10-9700B
+2824: AMD PRO A10-9700E
+2610: AMD PRO A12-8800B
+3088: AMD PRO A12-8830B
+2937: AMD PRO A12-8870
+2882: AMD PRO A12-8870E
+2939: AMD PRO A12-9800
+2840: AMD PRO A12-9800B
+2944: AMD PRO A12-9800E
+2802: AMD PRO A4-3350B APU
+3597: AMD PRO A4-4350B
+2714: AMD PRO A4-8350B
+3210: AMD PRO A6-7350B
+2695: AMD PRO A6-8500B
+2947: AMD PRO A6-8530B
+2821: AMD PRO A6-8550B
+2949: AMD PRO A6-8570
+2926: AMD PRO A6-8570E
+2942: AMD PRO A6-9500
+2981: AMD PRO A6-9500B
+2950: AMD PRO A6-9500E
+2652: AMD PRO A8-8600B
+2650: AMD PRO A8-8650B
+3071: AMD PRO A8-8670E
+2860: AMD PRO A8-9600
+2940: AMD PRO A8-9600B
+2529: AMD QC-4000
+2927: AMD R-260H APU
+3616: AMD R-272F APU
+2486: AMD R-460L APU
+1438: AMD R-464L APU
+2496: AMD RX-427BB
+3029: AMD Ryzen 3 1200
+3057: AMD Ryzen 3 1300X
+3186: AMD Ryzen 3 2200G
+3301: AMD Ryzen 3 2200GE
+3152: AMD Ryzen 3 2200U
+3290: AMD Ryzen 3 2300U
+3395: AMD Ryzen 3 2300X
+3497: AMD Ryzen 3 3200G
+3431: AMD Ryzen 3 3200U
+3520: AMD Ryzen 3 3300U
+3664: AMD Ryzen 3 4300U
+3073: AMD Ryzen 3 PRO 1200
+3074: AMD Ryzen 3 PRO 1300
+3452: AMD Ryzen 3 PRO 2100GE
+3216: AMD Ryzen 3 PRO 2200G
+3267: AMD Ryzen 3 PRO 2200GE
+3263: AMD Ryzen 3 PRO 2300U
+3570: AMD Ryzen 3 PRO 3200G
+3496: AMD Ryzen 3 PRO 3200GE
+3450: AMD Ryzen 3 PRO 3300U
+2992: AMD Ryzen 5 1400
+3001: AMD Ryzen 5 1500X
+2984: AMD Ryzen 5 1600
+3000: AMD Ryzen 5 1600X
+3183: AMD Ryzen 5 2400G
+3284: AMD Ryzen 5 2400GE
+3123: AMD Ryzen 5 2500U
+3410: AMD Ryzen 5 2500X
+3243: AMD Ryzen 5 2600
+3415: AMD Ryzen 5 2600H
+3235: AMD Ryzen 5 2600X
+3498: AMD Ryzen 5 3400G
+3690: AMD Ryzen 5 3400GE
+3588: AMD Ryzen 5 3500
+3421: AMD Ryzen 5 3500U
+3592: AMD Ryzen 5 3500X
+3403: AMD Ryzen 5 3550H
+3577: AMD Ryzen 5 3580U
+3481: AMD Ryzen 5 3600
+3494: AMD Ryzen 5 3600X
+3049: AMD Ryzen 5 PRO 1500
+3079: AMD Ryzen 5 PRO 1600
+3265: AMD Ryzen 5 PRO 2400G
+3266: AMD Ryzen 5 PRO 2400GE
+3262: AMD Ryzen 5 PRO 2500U
+3306: AMD Ryzen 5 PRO 2600
+3569: AMD Ryzen 5 PRO 3400G
+3565: AMD Ryzen 5 PRO 3400GE
+3500: AMD Ryzen 5 PRO 3500U
+3495: AMD Ryzen 5 PRO 3600
+2970: AMD Ryzen 7 1700
+2969: AMD Ryzen 7 1700X
+2966: AMD Ryzen 7 1800X
+3240: AMD Ryzen 7 2700
+3548: AMD Ryzen 7 2700E
+3140: AMD Ryzen 7 2700U
+3238: AMD Ryzen 7 2700X
+3383: AMD Ryzen 7 2800H
+3426: AMD Ryzen 7 3700U
+3485: AMD Ryzen 7 3700X
+3441: AMD Ryzen 7 3750H
+3587: AMD Ryzen 7 3780U
+3499: AMD Ryzen 7 3800X
+3676: AMD Ryzen 7 4800H
+3075: AMD Ryzen 7 PRO 1700
+3033: AMD Ryzen 7 PRO 1700X
+3307: AMD Ryzen 7 PRO 2700
+3258: AMD Ryzen 7 PRO 2700U
+3292: AMD Ryzen 7 PRO 2700X
+3564: AMD Ryzen 7 PRO 3700
+3433: AMD Ryzen 7 PRO 3700U
+3575: AMD Ryzen 9 3900
+3493: AMD Ryzen 9 3900X
+3598: AMD Ryzen 9 3950X
+3563: AMD Ryzen 9 PRO 3900
+3486: AMD Ryzen Embedded R1505G
+3659: AMD Ryzen Embedded R1606G
+3339: AMD Ryzen Embedded V1202B
+3661: AMD Ryzen Embedded V1404I
+3331: AMD Ryzen Embedded V1605B
+3574: AMD Ryzen Embedded V1756B
+3310: AMD Ryzen Embedded V1807B
+3086: AMD Ryzen Threadripper 1900X
+3062: AMD Ryzen Threadripper 1920X
+3058: AMD Ryzen Threadripper 1950X
+3354: AMD Ryzen Threadripper 2920X
+3316: AMD Ryzen Threadripper 2950X
+3345: AMD Ryzen Threadripper 2970WX
+3309: AMD Ryzen Threadripper 2990WX
+3332: AMD Ryzen Threadripper 2990X
+3617: AMD Ryzen Threadripper 3960X
+3623: AMD Ryzen Threadripper 3970X
+3674: AMD Ryzen Threadripper 3990X
+401: AMD Sempron 130
+402: AMD Sempron 140
+403: AMD Sempron 145
+404: AMD Sempron 150
+419: AMD Sempron 210U
+405: AMD Sempron 2200+
+406: AMD Sempron 2300+
+3327: AMD Sempron 240
+407: AMD Sempron 2400+
+408: AMD Sempron 2500+
+409: AMD Sempron 2600+
+2214: AMD Sempron 2650 APU
+410: AMD Sempron 2800+
+411: AMD Sempron 3000+
+420: AMD Sempron 3100+
+412: AMD Sempron 3200+
+413: AMD Sempron 3300+
+421: AMD Sempron 3400+
+422: AMD Sempron 3500+
+423: AMD Sempron 3600+
+424: AMD Sempron 3800+
+2209: AMD Sempron 3850 APU
+414: AMD Sempron Dual Core 2100
+415: AMD Sempron Dual Core 2200
+416: AMD Sempron Dual Core 2300
+425: AMD Sempron LE-1100
+426: AMD Sempron LE-1150
+427: AMD Sempron LE-1200
+428: AMD Sempron LE-1250
+429: AMD Sempron LE-1300
+417: AMD Sempron M100
+418: AMD Sempron M120
+431: AMD Sempron SI-40
+432: AMD Sempron SI-42
+433: AMD Sempron X2 180
+434: AMD Sempron X2 190
+2528: AMD Sempron X2 198 Dual-Core
+447: AMD Turion 64 Mobile MK-36
+448: AMD Turion 64 Mobile MK-38
+443: AMD Turion 64 Mobile ML-28
+444: AMD Turion 64 Mobile ML-30
+445: AMD Turion 64 Mobile ML-32
+449: AMD Turion 64 Mobile ML-34
+450: AMD Turion 64 Mobile ML-37
+446: AMD Turion 64 Mobile ML-40
+451: AMD Turion 64 Mobile ML-42
+452: AMD Turion 64 Mobile ML-44
+453: AMD Turion 64 Mobile MT-30
+454: AMD Turion 64 Mobile MT-32
+455: AMD Turion 64 Mobile MT-34
+1594: AMD Turion 64 Mobile MT-37
+458: AMD Turion 64 X2 Mobile TL-50
+459: AMD Turion 64 X2 Mobile TL-52
+460: AMD Turion 64 X2 Mobile TL-56
+461: AMD Turion 64 X2 Mobile TL-58
+462: AMD Turion 64 X2 Mobile TL-60
+463: AMD Turion 64 X2 Mobile TL-62
+464: AMD Turion 64 X2 Mobile TL-64
+465: AMD Turion 64 X2 Mobile TL-66
+466: AMD Turion 64 X2 Mobile TL-68
+436: AMD Turion Dual-Core RM-70
+437: AMD Turion Dual-Core RM-72
+2147: AMD Turion Dual-Core RM-74
+438: AMD Turion Dual-Core RM-75
+470: AMD Turion II Dual-Core Mobile M500
+471: AMD Turion II Dual-Core Mobile M520
+472: AMD Turion II Dual-Core Mobile M540
+473: AMD Turion II N530 Dual-Core
+1596: AMD Turion II N550 Dual-Core
+474: AMD Turion II Neo K625 Dual-Core
+475: AMD Turion II Neo K685 Dual-Core
+476: AMD Turion II Neo N40L Dual-Core
+477: AMD Turion II Neo N54L Dual-Core
+478: AMD Turion II P520 Dual-Core
+479: AMD Turion II P540 Dual-Core
+480: AMD Turion II P560 Dual-Core
+481: AMD Turion II Ultra Dual-Core Mobile M600
+482: AMD Turion II Ultra Dual-Core Mobile M620
+483: AMD Turion II Ultra Dual-Core Mobile M640
+1597: AMD Turion II Ultra Dual-Core Mobile M660
+484: AMD Turion Neo X2 Dual Core L625
+1599: AMD Turion X2 Dual Core L510
+1459: AMD Turion X2 Dual Core Mobile RM-70
+499: AMD Turion X2 Dual Core Mobile RM-76
+485: AMD Turion X2 Dual-Core Mobile RM-70
+486: AMD Turion X2 Dual-Core Mobile RM-72
+487: AMD Turion X2 Dual-Core Mobile RM-74
+488: AMD Turion X2 Dual-Core Mobile RM-75
+489: AMD Turion X2 Dual-Core Mobile RM-77
+490: AMD Turion X2 Ultra Dual-Core Mobile ZM-80
+491: AMD Turion X2 Ultra Dual-Core Mobile ZM-82
+492: AMD Turion X2 Ultra Dual-Core Mobile ZM-84
+493: AMD Turion X2 Ultra Dual-Core Mobile ZM-85
+494: AMD Turion X2 Ultra Dual-Core Mobile ZM-86
+495: AMD Turion X2 Ultra Dual-Core Mobile ZM-87
+496: AMD TurionX2 Dual Core Mobile RM-70
+497: AMD TurionX2 Dual Core Mobile RM-72
+2151: AMD TurionX2 Ultra DualCore Mobile ZM-85
+502: AMD V105
+503: AMD V120
+504: AMD V140
+505: AMD V160
+506: AMD Z-01
+1870: AMD Z-60 APU
+2224: Athlon 64 Dual Core 3800+
+509: Athlon 64 Dual Core 5000+
+1607: Athlon 64 Dual Core 5600+
+510: Athlon Dual Core 4050e
+511: Athlon Dual Core 4450e
+1608: Athlon Dual Core 4850e
+512: Celeron Dual-Core T3000 @ 1.80GHz
+513: Celeron Dual-Core T3100 @ 1.90GHz
+514: Celeron Dual-Core T3300 @ 2.00GHz
+515: Celeron Dual-Core T3500 @ 2.10GHz
+2856: Dual-Core AMD Opteron 1220 SE
+2415: HP Hexa-Core 2.0GHz
+3474: Intel 2.80GHz
+603: Intel Atom 230 @ 1.60GHz
+604: Intel Atom 330 @ 1.60GHz
+2381: Intel Atom C2338 @ 1.74GHz
+2822: Intel Atom C2358 @ 1.74GHz
+3252: Intel Atom C2538 @ 2.40GHz
+2331: Intel Atom C2550 @ 2.40GHz
+2557: Intel Atom C2558 @ 2.40GHz
+2185: Intel Atom C2750 @ 2.40GHz
+2534: Intel Atom C2750 @ 2.41GHz
+2564: Intel Atom C2758 @ 2.40GHz
+3253: Intel Atom C3538 @ 2.10GHz
+3129: Intel Atom C3558 @ 2.20GHz
+3696: Intel Atom C3758 @ 2.20GHz
+3287: Intel Atom C3858 @ 2.00GHz
+3526: Intel Atom C3958 @ 2.00GHz
+605: Intel Atom D2500 @ 1.86GHz
+606: Intel Atom D2550 @ 1.86GHz
+2113: Intel Atom D2560 @ 2.00GHz
+607: Intel Atom D2700 @ 2.13GHz
+1918: Intel Atom D2701 @ 2.13GHz
+608: Intel Atom D410 @ 1.66GHz
+609: Intel Atom D425 @ 1.80GHz
+610: Intel Atom D510 @ 1.66GHz
+611: Intel Atom D525 @ 1.80GHz
+2233: Intel Atom E3815 @ 1.46GHz
+2256: Intel Atom E3825 @ 1.33GHz
+2809: Intel Atom E3826 @ 1.46GHz
+2716: Intel Atom E3827 @ 1.74GHz
+2124: Intel Atom E3840 @ 1.91GHz
+2225: Intel Atom E3845 @ 1.91GHz
+2943: Intel Atom E3900 @ 1.60GHz
+3259: Intel Atom E3940 @ 1.60GHz
+2893: Intel Atom E3950 @ 1.60GHz
+1465: Intel Atom N2100 @ 1.60GHz
+613: Intel Atom N2600 @ 1.60GHz
+614: Intel Atom N270 @ 1.60GHz
+615: Intel Atom N280 @ 1.66GHz
+616: Intel Atom N2800 @ 1.86GHz
+617: Intel Atom N435 @ 1.33GHz
+618: Intel Atom N450 @ 1.66GHz
+619: Intel Atom N455 @ 1.66GHz
+620: Intel Atom N470 @ 1.83GHz
+621: Intel Atom N475 @ 1.83GHz
+622: Intel Atom N550 @ 1.50GHz
+623: Intel Atom N570 @ 1.66GHz
+1915: Intel Atom S1260 @ 2.00GHz
+3293: Intel Atom T5700 @ 1.70GHz
+2967: Intel Atom x5-E3930 @ 1.30GHz
+2740: Intel Atom x5-E8000 @ 1.04GHz
+2585: Intel Atom x5-Z8300 @ 1.44GHz
+2851: Intel Atom x5-Z8330 @ 1.44GHz
+2774: Intel Atom x5-Z8350 @ 1.44GHz
+2581: Intel Atom x5-Z8500 @ 1.44GHz
+2839: Intel Atom x5-Z8550 @ 1.44GHz
+2506: Intel Atom x7-Z8700 @ 1.60GHz
+2968: Intel Atom x7-Z8750 @ 1.60GHz
+1466: Intel Atom Z2760 @ 1.80GHz
+2270: Intel Atom Z3735D @ 1.33GHz
+2272: Intel Atom Z3735E @ 1.33GHz
+2326: Intel Atom Z3735F @ 1.33GHz
+2377: Intel Atom Z3735G @ 1.33GHz
+2400: Intel Atom Z3736F @ 1.33GHz
+2059: Intel Atom Z3740 @ 1.33GHz
+2079: Intel Atom Z3740D @ 1.33GHz
+2164: Intel Atom Z3745 @ 1.33GHz
+2394: Intel Atom Z3745D @ 1.33GHz
+2115: Intel Atom Z3770 @ 1.46GHz
+2229: Intel Atom Z3770D @ 1.49GHz
+2301: Intel Atom Z3775 @ 1.46GHz
+2455: Intel Atom Z3775D @ 1.49GHz
+2273: Intel Atom Z3795 @ 1.60GHz
+625: Intel Atom Z520 @ 1.33GHz
+626: Intel Atom Z530 @ 1.60GHz
+630: Intel Atom Z670 @ 1.50GHz
+631: Intel Celeron 1.70GHz
+632: Intel Celeron 1.80GHz
+1866: Intel Celeron 1000M @ 1.80GHz
+1648: Intel Celeron 1000MHz
+1959: Intel Celeron 1005M @ 1.90GHz
+1847: Intel Celeron 1007U @ 1.50GHz
+1991: Intel Celeron 1017U @ 1.60GHz
+2237: Intel Celeron 1019Y @ 1.00GHz
+2295: Intel Celeron 1020E @ 2.20GHz
+3638: Intel Celeron 1020M @ 2.10GHz
+1988: Intel Celeron 1037U @ 1.80GHz
+2166: Intel Celeron 1047UE @ 1.40GHz
+716: Intel Celeron 1100MHz
+717: Intel Celeron 1200MHz
+633: Intel Celeron 2.00GHz
+635: Intel Celeron 2.13GHz
+636: Intel Celeron 2.20GHz
+637: Intel Celeron 2.26GHz
+1467: Intel Celeron 2.30GHz
+638: Intel Celeron 2.40GHz
+639: Intel Celeron 2.50GHz
+640: Intel Celeron 2.53GHz
+641: Intel Celeron 2.60GHz
+642: Intel Celeron 2.66GHz
+643: Intel Celeron 2.70GHz
+644: Intel Celeron 2.80GHz
+645: Intel Celeron 2.93GHz
+2918: Intel Celeron 2000E @ 2.20GHz
+3347: Intel Celeron 2002E @ 1.50GHz
+1636: Intel Celeron 215 @ 1.33GHz
+646: Intel Celeron 220 @ 1.20GHz
+2203: Intel Celeron 2950M @ 2.00GHz
+2073: Intel Celeron 2955U @ 1.40GHz
+2200: Intel Celeron 2957U @ 1.40GHz
+2485: Intel Celeron 2961Y @ 1.10GHz
+2249: Intel Celeron 2970M @ 2.20GHz
+2369: Intel Celeron 2980U @ 1.60GHz
+2891: Intel Celeron 2981U @ 1.60GHz
+647: Intel Celeron 3.06GHz
+648: Intel Celeron 3.20GHz
+649: Intel Celeron 3.33GHz
+2509: Intel Celeron 3205U @ 1.50GHz
+2723: Intel Celeron 3215U @ 1.70GHz
+2476: Intel Celeron 3755U @ 1.70GHz
+2816: Intel Celeron 3765U @ 1.90GHz
+2735: Intel Celeron 3855U @ 1.60GHz
+3034: Intel Celeron 3865U @ 1.80GHz
+3442: Intel Celeron 3867U @ 1.80GHz
+2705: Intel Celeron 3955U @ 2.00GHz
+3145: Intel Celeron 3965U @ 2.20GHz
+3234: Intel Celeron 3965Y @ 1.50GHz
+650: Intel Celeron 420 @ 1.60GHz
+3460: Intel Celeron 4205U @ 1.80GHz
+651: Intel Celeron 430 @ 1.80GHz
+3628: Intel Celeron 4305UE @ 2.00GHz
+652: Intel Celeron 440 @ 2.00GHz
+653: Intel Celeron 450 @ 2.20GHz
+3688: Intel Celeron 5205U @ 1.90GHz
+654: Intel Celeron 530 @ 1.73GHz
+655: Intel Celeron 540 @ 1.86GHz
+656: Intel Celeron 550 @ 2.00GHz
+657: Intel Celeron 560 @ 2.13GHz
+658: Intel Celeron 570 @ 2.26GHz
+659: Intel Celeron 723 @ 1.20GHz
+660: Intel Celeron 743 @ 1.30GHz
+2446: Intel Celeron 807 @ 1.50GHz
+1836: Intel Celeron 807UE @ 1.00GHz
+1637: Intel Celeron 827E @ 1.40GHz
+661: Intel Celeron 847 @ 1.10GHz
+1468: Intel Celeron 847E @ 1.10GHz
+662: Intel Celeron 857 @ 1.20GHz
+663: Intel Celeron 867 @ 1.30GHz
+664: Intel Celeron 877 @ 1.40GHz
+1469: Intel Celeron 887 @ 1.50GHz
+665: Intel Celeron 900 @ 2.20GHz
+666: Intel Celeron 925 @ 2.30GHz
+2002: Intel Celeron @ 1.30GHz
+2574: Intel Celeron B710 @ 1.60GHz
+668: Intel Celeron B800 @ 1.50GHz
+669: Intel Celeron B810 @ 1.60GHz
+670: Intel Celeron B815 @ 1.60GHz
+671: Intel Celeron B820 @ 1.70GHz
+1803: Intel Celeron B830 @ 1.80GHz
+672: Intel Celeron B840 @ 1.90GHz
+693: Intel Celeron D 347 @ 3.06GHz
+694: Intel Celeron D 352 @ 3.20GHz
+695: Intel Celeron D 356 @ 3.33GHz
+696: Intel Celeron D 360 @ 3.46GHz
+698: Intel Celeron D 420 @ 1.60GHz
+673: Intel Celeron E1200 @ 1.60GHz
+674: Intel Celeron E1400 @ 2.00GHz
+675: Intel Celeron E1500 @ 2.20GHz
+1638: Intel Celeron E1600 @ 2.40GHz
+676: Intel Celeron E3200 @ 2.40GHz
+677: Intel Celeron E3300 @ 2.50GHz
+678: Intel Celeron E3400 @ 2.60GHz
+679: Intel Celeron E3500 @ 2.70GHz
+680: Intel Celeron G1101 @ 2.27GHz
+1819: Intel Celeron G1610 @ 2.60GHz
+2075: Intel Celeron G1610T @ 2.30GHz
+1848: Intel Celeron G1620 @ 2.70GHz
+2197: Intel Celeron G1620T @ 2.40GHz
+2064: Intel Celeron G1630 @ 2.80GHz
+2129: Intel Celeron G1820 @ 2.70GHz
+2169: Intel Celeron G1820T @ 2.40GHz
+2404: Intel Celeron G1820TE @ 2.20GHz
+2165: Intel Celeron G1830 @ 2.80GHz
+2268: Intel Celeron G1840 @ 2.80GHz
+2512: Intel Celeron G1840T @ 2.50GHz
+2240: Intel Celeron G1850 @ 2.90GHz
+2706: Intel Celeron G3900 @ 2.80GHz
+2998: Intel Celeron G3900E @ 2.40GHz
+2760: Intel Celeron G3900T @ 2.60GHz
+3296: Intel Celeron G3900TE @ 2.30GHz
+2807: Intel Celeron G3920 @ 2.90GHz
+2957: Intel Celeron G3930 @ 2.90GHz
+3353: Intel Celeron G3930T @ 2.70GHz
+3522: Intel Celeron G3930TE @ 2.70GHz
+2973: Intel Celeron G3950 @ 3.00GHz
+681: Intel Celeron G440 @ 1.60GHz
+682: Intel Celeron G460 @ 1.80GHz
+1804: Intel Celeron G465 @ 1.90GHz
+2180: Intel Celeron G470 @ 2.00GHz
+3275: Intel Celeron G4900 @ 3.10GHz
+3214: Intel Celeron G4900T @ 2.90GHz
+3305: Intel Celeron G4920 @ 3.20GHz
+3557: Intel Celeron G4930 @ 3.20GHz
+683: Intel Celeron G530 @ 2.40GHz
+1860: Intel Celeron G530T @ 2.00GHz
+684: Intel Celeron G540 @ 2.50GHz
+685: Intel Celeron G540T @ 2.10GHz
+686: Intel Celeron G550 @ 2.60GHz
+2328: Intel Celeron G550T @ 2.20GHz
+1791: Intel Celeron G555 @ 2.70GHz
+2215: Intel Celeron J1750 @ 2.41GHz
+2167: Intel Celeron J1800 @ 2.41GHz
+2060: Intel Celeron J1850 @ 1.99GHz
+2131: Intel Celeron J1900 @ 1.99GHz
+2852: Intel Celeron J3060 @ 1.60GHz
+2772: Intel Celeron J3160 @ 1.60GHz
+2960: Intel Celeron J3355 @ 2.00GHz
+2875: Intel Celeron J3455 @ 1.50GHz
+3200: Intel Celeron J4005 @ 2.00GHz
+3668: Intel Celeron J4025 @ 2.00GHz
+3159: Intel Celeron J4105 @ 1.50GHz
+3679: Intel Celeron J4115 @ 1.80GHz
+3667: Intel Celeron J4125 @ 2.00GHz
+706: Intel Celeron M 1.00GHz
+707: Intel Celeron M 1.30GHz
+709: Intel Celeron M 1.50GHz
+710: Intel Celeron M 1.60GHz
+711: Intel Celeron M 1.70GHz
+712: Intel Celeron M 1300MHz
+714: Intel Celeron M 1500MHz
+708: Intel Celeron M 360 1.40GHz
+699: Intel Celeron M 410 @ 1.46GHz
+700: Intel Celeron M 420 @ 1.60GHz
+701: Intel Celeron M 430 @ 1.73GHz
+702: Intel Celeron M 440 @ 1.86GHz
+1641: Intel Celeron M 443 @ 1.20GHz
+703: Intel Celeron M 450 @ 2.00GHz
+704: Intel Celeron M 520 @ 1.60GHz
+705: Intel Celeron M 530 @ 1.73GHz
+1643: Intel Celeron M 723 @ 1.20GHz
+715: Intel Celeron M 900MHz
+2099: Intel Celeron N2805 @ 1.46GHz
+2171: Intel Celeron N2806 @ 1.60GHz
+2263: Intel Celeron N2807 @ 1.58GHz
+2505: Intel Celeron N2808 @ 1.58GHz
+2109: Intel Celeron N2810 @ 2.00GHz
+2158: Intel Celeron N2815 @ 1.86GHz
+2145: Intel Celeron N2820 @ 2.13GHz
+2213: Intel Celeron N2830 @ 2.16GHz
+2388: Intel Celeron N2840 @ 2.16GHz
+2093: Intel Celeron N2910 @ 1.60GHz
+2134: Intel Celeron N2920 @ 1.86GHz
+2255: Intel Celeron N2930 @ 1.83GHz
+2356: Intel Celeron N2940 @ 1.83GHz
+2583: Intel Celeron N3000 @ 1.04GHz
+2884: Intel Celeron N3010 @ 1.04GHz
+2541: Intel Celeron N3050 @ 1.60GHz
+2762: Intel Celeron N3060 @ 1.60GHz
+2546: Intel Celeron N3150 @ 1.60GHz
+2812: Intel Celeron N3160 @ 1.60GHz
+2895: Intel Celeron N3350 @ 1.10GHz
+2907: Intel Celeron N3450 @ 1.10GHz
+3239: Intel Celeron N4000 @ 1.10GHz
+3635: Intel Celeron N4000C @ 1.10GHz
+3683: Intel Celeron N4020 @ 1.10GHz
+3270: Intel Celeron N4100 @ 1.10GHz
+3651: Intel Celeron N4120 @ 1.10GHz
+687: Intel Celeron P4500 @ 1.87GHz
+688: Intel Celeron P4505 @ 1.87GHz
+689: Intel Celeron P4600 @ 2.00GHz
+595: Intel Celeron SU2300 @ 1.20GHz
+582: Intel Celeron T1600 @ 1.66GHz
+2592: Intel Celeron U1900 @ 1.99GHz
+690: Intel Celeron U3400 @ 1.07GHz
+691: Intel Celeron U3600 @ 1.20GHz
+1470: Intel Core 860 @ 2.80GHz
+575: Intel Core Duo L2300 @ 1.50GHz
+725: Intel Core Duo L2400 @ 1.66GHz
+726: Intel Core Duo L2500 @ 1.83GHz
+584: Intel Core Duo T2050 @ 1.60GHz
+727: Intel Core Duo T2250 @ 1.73GHz
+728: Intel Core Duo T2300 @ 1.66GHz
+729: Intel Core Duo T2350 @ 1.86GHz
+730: Intel Core Duo T2400 @ 1.83GHz
+731: Intel Core Duo T2450 @ 2.00GHz
+732: Intel Core Duo T2500 @ 2.00GHz
+733: Intel Core Duo T2600 @ 2.16GHz
+734: Intel Core Duo T2700 @ 2.33GHz
+735: Intel Core Duo U2400 @ 1.06GHz
+736: Intel Core Duo U2500 @ 1.20GHz
+3560: Intel Core i3-1005G1 @ 1.20GHz
+3573: Intel Core i3-10110U @ 2.10GHz
+749: Intel Core i3-2100 @ 3.10GHz
+750: Intel Core i3-2100T @ 2.50GHz
+2728: Intel Core i3-2102 @ 3.10GHz
+751: Intel Core i3-2105 @ 3.10GHz
+3438: Intel Core i3-21050 @ 3.10GHz
+752: Intel Core i3-2120 @ 3.30GHz
+753: Intel Core i3-2120T @ 2.60GHz
+754: Intel Core i3-2125 @ 3.30GHz
+755: Intel Core i3-2130 @ 3.40GHz
+1863: Intel Core i3-2140 @ 3.50GHz
+1433: Intel Core i3-2310E @ 2.10GHz
+756: Intel Core i3-2310M @ 2.10GHz
+1658: Intel Core i3-2312M @ 2.10GHz
+1471: Intel Core i3-2328M @ 2.20GHz
+2206: Intel Core i3-2330E @ 2.20GHz
+757: Intel Core i3-2330M @ 2.20GHz
+2176: Intel Core i3-2332M @ 2.20GHz
+2265: Intel Core i3-2340UE @ 1.30GHz
+1878: Intel Core i3-2348M @ 2.30GHz
+758: Intel Core i3-2350M @ 2.30GHz
+759: Intel Core i3-2357M @ 1.30GHz
+1821: Intel Core i3-2365M @ 1.40GHz
+760: Intel Core i3-2367M @ 1.40GHz
+761: Intel Core i3-2370M @ 2.40GHz
+1879: Intel Core i3-2375M @ 1.50GHz
+762: Intel Core i3-2377M @ 1.50GHz
+763: Intel Core i3-3110M @ 2.40GHz
+1442: Intel Core i3-3120M @ 2.50GHz
+1829: Intel Core i3-3130M @ 2.60GHz
+1865: Intel Core i3-3210 @ 3.20GHz
+764: Intel Core i3-3217U @ 1.80GHz
+2143: Intel Core i3-3217UE @ 1.60GHz
+1472: Intel Core i3-3220 @ 3.30GHz
+1473: Intel Core i3-3220T @ 2.80GHz
+1474: Intel Core i3-3225 @ 3.30GHz
+1861: Intel Core i3-3227U @ 1.90GHz
+1950: Intel Core i3-3229Y @ 1.40GHz
+765: Intel Core i3-3240 @ 3.40GHz
+1793: Intel Core i3-3240T @ 2.90GHz
+1934: Intel Core i3-3245 @ 3.40GHz
+2034: Intel Core i3-3250 @ 3.50GHz
+2732: Intel Core i3-3250T @ 3.00GHz
+741: Intel Core i3-330E @ 2.13GHz
+742: Intel Core i3-330M @ 2.13GHz
+747: Intel Core i3-330UM @ 1.20GHz
+743: Intel Core i3-350M @ 2.27GHz
+744: Intel Core i3-370M @ 2.40GHz
+745: Intel Core i3-380M @ 2.53GHz
+748: Intel Core i3-380UM @ 1.33GHz
+746: Intel Core i3-390M @ 2.67GHz
+2072: Intel Core i3-4000M @ 2.40GHz
+2193: Intel Core i3-4005U @ 1.70GHz
+2012: Intel Core i3-4010U @ 1.70GHz
+2106: Intel Core i3-4010Y @ 1.30GHz
+2257: Intel Core i3-4012Y @ 1.50GHz
+2128: Intel Core i3-4020Y @ 1.50GHz
+2321: Intel Core i3-4025U @ 1.90GHz
+2277: Intel Core i3-4030U @ 1.90GHz
+2434: Intel Core i3-4030Y @ 1.60GHz
+2410: Intel Core i3-4100M @ 2.50GHz
+2453: Intel Core i3-4110M @ 2.60GHz
+2569: Intel Core i3-4110U @ 1.90GHz
+2769: Intel Core i3-4120U @ 2.00GHz
+2015: Intel Core i3-4130 @ 3.40GHz
+2035: Intel Core i3-4130T @ 2.90GHz
+2252: Intel Core i3-4150 @ 3.50GHz
+2296: Intel Core i3-4150T @ 3.00GHz
+2443: Intel Core i3-4158U @ 2.00GHz
+2317: Intel Core i3-4160 @ 3.60GHz
+2380: Intel Core i3-4160T @ 3.10GHz
+2522: Intel Core i3-4170 @ 3.70GHz
+2624: Intel Core i3-4170T @ 3.20GHz
+2025: Intel Core i3-4330 @ 3.50GHz
+2161: Intel Core i3-4330T @ 3.00GHz
+2139: Intel Core i3-4330TE @ 2.40GHz
+2029: Intel Core i3-4340 @ 3.60GHz
+2283: Intel Core i3-4350 @ 3.60GHz
+2544: Intel Core i3-4350T @ 3.10GHz
+2244: Intel Core i3-4360 @ 3.70GHz
+2330: Intel Core i3-4360T @ 3.20GHz
+2351: Intel Core i3-4370 @ 3.80GHz
+3117: Intel Core i3-4370T @ 3.30GHz
+2174: Intel Core i3-4570T @ 2.90GHz
+2484: Intel Core i3-5005U @ 2.00GHz
+2467: Intel Core i3-5010U @ 2.10GHz
+2551: Intel Core i3-5015U @ 2.10GHz
+2597: Intel Core i3-5020U @ 2.20GHz
+2602: Intel Core i3-5157U @ 2.50GHz
+737: Intel Core i3-530 @ 2.93GHz
+738: Intel Core i3-540 @ 3.07GHz
+739: Intel Core i3-550 @ 3.20GHz
+740: Intel Core i3-560 @ 3.33GHz
+2912: Intel Core i3-6006U @ 2.00GHz
+2708: Intel Core i3-6098P @ 3.60GHz
+2617: Intel Core i3-6100 @ 3.70GHz
+2789: Intel Core i3-6100E @ 2.70GHz
+2645: Intel Core i3-6100H @ 2.70GHz
+2639: Intel Core i3-6100T @ 3.20GHz
+2673: Intel Core i3-6100TE @ 2.70GHz
+2623: Intel Core i3-6100U @ 2.30GHz
+3528: Intel Core i3-6102E @ 1.90GHz
+2871: Intel Core i3-6157U @ 2.40GHz
+2621: Intel Core i3-6300 @ 3.80GHz
+2626: Intel Core i3-6300T @ 3.30GHz
+2625: Intel Core i3-6320 @ 3.90GHz
+3255: Intel Core i3-7020U @ 2.30GHz
+2924: Intel Core i3-7100 @ 3.90GHz
+3114: Intel Core i3-7100H @ 3.00GHz
+2953: Intel Core i3-7100T @ 3.40GHz
+2879: Intel Core i3-7100U @ 2.40GHz
+3105: Intel Core i3-7101TE @ 3.40GHz
+3469: Intel Core i3-7102E @ 2.10GHz
+3120: Intel Core i3-7130U @ 2.70GHz
+3370: Intel Core i3-7167U @ 2.80GHz
+2923: Intel Core i3-7300 @ 4.00GHz
+3021: Intel Core i3-7300T @ 3.50GHz
+2941: Intel Core i3-7320 @ 4.10GHz
+2930: Intel Core i3-7350K @ 4.20GHz
+3103: Intel Core i3-8100 @ 3.60GHz
+3406: Intel Core i3-8100B @ 3.60GHz
+3304: Intel Core i3-8100T @ 3.10GHz
+3333: Intel Core i3-8109U @ 3.00GHz
+3368: Intel Core i3-8121U @ 2.20GHz
+3225: Intel Core i3-8130U @ 2.20GHz
+3349: Intel Core i3-8145U @ 2.10GHz
+3280: Intel Core i3-8300 @ 3.70GHz
+3285: Intel Core i3-8300T @ 3.20GHz
+3102: Intel Core i3-8350K @ 4.00GHz
+3479: Intel Core i3-9100 @ 3.60GHz
+3461: Intel Core i3-9100F @ 3.60GHz
+3488: Intel Core i3-9100T @ 3.10GHz
+3510: Intel Core i3-9300 @ 3.70GHz
+3509: Intel Core i3-9300T @ 3.20GHz
+3539: Intel Core i3-9320 @ 3.70GHz
+3459: Intel Core i3-9350KF @ 4.00GHz
+1659: Intel Core i5 750S @ 2.40GHz
+2007: Intel Core i5 E 520 @ 2.40GHz
+3542: Intel Core i5-10210U @ 1.60GHz
+3643: Intel Core i5-10210Y @ 1.00GHz
+3646: Intel Core i5-10300H @ 2.50GHz
+3558: Intel Core i5-1035G1 @ 1.00GHz
+3581: Intel Core i5-1035G4 @ 1.10GHz
+3582: Intel Core i5-1035G7 @ 1.20GHz
+788: Intel Core i5-2300 @ 2.80GHz
+789: Intel Core i5-2310 @ 2.90GHz
+790: Intel Core i5-2320 @ 3.00GHz
+791: Intel Core i5-2380P @ 3.10GHz
+792: Intel Core i5-2390T @ 2.70GHz
+793: Intel Core i5-2400 @ 3.10GHz
+794: Intel Core i5-2400S @ 2.50GHz
+1958: Intel Core i5-24050S @ 2.50GHz
+795: Intel Core i5-2405S @ 2.50GHz
+796: Intel Core i5-2410M @ 2.30GHz
+797: Intel Core i5-2415M @ 2.30GHz
+798: Intel Core i5-2430M @ 2.40GHz
+799: Intel Core i5-2435M @ 2.40GHz
+800: Intel Core i5-2450M @ 2.50GHz
+801: Intel Core i5-2450P @ 3.20GHz
+802: Intel Core i5-2467M @ 1.60GHz
+803: Intel Core i5-2500 @ 3.30GHz
+804: Intel Core i5-2500K @ 3.30GHz
+805: Intel Core i5-2500S @ 2.70GHz
+806: Intel Core i5-2500T @ 2.30GHz
+807: Intel Core i5-2510E @ 2.50GHz
+808: Intel Core i5-2515E @ 2.50GHz
+809: Intel Core i5-2520M @ 2.50GHz
+810: Intel Core i5-2537M @ 1.40GHz
+812: Intel Core i5-2540M @ 2.60GHz
+813: Intel Core i5-2550K @ 3.40GHz
+814: Intel Core i5-2557M @ 1.70GHz
+2282: Intel Core i5-2560M @ 2.70GHz
+2242: Intel Core i5-3170K @ 3.20GHz
+815: Intel Core i5-3210M @ 2.50GHz
+1849: Intel Core i5-3230M @ 2.60GHz
+816: Intel Core i5-3317U @ 1.70GHz
+817: Intel Core i5-3320M @ 2.60GHz
+1475: Intel Core i5-3330 @ 3.00GHz
+1794: Intel Core i5-3330S @ 2.70GHz
+1811: Intel Core i5-3335S @ 2.70GHz
+1850: Intel Core i5-3337U @ 1.80GHz
+1984: Intel Core i5-3339Y @ 1.50GHz
+2071: Intel Core i5-3340 @ 3.10GHz
+1889: Intel Core i5-3340M @ 2.70GHz
+2090: Intel Core i5-3340S @ 2.80GHz
+1476: Intel Core i5-3350P @ 3.10GHz
+818: Intel Core i5-3360M @ 2.80GHz
+1973: Intel Core i5-3380M @ 2.90GHz
+819: Intel Core i5-3427U @ 1.80GHz
+1828: Intel Core i5-3437U @ 1.90GHz
+2050: Intel Core i5-3439Y @ 1.50GHz
+820: Intel Core i5-3450 @ 3.10GHz
+821: Intel Core i5-3450S @ 2.80GHz
+822: Intel Core i5-3470 @ 3.20GHz
+823: Intel Core i5-3470S @ 2.90GHz
+824: Intel Core i5-3470T @ 2.90GHz
+1775: Intel Core i5-3475S @ 2.90GHz
+825: Intel Core i5-3550 @ 3.30GHz
+826: Intel Core i5-3550S @ 3.00GHz
+827: Intel Core i5-3570 @ 3.40GHz
+828: Intel Core i5-3570K @ 3.40GHz
+829: Intel Core i5-3570S @ 3.10GHz
+1477: Intel Core i5-3570T @ 2.30GHz
+1859: Intel Core i5-3610ME @ 2.70GHz
+2142: Intel Core i5-4200H @ 2.80GHz
+2016: Intel Core i5-4200M @ 2.50GHz
+1947: Intel Core i5-4200U @ 1.60GHz
+2101: Intel Core i5-4200Y @ 1.40GHz
+2162: Intel Core i5-4202Y @ 1.60GHz
+2348: Intel Core i5-4210H @ 2.90GHz
+2245: Intel Core i5-4210M @ 2.60GHz
+2259: Intel Core i5-4210U @ 1.70GHz
+2032: Intel Core i5-4210Y @ 1.50GHz
+2532: Intel Core i5-4220Y @ 1.60GHz
+3171: Intel Core i5-4230U @ 1.90GHz
+1944: Intel Core i5-4250U @ 1.30GHz
+2069: Intel Core i5-4258U @ 2.40GHz
+2238: Intel Core i5-4260U @ 1.40GHz
+2312: Intel Core i5-4278U @ 2.60GHz
+2074: Intel Core i5-4288U @ 2.60GHz
+2095: Intel Core i5-4300M @ 2.60GHz
+2054: Intel Core i5-4300U @ 1.90GHz
+2089: Intel Core i5-4300Y @ 1.60GHz
+2144: Intel Core i5-4302Y @ 1.60GHz
+2428: Intel Core i5-4308U @ 2.80GHz
+775: Intel Core i5-430M @ 2.27GHz
+783: Intel Core i5-430UM @ 1.20GHz
+2235: Intel Core i5-4310M @ 2.70GHz
+2207: Intel Core i5-4310U @ 2.00GHz
+2055: Intel Core i5-4330M @ 2.80GHz
+2274: Intel Core i5-4340M @ 2.90GHz
+2010: Intel Core i5-4350U @ 1.40GHz
+2188: Intel Core i5-4400E @ 2.70GHz
+2697: Intel Core i5-4402E @ 1.60GHz
+3138: Intel Core i5-4422E @ 1.80GHz
+1924: Intel Core i5-4430 @ 3.00GHz
+2111: Intel Core i5-4430S @ 2.70GHz
+2017: Intel Core i5-4440 @ 3.10GHz
+2119: Intel Core i5-4440S @ 2.80GHz
+2230: Intel Core i5-4460 @ 3.20GHz
+2232: Intel Core i5-4460S @ 2.90GHz
+2370: Intel Core i5-4460T @ 1.90GHz
+3: Intel Core i5-450M @ 2.40GHz
+1896: Intel Core i5-4570 @ 3.20GHz
+2065: Intel Core i5-4570R @ 2.70GHz
+1925: Intel Core i5-4570S @ 2.90GHz
+2041: Intel Core i5-4570T @ 2.90GHz
+2338: Intel Core i5-4570TE @ 2.70GHz
+2234: Intel Core i5-4590 @ 3.30GHz
+2227: Intel Core i5-4590S @ 3.00GHz
+2276: Intel Core i5-4590T @ 2.00GHz
+776: Intel Core i5-460M @ 2.53GHz
+1933: Intel Core i5-4670 @ 3.40GHz
+1921: Intel Core i5-4670K @ 3.40GHz
+2452: Intel Core i5-4670K CPT @ 3.40GHz
+3294: Intel Core i5-4670R @ 3.00GHz
+2004: Intel Core i5-4670S @ 3.10GHz
+1966: Intel Core i5-4670T @ 2.30GHz
+2236: Intel Core i5-4690 @ 3.50GHz
+2284: Intel Core i5-4690K @ 3.50GHz
+2241: Intel Core i5-4690S @ 3.20GHz
+2437: Intel Core i5-4690T @ 2.50GHz
+784: Intel Core i5-470UM @ 1.33GHz
+777: Intel Core i5-480M @ 2.67GHz
+2440: Intel Core i5-5200U @ 2.20GHz
+778: Intel Core i5-520M @ 2.40GHz
+785: Intel Core i5-520UM @ 1.07GHz
+2478: Intel Core i5-5250U @ 1.60GHz
+2504: Intel Core i5-5257U @ 2.70GHz
+2575: Intel Core i5-5287U @ 2.90GHz
+2459: Intel Core i5-5300U @ 2.30GHz
+2530: Intel Core i5-5350U @ 1.80GHz
+779: Intel Core i5-540M @ 2.53GHz
+786: Intel Core i5-540UM @ 1.20GHz
+2683: Intel Core i5-5575R @ 2.80GHz
+780: Intel Core i5-560M @ 2.67GHz
+787: Intel Core i5-560UM @ 1.33GHz
+2563: Intel Core i5-5675C @ 3.10GHz
+2813: Intel Core i5-5675R @ 3.10GHz
+781: Intel Core i5-580M @ 2.67GHz
+2854: Intel Core i5-6198DU @ 2.30GHz
+2556: Intel Core i5-6200U @ 2.30GHz
+2671: Intel Core i5-6260U @ 1.80GHz
+2757: Intel Core i5-6267U @ 2.90GHz
+3109: Intel Core i5-6287U @ 3.10GHz
+2632: Intel Core i5-6300HQ @ 2.30GHz
+2609: Intel Core i5-6300U @ 2.40GHz
+2932: Intel Core i5-6360U @ 2.00GHz
+2578: Intel Core i5-6400 @ 2.70GHz
+2668: Intel Core i5-6400T @ 2.20GHz
+2754: Intel Core i5-6402P @ 2.80GHz
+2868: Intel Core i5-6440EQ @ 2.70GHz
+2691: Intel Core i5-6440HQ @ 2.60GHz
+3544: Intel Core i5-6442EQ @ 1.90GHz
+767: Intel Core i5-650 @ 3.20GHz
+2599: Intel Core i5-6500 @ 3.20GHz
+2627: Intel Core i5-6500T @ 2.50GHz
+2680: Intel Core i5-6500TE @ 2.30GHz
+774: Intel Core i5-655K @ 3.20GHz
+768: Intel Core i5-660 @ 3.33GHz
+2594: Intel Core i5-6600 @ 3.30GHz
+2570: Intel Core i5-6600K @ 3.50GHz
+2613: Intel Core i5-6600T @ 2.70GHz
+769: Intel Core i5-661 @ 3.33GHz
+770: Intel Core i5-670 @ 3.47GHz
+771: Intel Core i5-680 @ 3.60GHz
+2865: Intel Core i5-7200U @ 2.50GHz
+2993: Intel Core i5-7260U @ 2.20GHz
+3051: Intel Core i5-7267U @ 3.10GHz
+3272: Intel Core i5-7287U @ 3.30GHz
+2922: Intel Core i5-7300HQ @ 2.50GHz
+2955: Intel Core i5-7300U @ 2.60GHz
+3036: Intel Core i5-7360U @ 2.30GHz
+2929: Intel Core i5-7400 @ 3.00GHz
+2889: Intel Core i5-7400T @ 2.40GHz
+2962: Intel Core i5-7440HQ @ 2.80GHz
+3392: Intel Core i5-7442EQ @ 2.10GHz
+772: Intel Core i5-750 @ 2.67GHz
+2910: Intel Core i5-7500 @ 3.40GHz
+2917: Intel Core i5-7500T @ 2.70GHz
+773: Intel Core i5-760 @ 2.80GHz
+2920: Intel Core i5-7600 @ 3.50GHz
+2919: Intel Core i5-7600K @ 3.80GHz
+2928: Intel Core i5-7600T @ 2.80GHz
+782: Intel Core i5-760S @ 2.53GHz
+3045: Intel Core i5-7640X @ 4.00GHz
+2873: Intel Core i5-7Y54 @ 1.20GHz
+2956: Intel Core i5-7Y57 @ 1.20GHz
+3372: Intel Core i5-8200Y @ 1.30GHz
+3402: Intel Core i5-8210Y @ 1.60GHz
+3042: Intel Core i5-8250U @ 1.60GHz
+3605: Intel Core i5-8257U @ 1.40GHz
+3299: Intel Core i5-8259U @ 2.30GHz
+3323: Intel Core i5-8265U @ 1.60GHz
+3449: Intel Core i5-8265UC @ 1.60GHz
+3552: Intel Core i5-8279U @ 2.40GHz
+3254: Intel Core i5-8300H @ 2.30GHz
+3291: Intel Core i5-8305G @ 2.80GHz
+3150: Intel Core i5-8350U @ 1.70GHz
+3447: Intel Core i5-8365U @ 1.60GHz
+3594: Intel Core i5-8365UE @ 1.60GHz
+3097: Intel Core i5-8400 @ 2.80GHz
+3286: Intel Core i5-8400H @ 2.50GHz
+3260: Intel Core i5-8400T @ 1.70GHz
+3223: Intel Core i5-8500 @ 3.00GHz
+3382: Intel Core i5-8500B @ 3.00GHz
+3231: Intel Core i5-8500T @ 2.10GHz
+3251: Intel Core i5-8600 @ 3.10GHz
+3100: Intel Core i5-8600K @ 3.60GHz
+3241: Intel Core i5-8600T @ 2.30GHz
+3448: Intel Core i5-9300H @ 2.40GHz
+3414: Intel Core i5-9400 @ 2.90GHz
+3397: Intel Core i5-9400F @ 2.90GHz
+3508: Intel Core i5-9400H @ 2.50GHz
+3513: Intel Core i5-9400T @ 1.80GHz
+3444: Intel Core i5-9500 @ 3.00GHz
+3511: Intel Core i5-9500F @ 3.00GHz
+3454: Intel Core i5-9500T @ 2.20GHz
+3554: Intel Core i5-9600 @ 3.10GHz
+3337: Intel Core i5-9600K @ 3.70GHz
+3443: Intel Core i5-9600KF @ 3.70GHz
+3602: Intel Core i5-9600T @ 2.30GHz
+3549: Intel Core i7-10510U @ 1.80GHz
+3466: Intel Core i7-1065G7 @ 1.30GHz
+3567: Intel Core i7-10710U @ 1.10GHz
+3657: Intel Core i7-10750H @ 2.60GHz
+1: Intel Core i7-2600 @ 3.40GHz
+868: Intel Core i7-2600K @ 3.40GHz
+869: Intel Core i7-2600S @ 2.80GHz
+870: Intel Core i7-2610UE @ 1.50GHz
+871: Intel Core i7-2617M @ 1.50GHz
+872: Intel Core i7-2620M @ 2.70GHz
+873: Intel Core i7-2630QM @ 2.00GHz
+2013: Intel Core i7-2630UM @ 1.60GHz
+874: Intel Core i7-2635QM @ 2.00GHz
+875: Intel Core i7-2637M @ 1.70GHz
+876: Intel Core i7-2640M @ 2.80GHz
+877: Intel Core i7-2655LE @ 2.20GHz
+878: Intel Core i7-2670QM @ 2.20GHz
+879: Intel Core i7-2675QM @ 2.20GHz
+880: Intel Core i7-2677M @ 1.80GHz
+881: Intel Core i7-2700K @ 3.50GHz
+882: Intel Core i7-2710QE @ 2.10GHz
+1478: Intel Core i7-2715QE @ 2.10GHz
+883: Intel Core i7-2720QM @ 2.20GHz
+884: Intel Core i7-2760QM @ 2.40GHz
+885: Intel Core i7-2820QM @ 2.30GHz
+1479: Intel Core i7-2840QM @ 2.40GHz
+886: Intel Core i7-2860QM @ 2.50GHz
+887: Intel Core i7-2920XM @ 2.50GHz
+888: Intel Core i7-2960XM @ 2.70GHz
+889: Intel Core i7-3517U @ 1.90GHz
+1435: Intel Core i7-3517UE @ 1.70GHz
+890: Intel Core i7-3520M @ 2.90GHz
+1845: Intel Core i7-3537U @ 2.00GHz
+1857: Intel Core i7-3540M @ 3.00GHz
+1895: Intel Core i7-3555LE @ 2.50GHz
+1792: Intel Core i7-3610QE @ 2.30GHz
+891: Intel Core i7-3610QM @ 2.30GHz
+1666: Intel Core i7-3612QE @ 2.10GHz
+892: Intel Core i7-3612QM @ 2.10GHz
+1888: Intel Core i7-3615QE @ 2.30GHz
+893: Intel Core i7-3615QM @ 2.30GHz
+1444: Intel Core i7-3630QM @ 2.40GHz
+1480: Intel Core i7-3632QM @ 2.20GHz
+1784: Intel Core i7-3635QM @ 2.40GHz
+894: Intel Core i7-3667U @ 2.00GHz
+1840: Intel Core i7-3687U @ 2.10GHz
+2037: Intel Core i7-3689Y @ 1.50GHz
+895: Intel Core i7-3720QM @ 2.60GHz
+1481: Intel Core i7-3740QM @ 2.70GHz
+896: Intel Core i7-3770 @ 3.40GHz
+2: Intel Core i7-3770K @ 3.50GHz
+897: Intel Core i7-3770S @ 3.10GHz
+898: Intel Core i7-3770T @ 2.50GHz
+8: Intel Core i7-3820 @ 3.60GHz
+899: Intel Core i7-3820QM @ 2.70GHz
+900: Intel Core i7-3840QM @ 2.80GHz
+901: Intel Core i7-3920XM @ 2.90GHz
+902: Intel Core i7-3930K @ 3.20GHz
+1482: Intel Core i7-3940XM @ 3.00GHz
+903: Intel Core i7-3960X @ 3.30GHz
+1799: Intel Core i7-3970X @ 3.50GHz
+1937: Intel Core i7-4500U @ 1.80GHz
+2248: Intel Core i7-4510U @ 2.00GHz
+2168: Intel Core i7-4550U @ 1.50GHz
+2094: Intel Core i7-4558U @ 2.80GHz
+2719: Intel Core i7-4560U @ 1.60GHz
+2345: Intel Core i7-4578U @ 3.00GHz
+2056: Intel Core i7-4600M @ 2.90GHz
+2033: Intel Core i7-4600U @ 2.10GHz
+2261: Intel Core i7-4610M @ 3.00GHz
+2092: Intel Core i7-4610Y @ 1.70GHz
+1955: Intel Core i7-4650U @ 1.70GHz
+1897: Intel Core i7-4700EQ @ 2.40GHz
+1949: Intel Core i7-4700HQ @ 2.40GHz
+1923: Intel Core i7-4700MQ @ 2.40GHz
+2046: Intel Core i7-4702HQ @ 2.20GHz
+1939: Intel Core i7-4702MQ @ 2.20GHz
+2243: Intel Core i7-4710HQ @ 2.50GHz
+2219: Intel Core i7-4710MQ @ 2.50GHz
+2281: Intel Core i7-4712HQ @ 2.30GHz
+2228: Intel Core i7-4712MQ @ 2.30GHz
+2448: Intel Core i7-4720HQ @ 2.60GHz
+2562: Intel Core i7-4722HQ @ 2.40GHz
+1957: Intel Core i7-4750HQ @ 2.00GHz
+2378: Intel Core i7-4760HQ @ 2.10GHz
+2067: Intel Core i7-4765T @ 2.00GHz
+1907: Intel Core i7-4770 @ 3.40GHz
+2399: Intel Core i7-4770HQ @ 2.20GHz
+1919: Intel Core i7-4770K @ 3.50GHz
+2137: Intel Core i7-4770R @ 3.20GHz
+1884: Intel Core i7-4770S @ 3.10GHz
+2006: Intel Core i7-4770T @ 2.50GHz
+2561: Intel Core i7-4770TE @ 2.30GHz
+2027: Intel Core i7-4771 @ 3.50GHz
+2260: Intel Core i7-4785T @ 2.20GHz
+2226: Intel Core i7-4790 @ 3.60GHz
+2275: Intel Core i7-4790K @ 4.00GHz
+2258: Intel Core i7-4790S @ 3.20GHz
+2253: Intel Core i7-4790T @ 2.70GHz
+1927: Intel Core i7-4800MQ @ 2.70GHz
+2196: Intel Core i7-4810MQ @ 2.80GHz
+2030: Intel Core i7-4820K @ 3.70GHz
+2070: Intel Core i7-4850HQ @ 2.30GHz
+2661: Intel Core i7-4860EQ @ 1.80GHz
+2319: Intel Core i7-4860HQ @ 2.40GHz
+2314: Intel Core i7-4870HQ @ 2.50GHz
+1938: Intel Core i7-4900MQ @ 2.80GHz
+2220: Intel Core i7-4910MQ @ 2.90GHz
+2023: Intel Core i7-4930K @ 3.40GHz
+1985: Intel Core i7-4930MX @ 3.00GHz
+2186: Intel Core i7-4940MX @ 3.10GHz
+2087: Intel Core i7-4960HQ @ 2.60GHz
+2026: Intel Core i7-4960X @ 3.60GHz
+2327: Intel Core i7-4980HQ @ 2.80GHz
+2470: Intel Core i7-5500U @ 2.40GHz
+2749: Intel Core i7-5550U @ 2.00GHz
+2502: Intel Core i7-5557U @ 3.10GHz
+2456: Intel Core i7-5600U @ 2.60GHz
+2503: Intel Core i7-5650U @ 2.20GHz
+2635: Intel Core i7-5675C @ 3.10GHz
+2573: Intel Core i7-5700EQ @ 2.60GHz
+2533: Intel Core i7-5700HQ @ 2.70GHz
+2539: Intel Core i7-5775C @ 3.30GHz
+2767: Intel Core i7-5775R @ 3.30GHz
+2340: Intel Core i7-5820K @ 3.30GHz
+3357: Intel Core i7-5850EQ @ 2.70GHz
+2681: Intel Core i7-5850HQ @ 2.70GHz
+2336: Intel Core i7-5930K @ 3.50GHz
+2543: Intel Core i7-5950HQ @ 2.90GHz
+2332: Intel Core i7-5960X @ 3.00GHz
+845: Intel Core i7-610E @ 2.53GHz
+847: Intel Core i7-620LM @ 2.00GHz
+849: Intel Core i7-620M @ 2.67GHz
+857: Intel Core i7-620UM @ 1.07GHz
+848: Intel Core i7-640LM @ 2.13GHz
+850: Intel Core i7-640M @ 2.80GHz
+858: Intel Core i7-640UM @ 1.20GHz
+2887: Intel Core i7-6498DU @ 2.50GHz
+2607: Intel Core i7-6500U @ 2.50GHz
+2710: Intel Core i7-6560U @ 2.20GHz
+2713: Intel Core i7-6567U @ 3.30GHz
+2608: Intel Core i7-6600U @ 2.60GHz
+859: Intel Core i7-660UM @ 1.33GHz
+2654: Intel Core i7-6650U @ 2.20GHz
+2598: Intel Core i7-6700 @ 3.40GHz
+2586: Intel Core i7-6700HQ @ 2.60GHz
+2565: Intel Core i7-6700K @ 4.00GHz
+2614: Intel Core i7-6700T @ 2.80GHz
+2815: Intel Core i7-6700TE @ 2.40GHz
+2759: Intel Core i7-6770HQ @ 2.60GHz
+2785: Intel Core i7-6800K @ 3.40GHz
+860: Intel Core i7-680UM @ 1.47GHz
+2819: Intel Core i7-6820EQ @ 2.80GHz
+2616: Intel Core i7-6820HK @ 2.70GHz
+2659: Intel Core i7-6820HQ @ 2.70GHz
+2709: Intel Core i7-6822EQ @ 2.00GHz
+2800: Intel Core i7-6850K @ 3.60GHz
+2794: Intel Core i7-6900K @ 3.20GHz
+2699: Intel Core i7-6920HQ @ 2.90GHz
+2792: Intel Core i7-6950X @ 3.00GHz
+851: Intel Core i7-720QM @ 1.60GHz
+852: Intel Core i7-740QM @ 1.73GHz
+2863: Intel Core i7-7500U @ 2.70GHz
+2974: Intel Core i7-7560U @ 2.40GHz
+2990: Intel Core i7-7567U @ 3.50GHz
+2936: Intel Core i7-7600U @ 2.80GHz
+3016: Intel Core i7-7660U @ 2.50GHz
+2905: Intel Core i7-7700 @ 3.60GHz
+2906: Intel Core i7-7700HQ @ 2.80GHz
+2874: Intel Core i7-7700K @ 4.20GHz
+2951: Intel Core i7-7700T @ 2.90GHz
+3041: Intel Core i7-7740X @ 4.30GHz
+3037: Intel Core i7-7800X @ 3.50GHz
+3470: Intel Core i7-7820EQ @ 3.00GHz
+2938: Intel Core i7-7820HK @ 2.90GHz
+2952: Intel Core i7-7820HQ @ 2.90GHz
+3038: Intel Core i7-7820X @ 3.60GHz
+3056: Intel Core i7-7900X @ 3.30GHz
+3007: Intel Core i7-7920HQ @ 3.10GHz
+2880: Intel Core i7-7Y75 @ 1.30GHz
+3279: Intel Core i7-8086K @ 4.00GHz
+853: Intel Core i7-820QM @ 1.73GHz
+854: Intel Core i7-840QM @ 1.87GHz
+3338: Intel Core i7-8500Y @ 1.50GHz
+3064: Intel Core i7-8550U @ 1.80GHz
+3641: Intel Core i7-8557U @ 1.70GHz
+3302: Intel Core i7-8559U @ 2.70GHz
+3308: Intel Core i7-8565U @ 1.80GHz
+6: Intel Core i7-860 @ 2.80GHz
+855: Intel Core i7-860S @ 2.53GHz
+3070: Intel Core i7-8650U @ 1.90GHz
+3434: Intel Core i7-8665U @ 1.90GHz
+3611: Intel Core i7-8665UE @ 1.70GHz
+832: Intel Core i7-870 @ 2.93GHz
+3099: Intel Core i7-8700 @ 3.20GHz
+3388: Intel Core i7-8700B @ 3.20GHz
+3098: Intel Core i7-8700K @ 3.70GHz
+3213: Intel Core i7-8700T @ 2.40GHz
+3201: Intel Core i7-8705G @ 3.10GHz
+3288: Intel Core i7-8706G @ 3.10GHz
+3355: Intel Core i7-8709G @ 3.10GHz
+856: Intel Core i7-870S @ 2.67GHz
+3237: Intel Core i7-8750H @ 2.20GHz
+846: Intel Core i7-875K @ 2.93GHz
+833: Intel Core i7-880 @ 3.07GHz
+3209: Intel Core i7-8809G @ 3.10GHz
+3247: Intel Core i7-8850H @ 2.60GHz
+834: Intel Core i7-920 @ 2.67GHz
+864: Intel Core i7-920XM @ 2.00GHz
+835: Intel Core i7-930 @ 2.80GHz
+836: Intel Core i7-940 @ 2.93GHz
+865: Intel Core i7-940XM @ 2.13GHz
+837: Intel Core i7-950 @ 3.07GHz
+838: Intel Core i7-960 @ 3.20GHz
+839: Intel Core i7-965 @ 3.20GHz
+840: Intel Core i7-970 @ 3.20GHz
+3477: Intel Core i7-9700 @ 3.00GHz
+3465: Intel Core i7-9700F @ 3.00GHz
+3335: Intel Core i7-9700K @ 3.60GHz
+3428: Intel Core i7-9700KF @ 3.60GHz
+3506: Intel Core i7-9700T @ 2.00GHz
+3619: Intel Core i7-9700TE @ 1.80GHz
+841: Intel Core i7-975 @ 3.33GHz
+3425: Intel Core i7-9750H @ 2.60GHz
+3653: Intel Core i7-9750HF @ 2.60GHz
+842: Intel Core i7-980 @ 3.33GHz
+3374: Intel Core i7-9800X @ 3.80GHz
+866: Intel Core i7-980X @ 3.33GHz
+2425: Intel Core i7-985 @ 3.47GHz
+3478: Intel Core i7-9850H @ 2.60GHz
+3621: Intel Core i7-9850HL @ 1.90GHz
+867: Intel Core i7-990X @ 3.47GHz
+1664: Intel Core i7-995X @ 3.60GHz
+3633: Intel Core i9-10900X @ 3.70GHz
+3632: Intel Core i9-10920X @ 3.50GHz
+3639: Intel Core i9-10940X @ 3.30GHz
+3630: Intel Core i9-10980XE @ 3.00GHz
+3035: Intel Core i9-7900X @ 3.30GHz
+3082: Intel Core i9-7920X @ 2.90GHz
+3094: Intel Core i9-7940X @ 3.10GHz
+3096: Intel Core i9-7960X @ 2.80GHz
+3092: Intel Core i9-7980XE @ 2.60GHz
+3246: Intel Core i9-8950HK @ 2.90GHz
+3369: Intel Core i9-9820X @ 3.30GHz
+3456: Intel Core i9-9880H @ 2.30GHz
+3487: Intel Core i9-9900 @ 3.10GHz
+3334: Intel Core i9-9900K @ 3.60GHz
+3435: Intel Core i9-9900KF @ 3.60GHz
+3593: Intel Core i9-9900KS @ 4.00GHz
+3599: Intel Core i9-9900T @ 2.10GHz
+3376: Intel Core i9-9900X @ 3.50GHz
+3378: Intel Core i9-9920X @ 3.50GHz
+3358: Intel Core i9-9940X @ 3.30GHz
+3405: Intel Core i9-9960X @ 3.10GHz
+3451: Intel Core i9-9980HK @ 2.40GHz
+3373: Intel Core i9-9980XE @ 3.00GHz
+2316: Intel Core M-5Y10 @ 0.80GHz
+2499: Intel Core M-5Y10a @ 0.80GHz
+2464: Intel Core M-5Y10c @ 0.80GHz
+2515: Intel Core M-5Y31 @ 0.90GHz
+2517: Intel Core M-5Y51 @ 1.10GHz
+2382: Intel Core M-5Y70 @ 1.10GHz
+2465: Intel Core M-5Y71 @ 1.20GHz
+2631: Intel Core m3-6Y30 @ 0.90GHz
+2864: Intel Core m3-7Y30 @ 1.00GHz
+3052: Intel Core m3-7Y32 @ 1.10GHz
+3367: Intel Core m3-8100Y @ 1.10GHz
+2664: Intel Core m5-6Y54 @ 1.10GHz
+2670: Intel Core m5-6Y57 @ 1.10GHz
+2641: Intel Core m7-6Y75 @ 1.20GHz
+578: Intel Core Solo T1300 @ 1.66GHz
+579: Intel Core Solo T1350 @ 1.86GHz
+1632: Intel Core Solo T1400 @ 1.83GHz
+593: Intel Core Solo U1300 @ 1.06GHz
+904: Intel Core Solo U1400 @ 1.20GHz
+905: Intel Core Solo U1500 @ 1.33GHz
+1678: Intel Core2 Duo E4300 @ 1.80GHz
+935: Intel Core2 Duo E4400 @ 2.00GHz
+936: Intel Core2 Duo E4500 @ 2.20GHz
+937: Intel Core2 Duo E4600 @ 2.40GHz
+938: Intel Core2 Duo E4700 @ 2.60GHz
+908: Intel Core2 Duo E6300 @ 1.86GHz
+909: Intel Core2 Duo E6320 @ 1.86GHz
+939: Intel Core2 Duo E6400 @ 2.13GHz
+911: Intel Core2 Duo E6420 @ 2.13GHz
+940: Intel Core2 Duo E6540 @ 2.33GHz
+941: Intel Core2 Duo E6550 @ 2.33GHz
+912: Intel Core2 Duo E6600 @ 2.40GHz
+1668: Intel Core2 Duo E6700 @ 2.66GHz
+942: Intel Core2 Duo E6750 @ 2.66GHz
+943: Intel Core2 Duo E6850 @ 3.00GHz
+944: Intel Core2 Duo E7200 @ 2.53GHz
+945: Intel Core2 Duo E7300 @ 2.66GHz
+946: Intel Core2 Duo E7400 @ 2.80GHz
+947: Intel Core2 Duo E7500 @ 2.93GHz
+948: Intel Core2 Duo E7600 @ 3.06GHz
+1483: Intel Core2 Duo E8135 @ 2.40GHz
+949: Intel Core2 Duo E8135 @ 2.66GHz
+950: Intel Core2 Duo E8200 @ 2.66GHz
+951: Intel Core2 Duo E8235 @ 2.80GHz
+1790: Intel Core2 Duo E8290 @ 2.83GHz
+952: Intel Core2 Duo E8300 @ 2.83GHz
+953: Intel Core2 Duo E8335 @ 2.66GHz
+954: Intel Core2 Duo E8335 @ 2.93GHz
+955: Intel Core2 Duo E8400 @ 3.00GHz
+956: Intel Core2 Duo E8435 @ 3.06GHz
+5: Intel Core2 Duo E8500 @ 3.16GHz
+957: Intel Core2 Duo E8600 @ 3.33GHz
+958: Intel Core2 Duo L7100 @ 1.20GHz
+959: Intel Core2 Duo L7300 @ 1.40GHz
+960: Intel Core2 Duo L7400 @ 1.50GHz
+961: Intel Core2 Duo L7500 @ 1.60GHz
+962: Intel Core2 Duo L7700 @ 1.80GHz
+1822: Intel Core2 Duo L7800 @ 2.00GHz
+963: Intel Core2 Duo L9300 @ 1.60GHz
+965: Intel Core2 Duo L9600 @ 2.13GHz
+966: Intel Core2 Duo P7350 @ 2.00GHz
+967: Intel Core2 Duo P7370 @ 2.00GHz
+968: Intel Core2 Duo P7450 @ 2.13GHz
+970: Intel Core2 Duo P7550 @ 2.26GHz
+971: Intel Core2 Duo P7570 @ 2.26GHz
+973: Intel Core2 Duo P8400 @ 2.26GHz
+974: Intel Core2 Duo P8600 @ 2.40GHz
+975: Intel Core2 Duo P8700 @ 2.53GHz
+976: Intel Core2 Duo P8800 @ 2.66GHz
+977: Intel Core2 Duo P9300 @ 2.26GHz
+979: Intel Core2 Duo P9500 @ 2.53GHz
+980: Intel Core2 Duo P9600 @ 2.53GHz
+981: Intel Core2 Duo P9600 @ 2.66GHz
+982: Intel Core2 Duo P9700 @ 2.80GHz
+964: Intel Core2 Duo SL9400 @ 1.86GHz
+978: Intel Core2 Duo SP9400 @ 2.40GHz
+1019: Intel Core2 Duo SU9400 @ 1.40GHz
+920: Intel Core2 Duo T5200 @ 1.60GHz
+983: Intel Core2 Duo T5250 @ 1.50GHz
+984: Intel Core2 Duo T5270 @ 1.40GHz
+921: Intel Core2 Duo T5300 @ 1.73GHz
+985: Intel Core2 Duo T5450 @ 1.66GHz
+986: Intel Core2 Duo T5470 @ 1.60GHz
+922: Intel Core2 Duo T5500 @ 1.66GHz
+987: Intel Core2 Duo T5550 @ 1.83GHz
+923: Intel Core2 Duo T5600 @ 1.83GHz
+988: Intel Core2 Duo T5670 @ 1.80GHz
+989: Intel Core2 Duo T5750 @ 2.00GHz
+990: Intel Core2 Duo T5800 @ 2.00GHz
+991: Intel Core2 Duo T5850 @ 2.16GHz
+992: Intel Core2 Duo T5870 @ 2.00GHz
+993: Intel Core2 Duo T5900 @ 2.20GHz
+994: Intel Core2 Duo T6400 @ 2.00GHz
+995: Intel Core2 Duo T6500 @ 2.10GHz
+996: Intel Core2 Duo T6570 @ 2.10GHz
+997: Intel Core2 Duo T6600 @ 2.20GHz
+998: Intel Core2 Duo T6670 @ 2.20GHz
+999: Intel Core2 Duo T7100 @ 1.80GHz
+927: Intel Core2 Duo T7200 @ 2.00GHz
+1000: Intel Core2 Duo T7250 @ 2.00GHz
+1001: Intel Core2 Duo T7300 @ 2.00GHz
+1002: Intel Core2 Duo T7400 @ 2.16GHz
+1003: Intel Core2 Duo T7500 @ 2.20GHz
+929: Intel Core2 Duo T7600 @ 2.33GHz
+1004: Intel Core2 Duo T7700 @ 2.40GHz
+1005: Intel Core2 Duo T7800 @ 2.60GHz
+1006: Intel Core2 Duo T8100 @ 2.10GHz
+1007: Intel Core2 Duo T8300 @ 2.40GHz
+1008: Intel Core2 Duo T9300 @ 2.50GHz
+1009: Intel Core2 Duo T9400 @ 2.53GHz
+1010: Intel Core2 Duo T9500 @ 2.60GHz
+1011: Intel Core2 Duo T9550 @ 2.66GHz
+1012: Intel Core2 Duo T9600 @ 2.80GHz
+1013: Intel Core2 Duo T9800 @ 2.93GHz
+1014: Intel Core2 Duo T9900 @ 3.06GHz
+600: Intel Core2 Duo U7300 @ 1.30GHz
+1015: Intel Core2 Duo U7500 @ 1.06GHz
+1016: Intel Core2 Duo U7600 @ 1.20GHz
+1017: Intel Core2 Duo U7700 @ 1.33GHz
+1018: Intel Core2 Duo U9300 @ 1.20GHz
+1020: Intel Core2 Duo U9600 @ 1.60GHz
+1023: Intel Core2 Extreme Q6800 @ 2.93GHz
+1024: Intel Core2 Extreme Q6850 @ 3.00GHz
+3615: Intel Core2 Extreme Q9200 @ 2.40GHz
+1025: Intel Core2 Extreme Q9300 @ 2.53GHz
+933: Intel Core2 Extreme X6800 @ 2.93GHz
+1026: Intel Core2 Extreme X7800 @ 2.60GHz
+1028: Intel Core2 Extreme X7900 @ 2.80GHz
+1029: Intel Core2 Extreme X9000 @ 2.80GHz
+1030: Intel Core2 Extreme X9100 @ 3.06GHz
+1031: Intel Core2 Extreme X9650 @ 3.00GHz
+1032: Intel Core2 Extreme X9750 @ 3.16GHz
+1033: Intel Core2 Extreme X9770 @ 3.20GHz
+1682: Intel Core2 Extreme X9775 @ 3.20GHz
+1038: Intel Core2 Quad Q6600 @ 2.40GHz
+1039: Intel Core2 Quad Q6700 @ 2.66GHz
+1040: Intel Core2 Quad Q8200 @ 2.33GHz
+9: Intel Core2 Quad Q8300 @ 2.50GHz
+1041: Intel Core2 Quad Q8400 @ 2.66GHz
+1042: Intel Core2 Quad Q9000 @ 2.00GHz
+1043: Intel Core2 Quad Q9100 @ 2.26GHz
+1044: Intel Core2 Quad Q9300 @ 2.50GHz
+1045: Intel Core2 Quad Q9400 @ 2.66GHz
+1046: Intel Core2 Quad Q9450 @ 2.66GHz
+1047: Intel Core2 Quad Q9500 @ 2.83GHz
+1048: Intel Core2 Quad Q9505 @ 2.83GHz
+1049: Intel Core2 Quad Q9550 @ 2.83GHz
+1050: Intel Core2 Quad Q9650 @ 3.00GHz
+1051: Intel Core2 Solo U2100 @ 1.06GHz
+1052: Intel Core2 Solo U3500 @ 1.40GHz
+1909: Intel Pentium 1403 @ 2.60GHz
+3322: Intel Pentium 1403 v2 @ 2.60GHz
+1855: Intel Pentium 2020M @ 2.40GHz
+2062: Intel Pentium 2030M @ 2.50GHz
+1872: Intel Pentium 2117U @ 1.80GHz
+2008: Intel Pentium 2127U @ 1.90GHz
+2125: Intel Pentium 2129Y @ 1.10GHz
+2175: Intel Pentium 3550M @ 2.30GHz
+2104: Intel Pentium 3556U @ 1.70GHz
+2293: Intel Pentium 3558U @ 1.70GHz
+2458: Intel Pentium 3560M @ 2.40GHz
+2078: Intel Pentium 3560Y @ 1.20GHz
+2483: Intel Pentium 3805U @ 1.90GHz
+2579: Intel Pentium 3825U @ 1.90GHz
+1053: Intel Pentium 4 1.50GHz
+1054: Intel Pentium 4 1.60GHz
+1055: Intel Pentium 4 1.70GHz
+1056: Intel Pentium 4 1.80GHz
+1057: Intel Pentium 4 1.90GHz
+1058: Intel Pentium 4 1300MHz
+1059: Intel Pentium 4 1400MHz
+1060: Intel Pentium 4 1500MHz
+1062: Intel Pentium 4 1700MHz
+1063: Intel Pentium 4 1800MHz
+1064: Intel Pentium 4 2.00GHz
+1065: Intel Pentium 4 2.20GHz
+1066: Intel Pentium 4 2.26GHz
+1067: Intel Pentium 4 2.40GHz
+1068: Intel Pentium 4 2.50GHz
+1069: Intel Pentium 4 2.53GHz
+1070: Intel Pentium 4 2.60GHz
+1071: Intel Pentium 4 2.66GHz
+1072: Intel Pentium 4 2.80GHz
+1073: Intel Pentium 4 2.93GHz
+1074: Intel Pentium 4 3.00GHz
+1075: Intel Pentium 4 3.06GHz
+1076: Intel Pentium 4 3.20GHz
+1077: Intel Pentium 4 3.40GHz
+1078: Intel Pentium 4 3.46GHz
+1079: Intel Pentium 4 3.60GHz
+1080: Intel Pentium 4 3.73GHz
+1081: Intel Pentium 4 3.80GHz
+3256: Intel Pentium 4 3.83GHz
+1084: Intel Pentium 4 Mobile 1.60GHz
+1086: Intel Pentium 4 Mobile 1.80GHz
+1692: Intel Pentium 4 Mobile 1.90GHz
+1087: Intel Pentium 4 Mobile 2.00GHz
+2666: Intel Pentium 4405U @ 2.10GHz
+2775: Intel Pentium 4405Y @ 1.50GHz
+3134: Intel Pentium 4410Y @ 1.50GHz
+2977: Intel Pentium 4415U @ 2.30GHz
+3300: Intel Pentium 4415Y @ 1.60GHz
+3417: Intel Pentium 4417U @ 2.30GHz
+3437: Intel Pentium 5405U @ 2.30GHz
+1089: Intel Pentium 957 @ 1.20GHz
+1090: Intel Pentium 967 @ 1.30GHz
+1092: Intel Pentium 987 @ 1.50GHz
+1798: Intel Pentium 997 @ 1.60GHz
+2323: Intel Pentium A1018 @ 2.10GHz
+3666: Intel Pentium A1020 @ 2.41GHz
+1093: Intel Pentium B940 @ 2.00GHz
+1094: Intel Pentium B950 @ 2.10GHz
+1095: Intel Pentium B960 @ 2.20GHz
+1096: Intel Pentium B970 @ 2.30GHz
+1796: Intel Pentium B980 @ 2.40GHz
+1125: Intel Pentium D 805 @ 2.66GHz
+1127: Intel Pentium D 830 @ 3.00GHz
+1126: Intel Pentium D 915 @ 2.80GHz
+1128: Intel Pentium D 940 @ 3.20GHz
+1129: Intel Pentium D 950 @ 3.40GHz
+1131: Intel Pentium D 960 @ 3.60GHz
+3141: Intel Pentium D1508 @ 2.20GHz
+1133: Intel Pentium E2140 @ 1.60GHz
+1134: Intel Pentium E2160 @ 1.80GHz
+1135: Intel Pentium E2180 @ 2.00GHz
+1136: Intel Pentium E2200 @ 2.20GHz
+1387: Intel Pentium E2210 @ 2.20GHz
+1137: Intel Pentium E2220 @ 2.40GHz
+1097: Intel Pentium E5200 @ 2.50GHz
+1098: Intel Pentium E5300 @ 2.60GHz
+1099: Intel Pentium E5400 @ 2.70GHz
+1100: Intel Pentium E5500 @ 2.80GHz
+1101: Intel Pentium E5700 @ 3.00GHz
+1102: Intel Pentium E5800 @ 3.20GHz
+1103: Intel Pentium E6300 @ 2.80GHz
+1104: Intel Pentium E6500 @ 2.93GHz
+1105: Intel Pentium E6600 @ 3.06GHz
+1106: Intel Pentium E6700 @ 3.20GHz
+1398: Intel Pentium E6800 @ 3.33GHz
+1130: Intel Pentium Extreme Edition 955 @ 3.46GHz
+1132: Intel Pentium Extreme Edition 965 @ 3.73GHz
+1854: Intel Pentium G2010 @ 2.80GHz
+1839: Intel Pentium G2020 @ 2.90GHz
+1838: Intel Pentium G2020T @ 2.50GHz
+1961: Intel Pentium G2030 @ 3.00GHz
+2135: Intel Pentium G2030T @ 2.60GHz
+2786: Intel Pentium G2100T @ 2.60GHz
+1443: Intel Pentium G2120 @ 3.10GHz
+3684: Intel Pentium G2120T @ 2.70GHz
+1864: Intel Pentium G2130 @ 3.20GHz
+2136: Intel Pentium G2140 @ 3.30GHz
+2020: Intel Pentium G3220 @ 3.00GHz
+2189: Intel Pentium G3220T @ 2.60GHz
+2250: Intel Pentium G3240 @ 3.10GHz
+2325: Intel Pentium G3240T @ 2.70GHz
+2346: Intel Pentium G3250 @ 3.20GHz
+2461: Intel Pentium G3250T @ 2.80GHz
+2267: Intel Pentium G3258 @ 3.20GHz
+2523: Intel Pentium G3260 @ 3.30GHz
+2566: Intel Pentium G3260T @ 2.90GHz
+2122: Intel Pentium G3320TE @ 2.30GHz
+2028: Intel Pentium G3420 @ 3.20GHz
+2350: Intel Pentium G3420T @ 2.70GHz
+2063: Intel Pentium G3430 @ 3.30GHz
+2286: Intel Pentium G3440 @ 3.30GHz
+2421: Intel Pentium G3440T @ 2.80GHz
+2299: Intel Pentium G3450 @ 3.40GHz
+2611: Intel Pentium G3450T @ 2.90GHz
+2361: Intel Pentium G3460 @ 3.50GHz
+2521: Intel Pentium G3470 @ 3.60GHz
+2634: Intel Pentium G4400 @ 3.30GHz
+2633: Intel Pentium G4400T @ 2.90GHz
+3283: Intel Pentium G4400TE @ 2.40GHz
+2630: Intel Pentium G4500 @ 3.50GHz
+2734: Intel Pentium G4500T @ 3.00GHz
+2660: Intel Pentium G4520 @ 3.60GHz
+2925: Intel Pentium G4560 @ 3.50GHz
+2983: Intel Pentium G4560T @ 2.90GHz
+2921: Intel Pentium G4600 @ 3.60GHz
+3003: Intel Pentium G4600T @ 3.00GHz
+2948: Intel Pentium G4620 @ 3.70GHz
+1107: Intel Pentium G620 @ 2.60GHz
+1108: Intel Pentium G620T @ 2.20GHz
+1109: Intel Pentium G630 @ 2.70GHz
+1110: Intel Pentium G630T @ 2.30GHz
+1111: Intel Pentium G640 @ 2.80GHz
+2100: Intel Pentium G640T @ 2.40GHz
+1797: Intel Pentium G645 @ 2.90GHz
+1876: Intel Pentium G645T @ 2.50GHz
+1112: Intel Pentium G6950 @ 2.80GHz
+1113: Intel Pentium G6951 @ 2.80GHz
+1114: Intel Pentium G6960 @ 2.93GHz
+1115: Intel Pentium G840 @ 2.80GHz
+1116: Intel Pentium G850 @ 2.90GHz
+1117: Intel Pentium G860 @ 3.00GHz
+1484: Intel Pentium G870 @ 3.10GHz
+3248: Intel Pentium Gold G5400 @ 3.70GHz
+3329: Intel Pentium Gold G5400T @ 3.10GHz
+3471: Intel Pentium Gold G5420 @ 3.80GHz
+3589: Intel Pentium Gold G5420T @ 3.20GHz
+3271: Intel Pentium Gold G5500 @ 3.80GHz
+3264: Intel Pentium Gold G5500T @ 3.20GHz
+3261: Intel Pentium Gold G5600 @ 3.90GHz
+3568: Intel Pentium Gold G5600F @ 3.90GHz
+3626: Intel Pentium Gold G5620 @ 4.00GHz
+1695: Intel Pentium III 1400 @ 1400MHz
+1146: Intel Pentium III 1400S @ 1400MHz
+1698: Intel Pentium III Mobile 1066MHz
+1150: Intel Pentium III Mobile 1133MHz
+1151: Intel Pentium III Mobile 1200MHz
+1700: Intel Pentium III Mobile 800MHz
+1152: Intel Pentium III Mobile 866MHz
+2221: Intel Pentium J2850 @ 2.41GHz
+2173: Intel Pentium J2900 @ 2.41GHz
+2784: Intel Pentium J3710 @ 1.60GHz
+2877: Intel Pentium J4205 @ 1.50GHz
+1153: Intel Pentium M 1.10GHz
+1154: Intel Pentium M 1.20GHz
+1155: Intel Pentium M 1.30GHz
+1156: Intel Pentium M 1.40GHz
+1157: Intel Pentium M 1.50GHz
+1158: Intel Pentium M 1.60GHz
+1159: Intel Pentium M 1.70GHz
+1160: Intel Pentium M 1.73GHz
+1161: Intel Pentium M 1.80GHz
+1162: Intel Pentium M 1.86GHz
+1163: Intel Pentium M 1000MHz
+1165: Intel Pentium M 1200MHz
+1166: Intel Pentium M 1300MHz
+1167: Intel Pentium M 1400MHz
+1168: Intel Pentium M 1500MHz
+1169: Intel Pentium M 1600MHz
+1170: Intel Pentium M 1700MHz
+1171: Intel Pentium M 2.00GHz
+1172: Intel Pentium M 2.10GHz
+1173: Intel Pentium M 2.13GHz
+1174: Intel Pentium M 2.26GHz
+1175: Intel Pentium M 900MHz
+2107: Intel Pentium N3510 @ 1.99GHz
+2123: Intel Pentium N3520 @ 2.16GHz
+2278: Intel Pentium N3530 @ 2.16GHz
+2408: Intel Pentium N3540 @ 2.16GHz
+2513: Intel Pentium N3700 @ 1.60GHz
+2730: Intel Pentium N3710 @ 1.60GHz
+2886: Intel Pentium N4200 @ 1.10GHz
+1118: Intel Pentium P6000 @ 1.87GHz
+1119: Intel Pentium P6100 @ 2.00GHz
+1120: Intel Pentium P6200 @ 2.13GHz
+1121: Intel Pentium P6300 @ 2.27GHz
+3144: Intel Pentium Silver J5005 @ 1.50GHz
+3665: Intel Pentium Silver J5040 @ 2.00GHz
+3204: Intel Pentium Silver N5000 @ 1.10GHz
+3670: Intel Pentium Silver N5030 @ 1.10GHz
+598: Intel Pentium SU2700 @ 1.30GHz
+599: Intel Pentium SU4100 @ 1.30GHz
+585: Intel Pentium T2060 @ 1.60GHz
+586: Intel Pentium T2080 @ 1.73GHz
+587: Intel Pentium T2130 @ 1.86GHz
+1138: Intel Pentium T2310 @ 1.46GHz
+1139: Intel Pentium T2330 @ 1.60GHz
+1140: Intel Pentium T2370 @ 1.73GHz
+1141: Intel Pentium T2390 @ 1.86GHz
+1142: Intel Pentium T2410 @ 2.00GHz
+1143: Intel Pentium T3200 @ 2.00GHz
+1144: Intel Pentium T3400 @ 2.16GHz
+1399: Intel Pentium T4200 @ 2.00GHz
+1400: Intel Pentium T4300 @ 2.10GHz
+1122: Intel Pentium T4400 @ 2.20GHz
+1402: Intel Pentium T4500 @ 2.30GHz
+1123: Intel Pentium U5400 @ 1.20GHz
+1124: Intel Pentium U5600 @ 1.33GHz
+580: Intel T1400 @ 1.73GHz
+581: Intel T1500 @ 1.86GHz
+1815: Intel T2050 @ 2.00GHz
+1315: Intel Xeon 2.00GHz
+1712: Intel XEON 2.20GHz
+1316: Intel Xeon 2.40GHz
+1317: Intel Xeon 2.80GHz
+1318: Intel Xeon 3.00GHz
+1320: Intel Xeon 3.20GHz
+1321: Intel Xeon 3.40GHz
+1322: Intel Xeon 3.60GHz
+1323: Intel Xeon 3.73GHz
+1324: Intel Xeon 3.80GHz
+1176: Intel Xeon 3040 @ 1.86GHz
+1177: Intel Xeon 3050 @ 2.13GHz
+1178: Intel Xeon 3060 @ 2.40GHz
+1179: Intel Xeon 3065 @ 2.33GHz
+1180: Intel Xeon 3070 @ 2.66GHz
+1703: Intel Xeon 3075 @ 2.66GHz
+2642: Intel Xeon 3085 @ 3.00GHz
+1181: Intel Xeon 5110 @ 1.60GHz
+1182: Intel Xeon 5120 @ 1.86GHz
+1183: Intel Xeon 5130 @ 2.00GHz
+2098: Intel Xeon 5133 @ 2.20GHz
+1184: Intel Xeon 5140 @ 2.33GHz
+1185: Intel Xeon 5148 @ 2.33GHz
+1186: Intel Xeon 5150 @ 2.66GHz
+1187: Intel Xeon 5160 @ 3.00GHz
+3483: Intel Xeon @ 2.00GHz
+3212: Intel Xeon @ 2.20GHz
+3174: Intel Xeon Bronze 3104 @ 1.70GHz
+3230: Intel Xeon Bronze 3106 @ 1.70GHz
+3649: Intel Xeon Bronze 3204 @ 1.90GHz
+2799: Intel Xeon D-1518 @ 2.20GHz
+2662: Intel Xeon D-1520 @ 2.20GHz
+2712: Intel Xeon D-1521 @ 2.40GHz
+2764: Intel Xeon D-1528 @ 1.90GHz
+3107: Intel Xeon D-1531 @ 2.20GHz
+3244: Intel Xeon D-1537 @ 1.70GHz
+3537: Intel Xeon D-1539 @ 1.60GHz
+2507: Intel Xeon D-1540 @ 2.00GHz
+2718: Intel Xeon D-1541 @ 2.10GHz
+3429: Intel Xeon D-1548 @ 2.00GHz
+3519: Intel Xeon D-1557 @ 1.50GHz
+3066: Intel Xeon D-1559 @ 1.50GHz
+3006: Intel Xeon D-1567 @ 2.10GHz
+2835: Intel Xeon D-1587 @ 1.70GHz
+3319: Intel Xeon D-2123IT @ 2.20GHz
+3379: Intel Xeon D-2141I @ 2.20GHz
+3312: Intel Xeon D-2143IT @ 2.20GHz
+3530: Intel Xeon D-2146NT @ 2.30GHz
+3644: Intel Xeon D-2166NT @ 2.00GHz
+3268: Intel Xeon D-2183IT @ 2.20GHz
+3663: Intel Xeon D-2187NT @ 2.00GHz
+3342: Intel Xeon E-2104G @ 3.20GHz
+3432: Intel Xeon E-2124 @ 3.30GHz
+3364: Intel Xeon E-2124G @ 3.40GHz
+3360: Intel Xeon E-2126G @ 3.30GHz
+3391: Intel Xeon E-2134 @ 3.50GHz
+3363: Intel Xeon E-2136 @ 3.30GHz
+3399: Intel Xeon E-2144G @ 3.60GHz
+3314: Intel Xeon E-2146G @ 3.50GHz
+3320: Intel Xeon E-2174G @ 3.80GHz
+3336: Intel Xeon E-2176G @ 3.70GHz
+3242: Intel Xeon E-2176M @ 2.70GHz
+3346: Intel Xeon E-2186G @ 3.80GHz
+3232: Intel Xeon E-2186M @ 2.90GHz
+3512: Intel Xeon E-2224 @ 3.40GHz
+3490: Intel Xeon E-2224G @ 3.50GHz
+3572: Intel Xeon E-2226G @ 3.40GHz
+3607: Intel Xeon E-2236 @ 3.40GHz
+3580: Intel Xeon E-2244G @ 3.80GHz
+3523: Intel Xeon E-2246G @ 3.60GHz
+3622: Intel Xeon E-2254ML @ 1.70GHz
+3584: Intel Xeon E-2274G @ 4.00GHz
+3596: Intel Xeon E-2276G @ 3.80GHz
+3489: Intel Xeon E-2276M @ 2.80GHz
+3606: Intel Xeon E-2278G @ 3.40GHz
+3595: Intel Xeon E-2278GEL @ 2.00GHz
+3590: Intel Xeon E-2286G @ 4.00GHz
+3491: Intel Xeon E-2286M @ 2.40GHz
+3546: Intel Xeon E-2288G @ 3.70GHz
+3656: Intel Xeon E3-1205 v6 @ 3.00GHz
+1196: Intel Xeon E3-1220 @ 3.10GHz
+1188: Intel Xeon E3-1220 V2 @ 3.10GHz
+2022: Intel Xeon E3-1220 v3 @ 3.10GHz
+2692: Intel Xeon E3-1220 v5 @ 3.00GHz
+3131: Intel Xeon E3-1220 v6 @ 3.00GHz
+1197: Intel Xeon E3-1220L @ 2.20GHz
+2183: Intel Xeon E3-1220L V2 @ 2.30GHz
+2251: Intel Xeon E3-1220L v3 @ 1.10GHz
+1198: Intel Xeon E3-1225 @ 3.10GHz
+1485: Intel Xeon E3-1225 V2 @ 3.20GHz
+1993: Intel Xeon E3-1225 v3 @ 3.20GHz
+2707: Intel Xeon E3-1225 v5 @ 3.30GHz
+3019: Intel Xeon E3-1225 v6 @ 3.30GHz
+2297: Intel Xeon E3-1226 v3 @ 3.30GHz
+1199: Intel Xeon E3-1230 @ 3.20GHz
+1189: Intel Xeon E3-1230 V2 @ 3.30GHz
+1942: Intel Xeon E3-1230 v3 @ 3.30GHz
+2693: Intel Xeon E3-1230 v5 @ 3.40GHz
+3032: Intel Xeon E3-1230 v6 @ 3.50GHz
+2116: Intel Xeon E3-1230L v3 @ 1.80GHz
+2246: Intel Xeon E3-1231 v3 @ 3.40GHz
+1200: Intel Xeon E3-1235 @ 3.20GHz
+2985: Intel Xeon E3-1235L v5 @ 2.00GHz
+1201: Intel Xeon E3-1240 @ 3.30GHz
+1190: Intel Xeon E3-1240 V2 @ 3.40GHz
+1952: Intel Xeon E3-1240 v3 @ 3.40GHz
+2636: Intel Xeon E3-1240 v5 @ 3.50GHz
+3053: Intel Xeon E3-1240 v6 @ 3.70GHz
+2495: Intel Xeon E3-1240L v3 @ 2.00GHz
+3087: Intel Xeon E3-1240L v5 @ 2.10GHz
+2341: Intel Xeon E3-1241 v3 @ 3.50GHz
+1202: Intel Xeon E3-1245 @ 3.30GHz
+1191: Intel Xeon E3-1245 V2 @ 3.40GHz
+1926: Intel Xeon E3-1245 v3 @ 3.40GHz
+2674: Intel Xeon E3-1245 v5 @ 3.50GHz
+3025: Intel Xeon E3-1245 v6 @ 3.70GHz
+2279: Intel Xeon E3-1246 v3 @ 3.50GHz
+1203: Intel Xeon E3-1260L @ 2.40GHz
+2804: Intel Xeon E3-1260L v5 @ 2.90GHz
+2558: Intel Xeon E3-1265L @ 2.40GHz
+1486: Intel Xeon E3-1265L V2 @ 2.50GHz
+2088: Intel Xeon E3-1265L v3 @ 2.50GHz
+3289: Intel Xeon E3-1265L v4 @ 2.30GHz
+2363: Intel Xeon E3-1268L v3 @ 2.30GHz
+3202: Intel Xeon E3-1268L v5 @ 2.40GHz
+1204: Intel Xeon E3-1270 @ 3.40GHz
+1192: Intel Xeon E3-1270 V2 @ 3.50GHz
+1969: Intel Xeon E3-1270 v3 @ 3.50GHz
+2651: Intel Xeon E3-1270 v5 @ 3.60GHz
+3014: Intel Xeon E3-1270 v6 @ 3.80GHz
+3396: Intel Xeon E3-1270L v4 @ 3.00GHz
+2334: Intel Xeon E3-1271 v3 @ 3.60GHz
+1205: Intel Xeon E3-1275 @ 3.40GHz
+1193: Intel Xeon E3-1275 V2 @ 3.50GHz
+1979: Intel Xeon E3-1275 v3 @ 3.50GHz
+2672: Intel Xeon E3-1275 v5 @ 3.60GHz
+3015: Intel Xeon E3-1275 v6 @ 3.80GHz
+2490: Intel Xeon E3-1275L v3 @ 2.70GHz
+2269: Intel Xeon E3-1276 v3 @ 3.60GHz
+1206: Intel Xeon E3-1280 @ 3.50GHz
+1779: Intel Xeon E3-1280 V2 @ 3.60GHz
+1964: Intel Xeon E3-1280 v3 @ 3.60GHz
+2773: Intel Xeon E3-1280 v5 @ 3.70GHz
+2988: Intel Xeon E3-1280 v6 @ 3.90GHz
+2516: Intel Xeon E3-1281 v3 @ 3.70GHz
+2894: Intel Xeon E3-1285 v3 @ 3.60GHz
+3282: Intel Xeon E3-1285 v4 @ 3.50GHz
+3158: Intel Xeon E3-1285 v6 @ 4.10GHz
+2417: Intel Xeon E3-1285L v3 @ 3.10GHz
+2743: Intel Xeon E3-1285L v4 @ 3.40GHz
+2401: Intel Xeon E3-1286 v3 @ 3.70GHz
+3177: Intel Xeon E3-1286L v3 @ 3.20GHz
+1208: Intel Xeon E3-1290 @ 3.60GHz
+1774: Intel Xeon E3-1290 V2 @ 3.70GHz
+2980: Intel Xeon E3-1505L v5 @ 2.00GHz
+3020: Intel Xeon E3-1505L v6 @ 2.20GHz
+2637: Intel Xeon E3-1505M v5 @ 2.80GHz
+2931: Intel Xeon E3-1505M v6 @ 3.00GHz
+2954: Intel Xeon E3-1515M v5 @ 2.80GHz
+2667: Intel Xeon E3-1535M v5 @ 2.90GHz
+2999: Intel Xeon E3-1535M v6 @ 3.10GHz
+2711: Intel Xeon E3-1545M v5 @ 2.90GHz
+2801: Intel Xeon E3-1575M v5 @ 3.00GHz
+3011: Intel Xeon E3-1585 v5 @ 3.50GHz
+3277: Intel Xeon E3-1585L v5 @ 3.00GHz
+1194: Intel Xeon E3110 @ 3.00GHz
+2403: Intel Xeon E3113 @ 3.00GHz
+1195: Intel Xeon E3120 @ 3.16GHz
+1945: Intel Xeon E5-1410 @ 2.80GHz
+2589: Intel Xeon E5-1410 v2 @ 2.80GHz
+3556: Intel Xeon E5-1428L v2 @ 2.20GHz
+1209: Intel Xeon E5-1603 @ 2.80GHz
+2457: Intel Xeon E5-1603 v3 @ 2.80GHz
+2959: Intel Xeon E5-1603 v4 @ 2.80GHz
+1434: Intel Xeon E5-1607 @ 3.00GHz
+2192: Intel Xeon E5-1607 v2 @ 3.00GHz
+2493: Intel Xeon E5-1607 v3 @ 3.10GHz
+2885: Intel Xeon E5-1607 v4 @ 3.10GHz
+1210: Intel Xeon E5-1620 @ 3.60GHz
+2047: Intel Xeon E5-1620 v2 @ 3.70GHz
+2409: Intel Xeon E5-1620 v3 @ 3.50GHz
+2777: Intel Xeon E5-1620 v4 @ 3.50GHz
+2384: Intel Xeon E5-1630 v3 @ 3.70GHz
+2827: Intel Xeon E5-1630 v4 @ 3.70GHz
+1211: Intel Xeon E5-1650 @ 3.20GHz
+2066: Intel Xeon E5-1650 v2 @ 3.50GHz
+2389: Intel Xeon E5-1650 v3 @ 3.50GHz
+2838: Intel Xeon E5-1650 v4 @ 3.60GHz
+1212: Intel Xeon E5-1660 @ 3.30GHz
+2120: Intel Xeon E5-1660 v2 @ 3.70GHz
+2412: Intel Xeon E5-1660 v3 @ 3.00GHz
+2866: Intel Xeon E5-1660 v4 @ 3.20GHz
+2342: Intel Xeon E5-1680 v2 @ 3.00GHz
+2497: Intel Xeon E5-1680 v3 @ 3.20GHz
+2869: Intel Xeon E5-1680 v4 @ 3.40GHz
+2755: Intel Xeon E5-1681 v3 @ 2.90GHz
+1827: Intel Xeon E5-2403 @ 1.80GHz
+2519: Intel Xeon E5-2403 v2 @ 1.80GHz
+1856: Intel Xeon E5-2407 @ 2.20GHz
+2354: Intel Xeon E5-2407 v2 @ 2.40GHz
+2729: Intel Xeon E5-2418L @ 2.00GHz
+1213: Intel Xeon E5-2420 @ 1.90GHz
+2217: Intel Xeon E5-2420 v2 @ 2.20GHz
+1788: Intel Xeon E5-2430 @ 2.20GHz
+2304: Intel Xeon E5-2430 v2 @ 2.50GHz
+3139: Intel Xeon E5-2430L @ 2.00GHz
+2494: Intel Xeon E5-2430L v2 @ 2.40GHz
+2194: Intel Xeon E5-2440 @ 2.40GHz
+2411: Intel Xeon E5-2440 v2 @ 1.90GHz
+3208: Intel Xeon E5-2448L v2 @ 1.80GHz
+2514: Intel Xeon E5-2450 @ 2.10GHz
+2572: Intel Xeon E5-2450L @ 1.80GHz
+2003: Intel Xeon E5-2470 @ 2.30GHz
+2715: Intel Xeon E5-2470 v2 @ 2.40GHz
+1771: Intel Xeon E5-2603 @ 1.80GHz
+2420: Intel Xeon E5-2603 v2 @ 1.80GHz
+2468: Intel Xeon E5-2603 v3 @ 1.60GHz
+2834: Intel Xeon E5-2603 v4 @ 1.70GHz
+3173: Intel Xeon E5-2608L v3 @ 2.00GHz
+1429: Intel Xeon E5-2609 @ 2.40GHz
+2202: Intel Xeon E5-2609 v2 @ 2.50GHz
+2427: Intel Xeon E5-2609 v3 @ 1.90GHz
+2850: Intel Xeon E5-2609 v4 @ 1.70GHz
+2965: Intel Xeon E5-2618L v3 @ 2.30GHz
+3101: Intel Xeon E5-2618L v4 @ 2.20GHz
+1214: Intel Xeon E5-2620 @ 2.00GHz
+2051: Intel Xeon E5-2620 v2 @ 2.10GHz
+2418: Intel Xeon E5-2620 v3 @ 2.40GHz
+2766: Intel Xeon E5-2620 v4 @ 2.10GHz
+2492: Intel Xeon E5-2623 v3 @ 3.00GHz
+2808: Intel Xeon E5-2623 v4 @ 2.60GHz
+2576: Intel Xeon E5-2628L v2 @ 1.90GHz
+2560: Intel Xeon E5-2628L v3 @ 2.00GHz
+2964: Intel Xeon E5-2628L v4 @ 1.90GHz
+2867: Intel Xeon E5-2629 v3 @ 2.40GHz
+1215: Intel Xeon E5-2630 @ 2.30GHz
+2052: Intel Xeon E5-2630 v2 @ 2.60GHz
+2386: Intel Xeon E5-2630 v3 @ 2.40GHz
+2758: Intel Xeon E5-2630 v4 @ 2.20GHz
+2222: Intel Xeon E5-2630L @ 2.00GHz
+2435: Intel Xeon E5-2630L v2 @ 2.40GHz
+2818: Intel Xeon E5-2630L v3 @ 1.80GHz
+2914: Intel Xeon E5-2630L v4 @ 1.80GHz
+3236: Intel Xeon E5-2637 @ 3.00GHz
+2178: Intel Xeon E5-2637 v2 @ 3.50GHz
+2383: Intel Xeon E5-2637 v3 @ 3.50GHz
+2790: Intel Xeon E5-2637 v4 @ 3.50GHz
+1216: Intel Xeon E5-2640 @ 2.50GHz
+2153: Intel Xeon E5-2640 v2 @ 2.00GHz
+2365: Intel Xeon E5-2640 v3 @ 2.60GHz
+2752: Intel Xeon E5-2640 v4 @ 2.40GHz
+1217: Intel Xeon E5-2643 @ 3.30GHz
+2084: Intel Xeon E5-2643 v2 @ 3.50GHz
+2479: Intel Xeon E5-2643 v3 @ 3.40GHz
+2811: Intel Xeon E5-2643 v4 @ 3.40GHz
+2605: Intel Xeon E5-2648L @ 1.80GHz
+3157: Intel Xeon E5-2648L v2 @ 1.90GHz
+2748: Intel Xeon E5-2648L v3 @ 1.80GHz
+3044: Intel Xeon E5-2648L v4 @ 1.80GHz
+3194: Intel Xeon E5-2649 v3 @ 2.30GHz
+1218: Intel Xeon E5-2650 @ 2.00GHz
+2042: Intel Xeon E5-2650 v2 @ 2.60GHz
+2344: Intel Xeon E5-2650 v3 @ 2.30GHz
+2797: Intel Xeon E5-2650 v4 @ 2.20GHz
+1776: Intel Xeon E5-2650L @ 1.80GHz
+2989: Intel Xeon E5-2650L v2 @ 1.70GHz
+2588: Intel Xeon E5-2650L v3 @ 1.80GHz
+3054: Intel Xeon E5-2650L v4 @ 1.70GHz
+2739: Intel Xeon E5-2651 v2 @ 1.80GHz
+1487: Intel Xeon E5-2658 @ 2.10GHz
+2110: Intel Xeon E5-2658 v2 @ 2.40GHz
+2619: Intel Xeon E5-2658 v3 @ 2.20GHz
+2904: Intel Xeon E5-2658 v4 @ 2.30GHz
+1219: Intel Xeon E5-2660 @ 2.20GHz
+2184: Intel Xeon E5-2660 v2 @ 2.20GHz
+2359: Intel Xeon E5-2660 v3 @ 2.60GHz
+2881: Intel Xeon E5-2660 v4 @ 2.00GHz
+2677: Intel Xeon E5-2663 v3 @ 2.80GHz
+1439: Intel Xeon E5-2665 @ 2.40GHz
+1488: Intel Xeon E5-2667 @ 2.90GHz
+2154: Intel Xeon E5-2667 v2 @ 3.30GHz
+2441: Intel Xeon E5-2667 v3 @ 3.20GHz
+2830: Intel Xeon E5-2667 v4 @ 3.20GHz
+2700: Intel Xeon E5-2669 v3 @ 2.30GHz
+1220: Intel Xeon E5-2670 @ 2.60GHz
+2152: Intel Xeon E5-2670 v2 @ 2.50GHz
+2337: Intel Xeon E5-2670 v3 @ 2.30GHz
+2741: Intel Xeon E5-2673 v2 @ 3.30GHz
+2606: Intel Xeon E5-2673 v3 @ 2.40GHz
+2888: Intel Xeon E5-2673 v4 @ 2.30GHz
+2686: Intel Xeon E5-2675 v3 @ 1.80GHz
+2643: Intel Xeon E5-2676 v3 @ 2.40GHz
+2584: Intel Xeon E5-2678 v3 @ 2.50GHz
+2805: Intel Xeon E5-2679 v4 @ 2.50GHz
+1221: Intel Xeon E5-2680 @ 2.70GHz
+2061: Intel Xeon E5-2680 v2 @ 2.80GHz
+2390: Intel Xeon E5-2680 v3 @ 2.50GHz
+2779: Intel Xeon E5-2680 v4 @ 2.40GHz
+3081: Intel Xeon E5-2682 v4 @ 2.50GHz
+2491: Intel Xeon E5-2683 v3 @ 2.00GHz
+2908: Intel Xeon E5-2683 v4 @ 2.10GHz
+2538: Intel Xeon E5-2685 v3 @ 2.60GHz
+2568: Intel Xeon E5-2686 v3 @ 2.00GHz
+2870: Intel Xeon E5-2686 v4 @ 2.30GHz
+1222: Intel Xeon E5-2687W @ 3.10GHz
+2045: Intel Xeon E5-2687W v2 @ 3.40GHz
+2387: Intel Xeon E5-2687W v3 @ 3.10GHz
+2765: Intel Xeon E5-2687W v4 @ 3.00GHz
+1881: Intel Xeon E5-2689 @ 2.60GHz
+2853: Intel Xeon E5-2689 v4 @ 3.10GHz
+1223: Intel Xeon E5-2690 @ 2.90GHz
+2057: Intel Xeon E5-2690 v2 @ 3.00GHz
+2364: Intel Xeon E5-2690 v3 @ 2.60GHz
+2780: Intel Xeon E5-2690 v4 @ 2.60GHz
+2761: Intel Xeon E5-2692 v2 @ 2.20GHz
+2114: Intel Xeon E5-2695 v2 @ 2.40GHz
+2371: Intel Xeon E5-2695 v3 @ 2.30GHz
+2846: Intel Xeon E5-2695 v4 @ 2.10GHz
+2039: Intel Xeon E5-2696 v2 @ 2.50GHz
+2526: Intel Xeon E5-2696 v3 @ 2.30GHz
+2750: Intel Xeon E5-2696 v4 @ 2.20GHz
+2009: Intel Xeon E5-2697 v2 @ 2.70GHz
+2333: Intel Xeon E5-2697 v3 @ 2.60GHz
+2783: Intel Xeon E5-2697 v4 @ 2.30GHz
+2814: Intel Xeon E5-2697A v4 @ 2.60GHz
+2368: Intel Xeon E5-2698 v3 @ 2.30GHz
+2806: Intel Xeon E5-2698 v4 @ 2.20GHz
+2366: Intel Xeon E5-2699 v3 @ 2.30GHz
+2753: Intel Xeon E5-2699 v4 @ 2.20GHz
+3398: Intel Xeon E5-2699A v4 @ 2.40GHz
+2181: Intel Xeon E5-4603 @ 2.00GHz
+2828: Intel Xeon E5-4607 v2 @ 2.60GHz
+3348: Intel Xeon E5-4610 @ 2.40GHz
+3527: Intel Xeon E5-4610 v3 @ 1.70GHz
+2150: Intel Xeon E5-4617 @ 2.90GHz
+2615: Intel Xeon E5-4620 @ 2.20GHz
+3640: Intel Xeon E5-4620 v3 @ 2.00GHz
+2510: Intel Xeon E5-4627 v2 @ 3.30GHz
+2913: Intel Xeon E5-4627 v3 @ 2.60GHz
+3005: Intel Xeon E5-4627 v4 @ 2.60GHz
+1224: Intel Xeon E5-4640 @ 2.40GHz
+3031: Intel Xeon E5-4640 v3 @ 1.90GHz
+3024: Intel Xeon E5-4648 v3 @ 1.70GHz
+1225: Intel Xeon E5-4650 @ 2.70GHz
+3039: Intel Xeon E5-4650L @ 2.60GHz
+3250: Intel Xeon E5-4655 v3 @ 2.90GHz
+2480: Intel Xeon E5-4657L v2 @ 2.40GHz
+3010: Intel Xeon E5-4660 v3 @ 2.10GHz
+3163: Intel Xeon E5-4667 v3 @ 2.00GHz
+2678: Intel Xeon E5-4669 v3 @ 2.10GHz
+2997: Intel Xeon E5-4669 v4 @ 2.20GHz
+1226: Intel Xeon E5205 @ 1.86GHz
+1227: Intel Xeon E5240 @ 3.00GHz
+1704: Intel Xeon E5310 @ 1.60GHz
+1228: Intel Xeon E5320 @ 1.86GHz
+1229: Intel Xeon E5335 @ 2.00GHz
+1230: Intel Xeon E5345 @ 2.33GHz
+1231: Intel Xeon E5405 @ 2.00GHz
+1232: Intel Xeon E5410 @ 2.33GHz
+1233: Intel Xeon E5420 @ 2.50GHz
+1234: Intel Xeon E5430 @ 2.66GHz
+1235: Intel Xeon E5440 @ 2.83GHz
+1236: Intel Xeon E5450 @ 3.00GHz
+1237: Intel Xeon E5462 @ 2.80GHz
+1705: Intel Xeon E5472 @ 3.00GHz
+1238: Intel Xeon E5502 @ 1.87GHz
+1239: Intel Xeon E5503 @ 2.00GHz
+1240: Intel Xeon E5504 @ 2.00GHz
+1241: Intel Xeon E5506 @ 2.13GHz
+1242: Intel Xeon E5507 @ 2.27GHz
+1243: Intel Xeon E5520 @ 2.27GHz
+1244: Intel Xeon E5530 @ 2.40GHz
+1245: Intel Xeon E5540 @ 2.53GHz
+1246: Intel Xeon E5603 @ 1.60GHz
+1247: Intel Xeon E5606 @ 2.13GHz
+1248: Intel Xeon E5607 @ 2.27GHz
+1249: Intel Xeon E5620 @ 2.40GHz
+1250: Intel Xeon E5630 @ 2.53GHz
+1251: Intel Xeon E5640 @ 2.67GHz
+1252: Intel Xeon E5645 @ 2.40GHz
+1253: Intel Xeon E5649 @ 2.53GHz
+3160: Intel Xeon E7- 2830 @ 2.13GHz
+2726: Intel Xeon E7320 @ 2.13GHz
+3108: Intel Xeon Gold 5117 @ 2.00GHz
+3148: Intel Xeon Gold 5118 @ 2.30GHz
+3154: Intel Xeon Gold 5120 @ 2.20GHz
+3229: Intel Xeon Gold 5120T @ 2.20GHz
+3128: Intel Xeon Gold 5122 @ 3.60GHz
+3536: Intel Xeon Gold 5218 @ 2.30GHz
+3219: Intel Xeon Gold 6126 @ 2.60GHz
+3104: Intel Xeon Gold 6128 @ 3.40GHz
+3126: Intel Xeon Gold 6130 @ 2.10GHz
+3227: Intel Xeon Gold 6132 @ 2.60GHz
+3008: Intel Xeon Gold 6134 @ 3.20GHz
+3065: Intel Xeon Gold 6136 @ 3.00GHz
+3381: Intel Xeon Gold 6137 @ 3.90GHz
+3137: Intel Xeon Gold 6138 @ 2.00GHz
+3132: Intel Xeon Gold 6140 @ 2.30GHz
+3502: Intel Xeon Gold 6143 @ 2.80GHz
+3110: Intel Xeon Gold 6144 @ 3.50GHz
+3205: Intel Xeon Gold 6146 @ 3.20GHz
+3176: Intel Xeon Gold 6148 @ 2.40GHz
+3169: Intel Xeon Gold 6152 @ 2.10GHz
+3127: Intel Xeon Gold 6154 @ 3.00GHz
+3540: Intel Xeon Gold 6210U @ 2.50GHz
+3608: Intel Xeon Gold 6212U @ 2.40GHz
+3682: Intel Xeon Gold 6226 @ 2.70GHz
+3468: Intel Xeon Gold 6230 @ 2.10GHz
+3516: Intel Xeon Gold 6242 @ 2.80GHz
+3521: Intel Xeon Gold 6246 @ 3.30GHz
+3482: Intel Xeon Gold 6254 @ 3.10GHz
+2044: Intel Xeon L3110 @ 3.00GHz
+1254: Intel Xeon L3360 @ 2.83GHz
+1899: Intel Xeon L3406 @ 2.27GHz
+1255: Intel Xeon L3426 @ 1.87GHz
+1257: Intel Xeon L5240 @ 3.00GHz
+2778: Intel Xeon L5310 @ 1.60GHz
+1258: Intel Xeon L5320 @ 1.86GHz
+1977: Intel Xeon L5335 @ 2.00GHz
+2231: Intel Xeon L5408 @ 2.13GHz
+1706: Intel Xeon L5410 @ 2.33GHz
+1259: Intel Xeon L5420 @ 2.50GHz
+2170: Intel Xeon L5430 @ 2.66GHz
+1260: Intel Xeon L5520 @ 2.27GHz
+1261: Intel Xeon L5530 @ 2.40GHz
+1883: Intel Xeon L5609 @ 1.87GHz
+2086: Intel Xeon L5630 @ 2.13GHz
+1262: Intel Xeon L5638 @ 2.00GHz
+1983: Intel Xeon L5639 @ 2.13GHz
+1263: Intel Xeon L5640 @ 2.27GHz
+2431: Intel Xeon L7455 @ 2.13GHz
+2524: Intel Xeon MV 3.20GHz
+3352: Intel Xeon Platinum 8124M @ 3.00GHz
+3458: Intel Xeon Platinum 8151 @ 3.40GHz
+3085: Intel Xeon Platinum 8160 @ 2.10GHz
+3111: Intel Xeon Platinum 8168 @ 2.70GHz
+3182: Intel Xeon Platinum 8173M @ 2.00GHz
+3311: Intel Xeon Platinum 8175M @ 2.50GHz
+3473: Intel Xeon Platinum 8176 @ 2.10GHz
+3671: Intel Xeon Platinum 8259CL @ 2.50GHz
+3472: Intel Xeon Platinum 8268 @ 2.90GHz
+3167: Intel Xeon Silver 4108 @ 1.80GHz
+3228: Intel Xeon Silver 4109T @ 2.00GHz
+3106: Intel Xeon Silver 4110 @ 2.10GHz
+3199: Intel Xeon Silver 4112 @ 2.60GHz
+3095: Intel Xeon Silver 4114 @ 2.20GHz
+3179: Intel Xeon Silver 4116 @ 2.10GHz
+3189: Intel Xeon Silver 4123 @ 3.00GHz
+3507: Intel Xeon Silver 4208 @ 2.10GHz
+3524: Intel Xeon Silver 4210 @ 2.20GHz
+3535: Intel Xeon Silver 4214 @ 2.20GHz
+3476: Intel Xeon Silver 4215 @ 2.50GHz
+3533: Intel Xeon Silver 4216 @ 2.10GHz
+3276: Intel Xeon W-2102 @ 2.90GHz
+3343: Intel Xeon W-2104 @ 3.20GHz
+3136: Intel Xeon W-2123 @ 3.60GHz
+3146: Intel Xeon W-2125 @ 4.00GHz
+3084: Intel Xeon W-2133 @ 3.60GHz
+3121: Intel Xeon W-2135 @ 3.70GHz
+3172: Intel Xeon W-2140B @ 3.20GHz
+3156: Intel Xeon W-2145 @ 3.70GHz
+3162: Intel Xeon W-2150B @ 3.00GHz
+3178: Intel Xeon W-2155 @ 3.30GHz
+3324: Intel Xeon W-2170B @ 2.50GHz
+3409: Intel Xeon W-2175 @ 2.50GHz
+3149: Intel Xeon W-2195 @ 2.30GHz
+3692: Intel Xeon W-2223 @ 3.60GHz
+3678: Intel Xeon W-2225 @ 4.10GHz
+3691: Intel Xeon W-2245 @ 3.90GHz
+3420: Intel Xeon W-3175X @ 3.10GHz
+3601: Intel Xeon W-3235 @ 3.30GHz
+3541: Intel Xeon W-3265 @ 2.70GHz
+3642: Intel Xeon W-3275M @ 2.50GHz
+1264: Intel Xeon W3503 @ 2.40GHz
+1265: Intel Xeon W3505 @ 2.53GHz
+1266: Intel Xeon W3520 @ 2.67GHz
+1267: Intel Xeon W3530 @ 2.80GHz
+1268: Intel Xeon W3540 @ 2.93GHz
+1269: Intel Xeon W3550 @ 3.07GHz
+1270: Intel Xeon W3565 @ 3.20GHz
+1271: Intel Xeon W3570 @ 3.20GHz
+1272: Intel Xeon W3580 @ 3.33GHz
+1273: Intel Xeon W3670 @ 3.20GHz
+1274: Intel Xeon W3680 @ 3.33GHz
+1275: Intel Xeon W3690 @ 3.47GHz
+1276: Intel Xeon W5580 @ 3.20GHz
+1277: Intel Xeon W5590 @ 3.33GHz
+1278: Intel Xeon X3210 @ 2.13GHz
+1279: Intel Xeon X3220 @ 2.40GHz
+1280: Intel Xeon X3230 @ 2.66GHz
+1281: Intel Xeon X3320 @ 2.50GHz
+2280: Intel Xeon X3323 @ 2.50GHz
+1282: Intel Xeon X3330 @ 2.66GHz
+1283: Intel Xeon X3350 @ 2.66GHz
+2211: Intel Xeon X3353 @ 2.66GHz
+1284: Intel Xeon X3360 @ 2.83GHz
+2068: Intel Xeon X3363 @ 2.83GHz
+1285: Intel Xeon X3370 @ 3.00GHz
+1286: Intel Xeon X3380 @ 3.16GHz
+1287: Intel Xeon X3430 @ 2.40GHz
+1288: Intel Xeon X3440 @ 2.53GHz
+1289: Intel Xeon X3450 @ 2.67GHz
+1290: Intel Xeon X3460 @ 2.80GHz
+1291: Intel Xeon X3470 @ 2.93GHz
+1708: Intel Xeon X3480 @ 3.07GHz
+1292: Intel Xeon X5260 @ 3.33GHz
+2358: Intel Xeon X5270 @ 3.50GHz
+1293: Intel Xeon X5272 @ 3.40GHz
+1294: Intel Xeon X5355 @ 2.66GHz
+1295: Intel Xeon X5365 @ 3.00GHz
+1296: Intel Xeon X5450 @ 3.00GHz
+1297: Intel Xeon X5460 @ 3.16GHz
+1709: Intel Xeon X5470 @ 3.33GHz
+1298: Intel Xeon X5472 @ 3.00GHz
+1299: Intel Xeon X5482 @ 3.20GHz
+1493: Intel Xeon X5492 @ 3.40GHz
+1300: Intel Xeon X5550 @ 2.67GHz
+1301: Intel Xeon X5560 @ 2.80GHz
+1302: Intel Xeon X5570 @ 2.93GHz
+1303: Intel Xeon X5647 @ 2.93GHz
+1304: Intel Xeon X5650 @ 2.67GHz
+1305: Intel Xeon X5660 @ 2.80GHz
+1306: Intel Xeon X5667 @ 3.07GHz
+1307: Intel Xeon X5670 @ 2.93GHz
+1308: Intel Xeon X5672 @ 3.20GHz
+1309: Intel Xeon X5675 @ 3.07GHz
+1310: Intel Xeon X5677 @ 3.47GHz
+1311: Intel Xeon X5679 @ 3.20GHz
+1312: Intel Xeon X5680 @ 3.33GHz
+1313: Intel Xeon X5687 @ 3.60GHz
+1314: Intel Xeon X5690 @ 3.47GHz
+1928: Intel Xeon X5698 @ 4.40GHz
+2105: Intel Xeon X6550 @ 2.00GHz
+1717: Mobile AMD Athlon 2500+
+1325: Mobile AMD Athlon 4 2400+
+1328: Mobile AMD Athlon 64 3200+
+1329: Mobile AMD Athlon 64 3400+
+1330: Mobile AMD Athlon 64 3700+
+1331: Mobile AMD Athlon 64 4000+
+2126: Mobile AMD Athlon MP-M 1800+
+1802: Mobile AMD Athlon MP-M 2400+
+1334: Mobile AMD Athlon XP-M 1600+
+1335: Mobile AMD Athlon XP-M 1800+
+1341: Mobile AMD Athlon XP-M 2000+
+1337: Mobile AMD Athlon XP-M 2200+
+1338: Mobile AMD Athlon XP-M 2400+
+1342: Mobile AMD Athlon XP-M 2500+
+1343: Mobile AMD Athlon XP-M 2600+
+1344: Mobile AMD Athlon XP-M 2800+
+1345: Mobile AMD Athlon XP-M 3000+
+1349: Mobile AMD Sempron 2100+
+1350: Mobile AMD Sempron 2600+
+1351: Mobile AMD Sempron 2800+
+1352: Mobile AMD Sempron 3000+
+1348: Mobile AMD Sempron 3100+
+1353: Mobile AMD Sempron 3200+
+1354: Mobile AMD Sempron 3300+
+1355: Mobile AMD Sempron 3400+
+1356: Mobile AMD Sempron 3500+
+1357: Mobile AMD Sempron 3600+
+1732: Mobile AMD Sempron 3800+
+1734: Mobile Intel Celeron 1.70GHz
+1360: Mobile Intel Celeron 1.80GHz
+1737: Mobile Intel Celeron 1333MHz
+1361: Mobile Intel Celeron 2.00GHz
+1362: Mobile Intel Celeron 2.20GHz
+1363: Mobile Intel Celeron 2.40GHz
+1365: Mobile Intel Pentium 4 - M 1.70GHz
+1366: Mobile Intel Pentium 4 - M 1.80GHz
+1368: Mobile Intel Pentium 4 - M 2.00GHz
+1369: Mobile Intel Pentium 4 - M 2.20GHz
+1370: Mobile Intel Pentium 4 - M 2.40GHz
+1374: Mobile Intel Pentium 4 2.66GHz
+1375: Mobile Intel Pentium 4 2.80GHz
+1376: Mobile Intel Pentium 4 3.06GHz
+1377: Mobile Intel Pentium 4 3.20GHz
+1378: Mobile Intel Pentium 4 3.33GHz
+1382: Mobile Intel Pentium III - M 1200MHz
+1742: Mobile Intel Pentium III - M 933MHz
+1743: Pentium Dual-Core E6000 @ 3.46GHz
+2315: Quad-Core AMD Opteron 1385
+2149: Quad-Core AMD Opteron 1389
+2322: Six-Core AMD Opteron 2419 EE
+1413: VIA C7-D 1800MHz
+1414: VIA C7-M 1200MHz
+1415: VIA C7-M 1600MHz
+1416: VIA C7-M 6300MHz
+3147: VIA Eden 1000MHz
+3013: VIA Eden 1200MHz
+3116: VIA Eden C1050@1.06GHz
+1835: VIA Eden X2 U4200 @ 1.0+ GHz
+2554: VIA Eden X4 C4250 @ 1.2+GHz
+1418: VIA Esther 1000MHz
+1420: VIA Esther 1500MHz
+1421: VIA Nano L2007@1600MHz
+1768: VIA Nano L2100@1800MHz
+2140: VIA Nano L2207@1600MHz
+1422: VIA Nano U2250 (1.6GHz Capable)
+1423: VIA Nano U2250@1300+MHz
+1490: VIA Nano U2500@1200MHz
+1491: VIA Nano U3500@1000MHz
+1981: VIA Nano X2 U4025 @ 1.2 GHz
+1425: VIA Nehemiah
+2618: VIA QuadCore C4650@2.0GHz
+1932: VIA QuadCore L4700 @ 1.2+ GHz
+1818: VIA QuadCore U4650 @ 1.0+ GHz
+3515: ZHAOXIN KaiXian KX-U6780A@2.7GHz
+3576: ZHAOXIN KaiXian ZX-C+ C4700@2.0GHz

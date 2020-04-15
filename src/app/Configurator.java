@@ -530,12 +530,72 @@ public class Configurator
     {
         //This method will go to the repository of data for the benchmark software that is used to measure performance for this program (PassMark software)
         //It will pull a list of all hardware and their associated ID's.
+        UserAgent userAgent = new UserAgent();
 
         //CPU
+        try
+        {
+            userAgent.sendGET("https://www.cpubenchmark.net/cpu_list.php");
+            String[] rawCPUData = userAgent.getSource().split("<tr"); //Currently the GPU's are organized within <TR> tags
+            String[] cpuNames = new String[rawCPUData.length];
+            int[] cpuIDs = new int[rawCPUData.length];
 
+            for (int i = 0; i < rawCPUData.length; i++)
+            {
+                String curCPUData = rawCPUData[i].split("</tr>")[0];
+
+                try
+                {
+                    cpuIDs[i] = Integer.parseInt(curCPUData.split(">")[0].replace("\"","").replace("id=","").replace("cpu","").trim());
+                    cpuNames[i] = curCPUData.split("id="+cpuIDs[i]+"\">")[1].replace("<td>","").replace("</td>","").split("</a>")[0].trim();
+                }              
+                catch (ArrayIndexOutOfBoundsException e)
+                {
+                }  
+                catch (NumberFormatException e)
+                {
+                    //This will only occur on parts of the HTML that aren't wanted anyway
+                }
+            }
+
+            String workingDir = System.getProperty("user.dir"); //Review note: On the author's personal machine, Java was not properly finding the CWD, so its explicitly set here
+            File cachedCPUData = new File(workingDir + "/cache/cpu_set.txt");
+            if (cachedCPUData.exists() == false)
+            {
+                try
+                {
+                    cachedCPUData.createNewFile();
+                }
+                catch (IOException g)
+                {
+                    g.printStackTrace();
+                }
+            }
+    
+            try
+            {
+                FileWriter writer = new FileWriter(cachedCPUData);
+                
+                for (int i = 0; i < cpuIDs.length; i++)
+                {
+                    if (cpuIDs[i] != 0 && cpuNames[i] != null)
+                    {
+                        writer.write(cpuIDs[i] + ": " + cpuNames[i] + "\n");
+                    }
+                }
+                
+                writer.close();
+            }
+            catch (IOException g)
+            {
+                g.printStackTrace();
+            }
+        }
+        catch (ResponseException e)
+        {
+        }
 
         //GPU
-        UserAgent userAgent = new UserAgent();
         try
         {
             userAgent.sendGET("https://www.videocardbenchmark.net/gpu_list.php");

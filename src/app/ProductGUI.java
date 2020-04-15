@@ -76,10 +76,13 @@ class ProductGUI extends VBox
                     }
                 }
             }
+            else
+            {
+                //something in the gui here
+            }
         }
         catch (FileNotFoundException e)
         {
-            //This means that the GPU data was not previously cached and was not able to be gathered newly. What should be done in this case?
         }
         catch (IOException e)
         {
