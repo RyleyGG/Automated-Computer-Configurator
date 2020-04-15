@@ -424,9 +424,101 @@ public class Configurator
 
     }
 
-    public void createCPU()
+    public boolean createCPU(String cpuName, String cpuID)
     {
+        UserAgent userAgent = new UserAgent();
 
+        try
+        {
+            userAgent.sendGET("https://www.cpubenchmark.net/cpu.php?id="+cpuID);
+
+            int cpuPerformance = Integer.parseInt(userAgent.getSource().split("font-weight: bold; color: #F48A18;\">")[1].split("</span>")[0]);
+            double cpuCost = Double.parseDouble(userAgent.getSource().split("Last Price Change:")[1].split(" USD")[0].replace("</strong>","").replace("&nbsp;","").replace("$","").replace("<a href=\"#history\">",""));
+            Product cpu = new Product("CPU",cpuName,Integer.parseInt(cpuID),cpuCost,cpuPerformance);
+            this.cpuList.add(cpu);
+            this.cacheCPU(cpu);
+            return true;
+        }
+        catch (ResponseException e)
+        {
+            String workingDir = System.getProperty("user.dir");
+            File cachedCPUData = new File(workingDir + "/cache/products/cpu/" + cpuID + ".txt");
+            try
+            {
+                FileReader fr = new FileReader(cachedCPUData);  
+                BufferedReader br = new BufferedReader(fr);
+                String curLine = "";
+                int cpuPerformance = -1;
+                double cpuCost = -1;
+
+                while ((curLine = br.readLine()) != null)
+                {
+                    if (curLine.contains("Cost"))
+                    {
+                        cpuCost = Double.parseDouble(curLine.split(": ")[1]);
+                    }
+                    else if (curLine.contains("Performance"))
+                    {
+                        cpuPerformance = Integer.parseInt(curLine.split(": ")[1]);
+                    }
+                }
+
+                if (cpuCost > 0 && cpuPerformance > 0)
+                {
+                    Product cpu = new Product("CPU",cpuName,Integer.parseInt(cpuID),cpuCost,cpuPerformance);
+                    this.cpuList.add(cpu);
+                    return true;
+                }
+                else
+                {
+                    return false;
+                }
+            }
+            catch (FileNotFoundException f)
+            { 
+            }
+            catch (IOException f)
+            {
+            }
+        }
+        catch(NumberFormatException e)
+        {
+        }
+
+        return false;
+    }
+
+    public void cacheCPU(Product cpu)
+    {
+        System.out.println("caching check");
+        String workingDir = System.getProperty("user.dir");
+        File cachedCPUData = new File(workingDir + "/cache/products/cpu/" + cpu.getID() + ".txt");
+
+        if (cachedCPUData.exists() == false)
+        {
+            try
+            {
+                cachedCPUData.createNewFile();
+            }
+            catch (IOException e)
+            {
+            }
+        }
+
+        try
+        {
+            FileWriter fw = new FileWriter(cachedCPUData);
+            BufferedWriter bw = new BufferedWriter(fw);
+
+            bw.write("Name: " + cpu.getName() + "\n");
+            bw.write("ID: " + cpu.getID() + "\n");
+            bw.write("Cost: " + cpu.getCost() + "\n");
+            bw.write("Performance: " + cpu.getPerformance() + "\n");
+            bw.close();
+        }
+        catch (IOException e)
+        {
+        }
     }
 
     public boolean createGPU(String gpuName, String gpuID)
