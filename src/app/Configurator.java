@@ -22,12 +22,19 @@ import java.util.Arrays;
 
 public class Configurator
 {
+    //Application-related
     private List<GenericApplication> appList = new ArrayList<GenericApplication>();
+    private StoreFrontService storefront = new StoreFrontService();
+
+    //User preferences
     private int userBudget;
     private int monitorCount;
     private String monitorRes;
     private List<String> selectedConfigs;
-    private StoreFrontService storefront = new StoreFrontService();
+
+    //Product lists
+    private List<Product> gpuList = new ArrayList<Product>();
+    private List<Product> cpuList = new ArrayList<Product>();
 
 
     public void gatherUserInput()
@@ -417,26 +424,106 @@ public class Configurator
 
     }
 
-    public void createProduct()
+    public void createCPU()
     {
 
     }
 
-    public void lookupGPU(String gpuName)
+    public boolean createGPU(String gpuName, String gpuID)
     {
         UserAgent userAgent = new UserAgent();
+
         try
         {
-            userAgent.sendGET("http://www.videocardbenchmark.net/video_lookup.php");
+            userAgent.sendGET("https://www.videocardbenchmark.net/gpu.php?id="+gpuID);
+
+            int gpuPerformance = Integer.parseInt(userAgent.getSource().split("font-weight: bold; color: #F48A18;\">")[1].split("</span>")[0]);
+            double gpuCost = Double.parseDouble(userAgent.getSource().split("Last Price Change:")[1].split(" USD")[0].replace("</strong>","").replace("&nbsp;","").replace("$",""));
+
+            Product gpu = new Product("GPU",gpuName,Integer.parseInt(gpuID), gpuCost,gpuPerformance);
+            this.gpuList.add(gpu);
+            this.cacheGPU(gpu);
+            return true;
         }
-        catch(ResponseException e)
+        catch (ResponseException e)
+        {
+            String workingDir = System.getProperty("user.dir");
+            File cachedGPUData = new File(workingDir + "/cache/products/gpu/" + gpuID + ".txt");
+            try
+            {
+                FileReader fr = new FileReader(cachedGPUData);  
+                BufferedReader br = new BufferedReader(fr);
+                String curLine = "";
+                int gpuPerformance = -1;
+                double gpuCost = -1;
+
+                while ((curLine = br.readLine()) != null)
+                {
+                    if (curLine.contains("Cost"))
+                    {
+                        gpuCost = Double.parseDouble(curLine.split(": ")[1]);
+                    }
+                    else if (curLine.contains("Performance"))
+                    {
+                        gpuPerformance = Integer.parseInt(curLine.split(": ")[1]);
+                    }
+                }
+
+                if (gpuCost > 0 && gpuPerformance > 0)
+                {
+                    Product gpu = new Product("GPU",gpuName,Integer.parseInt(gpuID),gpuCost,gpuPerformance);
+                    this.gpuList.add(gpu);
+                    return true;
+                }
+                else
+                {
+                    return false;
+                }
+            }
+            catch (FileNotFoundException f)
+            { 
+            }
+            catch (IOException f)
+            {
+            }
+        }
+        catch(NumberFormatException e)
         {
         }
+
+        return false;
     }
 
-    public void lookupCPU(String cpuName)
+    public void cacheGPU(Product gpu)
     {
+        String workingDir = System.getProperty("user.dir");
+        File cachedGPUData = new File(workingDir + "/cache/products/gpu/" + gpu.getID() + ".txt");
 
+        if (cachedGPUData.exists() == false)
+        {
+            try
+            {
+                cachedGPUData.createNewFile();
+            }
+            catch (IOException e)
+            {
+            }
+        }
+
+        try
+        {
+            FileWriter fw = new FileWriter(cachedGPUData);
+            BufferedWriter bw = new BufferedWriter(fw);
+
+            bw.write("Name: " + gpu.getName() + "\n");
+            bw.write("ID: " + gpu.getID() + "\n");
+            bw.write("Cost: " + gpu.getCost() + "\n");
+            bw.write("Performance: " + gpu.getPerformance() + "\n");
+            bw.close();
+        }
+        catch (IOException e)
+        {
+        }
     }
 
     public void cacheHardwareData()
