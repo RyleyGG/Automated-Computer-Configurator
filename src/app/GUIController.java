@@ -1,7 +1,7 @@
 //**********************************************************
 // Class: GUIController
 // Author: Ryley G.
-// Date Modified: March 27, 2020
+// Date Modified: April 13, 2020
 //
 // Purpose: Manage the application input window in the GUI
 //
@@ -97,7 +97,8 @@ public class GUIController extends Application
                                     configurator.setMonitorCount(monitorCount);
                                     configurator.setMonitorRes(monitorRes);
                                     configurator.setSelectedConfigs(selectedConfigs);
-                                    System.out.println("Proceeding onto product GUI");
+                                    ProductGUI productGUI = new ProductGUI(scene, configurator);
+                                    rootPane.getChildren().set(0,productGUI);
                                 }
                             }
                             else

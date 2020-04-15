@@ -10,12 +10,14 @@
 import pl.l7ssha.javasteam.*;
 import java.io.*;
 import com.jaunt.JauntException;
+import com.jaunt.ResponseException;
 import com.jaunt.UserAgent; //Web-scraping
 
 import java.util.NoSuchElementException;
 import java.util.Scanner;
 import java.util.List;
 import java.util.ArrayList;
+import java.util.Arrays;
 
 
 public class Configurator
@@ -82,7 +84,11 @@ public class Configurator
     {                       
         SteamApplication newSteamApp = new SteamApplication(storefront,curApp[0],curApp[1]);
         newSteamApp.gatherRequirements();
-        this.appList.add(newSteamApp);
+
+        if (newSteamApp.reqList != null)
+        {
+            this.appList.add(newSteamApp);
+        }
 
         return newSteamApp;
     }
@@ -249,7 +255,7 @@ public class Configurator
         }
     }
 
-    public SteamApplication loadCachedSteamApplication(String appName, String appID)
+    public boolean loadCachedSteamApplication(String appName, String appID)
     {
         String workingDir = System.getProperty("user.dir");
         File cachedApplicationList = new File(workingDir + "/cache/applications/" + appID + ".txt");
@@ -258,10 +264,8 @@ public class Configurator
 
         if (cachedApplicationList.exists() == false)
         {
-            return null;
+            return false;
         }
-
-        this.appList.add(newSteamApp);
 
         try
         {
@@ -278,11 +282,12 @@ public class Configurator
         }
         catch (IOException g)
         {
-            g.printStackTrace();
+            return false;
         }
-        
+
+        this.appList.add(newSteamApp);
         newSteamApp.parseCachedRequirements(appRequirementList.toArray(new String[0]));
-        return newSteamApp;
+        return true;
     }
 
 
@@ -415,6 +420,96 @@ public class Configurator
     public void createProduct()
     {
 
+    }
+
+    public void lookupGPU(String gpuName)
+    {
+        UserAgent userAgent = new UserAgent();
+        try
+        {
+            userAgent.sendGET("http://www.videocardbenchmark.net/video_lookup.php");
+        }
+        catch(ResponseException e)
+        {
+        }
+    }
+
+    public void lookupCPU(String cpuName)
+    {
+
+    }
+
+    public void cacheHardwareData()
+    {
+        //This method will go to the repository of data for the benchmark software that is used to measure performance for this program (PassMark software)
+        //It will pull a list of all hardware and their associated ID's.
+
+        //CPU
+
+
+        //GPU
+        UserAgent userAgent = new UserAgent();
+        try
+        {
+            userAgent.sendGET("https://www.videocardbenchmark.net/gpu_list.php");
+            String[] rawGPUData = userAgent.getSource().split("<TR"); //Currently the GPU's are organized within <TR> tags
+            String[] gpuNames = new String[rawGPUData.length];
+            int[] gpuIDs = new int[rawGPUData.length];
+
+            for (int i = 0; i < rawGPUData.length; i++)
+            {
+                String curGPUData = rawGPUData[i].split("</TR>")[0];
+
+                try
+                {
+                    gpuIDs[i] = Integer.parseInt(curGPUData.split(">")[0].replace("\"","").replace("id=","").replace("gpu","").trim());
+                    gpuNames[i] = curGPUData.split("id="+gpuIDs[i]+"\">")[1].replace("<TD>","").replace("</TD>","").split("</A>")[0].trim();
+                }              
+                catch (ArrayIndexOutOfBoundsException e)
+                {
+                }  
+                catch (NumberFormatException e)
+                {
+                    //This will only occur on parts of the HTML that aren't wanted anyway
+                }
+            }
+
+            String workingDir = System.getProperty("user.dir"); //Review note: On the author's personal machine, Java was not properly finding the CWD, so its explicitly set here
+            File cachedGPUData = new File(workingDir + "/cache/gpu_set.txt");
+            if (cachedGPUData.exists() == false)
+            {
+                try
+                {
+                    cachedGPUData.createNewFile();
+                }
+                catch (IOException g)
+                {
+                    g.printStackTrace();
+                }
+            }
+    
+            try
+            {
+                FileWriter writer = new FileWriter(cachedGPUData);
+                
+                for (int i = 0; i < gpuIDs.length; i++)
+                {
+                    if (gpuIDs[i] != 0)
+                    {
+                        writer.write(gpuIDs[i] + ": " + gpuNames[i] + "\n");
+                    }
+                }
+                
+                writer.close();
+            }
+            catch (IOException g)
+            {
+                g.printStackTrace();
+            }
+        }
+        catch (ResponseException e)
+        {
+        }
     }
 
     public void createComputerBuild()

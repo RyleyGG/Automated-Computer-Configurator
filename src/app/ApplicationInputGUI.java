@@ -305,7 +305,7 @@ public class ApplicationInputGUI extends VBox
                                 Text currentStatusText = new Text("Application data saved successfully.");
                                 this.currentStatusContainer.getChildren().set(0,currentStatusText);
                             }
-                            else if (configurator.loadCachedSteamApplication(curatedApplicableApps[tempIndex][0], curatedApplicableApps[tempIndex][1]).reqList != null)
+                            else if (configurator.loadCachedSteamApplication(curatedApplicableApps[tempIndex][0], curatedApplicableApps[tempIndex][1]) == true)
                             {
                                 this.applicationCount++;
                                 Text applicationCountText = new Text("Total Applications Saved: " + this.applicationCount);

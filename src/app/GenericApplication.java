@@ -95,4 +95,9 @@ public class GenericApplication
     {
         return this.name;
     }
+
+    public String[][] getReqList()
+    {
+        return this.reqList;
+    }
 }
