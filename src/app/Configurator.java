@@ -490,7 +490,6 @@ public class Configurator
 
     public void cacheCPU(Product cpu)
     {
-        System.out.println("caching check");
         String workingDir = System.getProperty("user.dir");
         File cachedCPUData = new File(workingDir + "/cache/products/cpu/" + cpu.getID() + ".txt");
 
@@ -652,7 +651,7 @@ public class Configurator
 
             String workingDir = System.getProperty("user.dir"); //Review note: On the author's personal machine, Java was not properly finding the CWD, so its explicitly set here
             File cachedCPUData = new File(workingDir + "/cache/cpu_set.txt");
-            if (cachedCPUData.exists() == false)
+            if (cachedCPUData.exists() == false && cpuNames.length > 0)
             {
                 try
                 {
@@ -680,7 +679,7 @@ public class Configurator
             }
             catch (IOException g)
             {
-                g.printStackTrace();
+                //g.printStackTrace();
             }
         }
         catch (ResponseException e)
@@ -715,7 +714,7 @@ public class Configurator
 
             String workingDir = System.getProperty("user.dir"); //Review note: On the author's personal machine, Java was not properly finding the CWD, so its explicitly set here
             File cachedGPUData = new File(workingDir + "/cache/gpu_set.txt");
-            if (cachedGPUData.exists() == false)
+            if (cachedGPUData.exists() == false && gpuNames.length > 0)
             {
                 try
                 {
