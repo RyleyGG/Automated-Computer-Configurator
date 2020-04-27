@@ -56,4 +56,19 @@ public class Product
     {
         return this.performance;
     }
+
+    public double getCostPerformanceRatio()
+    {
+        return this.costPerformanceRatio;
+    }
+
+    public double getGriffithCoefficient()
+    {
+        return this.griffithCoefficient;
+    }
+    
+    public void setGriffithCoefficient(double griffithCoefficient)
+    {
+        this.griffithCoefficient = griffithCoefficient;
+    }
 }

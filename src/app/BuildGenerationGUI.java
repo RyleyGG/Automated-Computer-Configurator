@@ -160,7 +160,7 @@ class BuildGenerationGUI extends VBox
                     }
                     catch (IOException e)
                     {
-                        e.printStackTrace();
+                        //e.printStackTrace();
                     }
 
                     //GPU
@@ -243,12 +243,14 @@ class BuildGenerationGUI extends VBox
                         e.printStackTrace();
                     }
 
-                    /*
-                    //Once the relevant CPU and GPU data has been gathered, assign Griffith Coefficients to each product
-                    for (int i = 0; i < configurator.getCPUList().size(); i++)
-                    {
+                    this.updateGUI(mainStepText, smallStepText, "Creating Computer Builds", "Generating Griffith Coefficients...");
+                    configurator.generateGriffithCoefficients();
 
-                    }
+
+                    /*
+                    The performance conscious checks should be like this:
+
+                    if the set of products is above budget, and the ratio in price (newBuild/oldBuild) is less than the ratio in performance (newBuild/oldBuild)
                     */
 
                     this.updateGUI(mainStepText, smallStepText, "Done!", "Press the button below to view your computer build(s)!");

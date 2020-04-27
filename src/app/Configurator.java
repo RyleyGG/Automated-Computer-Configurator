@@ -752,6 +752,85 @@ public class Configurator
         return new ComputerBuild[0];
     }
 
+    public void generateGriffithCoefficients()
+    {
+        //CPU's
+        for (int x = 0; x < this.cpuList.size(); x++)
+        {
+            int cpuPerformance = this.cpuList.get(x).getPerformance();
+            int adequatePerformanceCount = 0; //Count of how many user-submitted applications the CPU could manage performance-wise
+
+            for (int y = 0; y < this.appList.size(); y++)
+            {
+                if (cpuPerformance >= this.appList.get(y).getCPUPerformance())
+                {
+                    adequatePerformanceCount++;
+                }
+            }
+
+            this.cpuList.get(x).setGriffithCoefficient((adequatePerformanceCount/this.appList.size()) * this.cpuList.get(x).getCostPerformanceRatio());
+        }
+
+        //GPU's
+        for (int x = 0; x < this.gpuList.size(); x++)
+        {
+            int gpuPerformance = this.gpuList.get(x).getPerformance();
+            int adequatePerformanceCount = 0; //Count of how many user-submitted applications the GPU could manage performance-wise
+
+            for (int y = 0; y < this.appList.size(); y++)
+            {
+                if (gpuPerformance >= this.appList.get(y).getGPUPerformance())
+                {
+                    adequatePerformanceCount++;
+                }
+            }
+
+            this.gpuList.get(x).setGriffithCoefficient((adequatePerformanceCount/this.appList.size()) * this.gpuList.get(x).getCostPerformanceRatio());
+        }
+
+
+        //Ordering the lists of CPU's and GPU's from highest to lowest Griffith Coefficients. The following uses a reverse bubble sorting algorithm.
+
+        int notSortedCheck = 0;
+        while (notSortedCheck != this.cpuList.size())
+        {
+            notSortedCheck = 0;
+            for (int i = 0; i < this.cpuList.size(); i++)
+            {
+
+                if ((i + 1 < this.cpuList.size()) && (this.cpuList.get(i+1).getGriffithCoefficient() > this.cpuList.get(i).getGriffithCoefficient()))
+                {
+                    Product temp = this.cpuList.get(i);
+                    this.cpuList.set(i,this.cpuList.get(i+1));
+                    this.cpuList.set(i + 1, temp);
+                }
+                else
+                {
+                    notSortedCheck++;
+                }
+            }
+        }
+
+        notSortedCheck = 0;
+        while (notSortedCheck != this.gpuList.size())
+        {
+            notSortedCheck = 0;
+            for (int i = 0; i < this.gpuList.size(); i++)
+            {
+
+                if ((i + 1 < this.gpuList.size()) && (this.gpuList.get(i+1).getGriffithCoefficient() > this.gpuList.get(i).getGriffithCoefficient()))
+                {
+                    Product temp = this.gpuList.get(i);
+                    this.gpuList.set(i,this.gpuList.get(i+1));
+                    this.gpuList.set(i + 1, temp);
+                }
+                else
+                {
+                    notSortedCheck++;
+                }
+            }
+        }
+    }
 
     //Setters & getters
 
