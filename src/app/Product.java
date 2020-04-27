@@ -30,6 +30,13 @@ public class Product
         this.costPerformanceRatio = performance/cost;
     }
 
+    public Product(String category, String name, double cost)
+    {
+        this.category = category;
+        this.name = name;
+        this.cost = cost;
+    }
+
     public void calcGriffithCoefficient()
     {
 
@@ -70,5 +77,10 @@ public class Product
     public void setGriffithCoefficient(double griffithCoefficient)
     {
         this.griffithCoefficient = griffithCoefficient;
+    }
+
+    public void setCost(double cost)
+    {
+        this.cost = cost;
     }
 }

@@ -30,9 +30,8 @@ import java.util.ArrayList;
 class UserPreferencesGUI extends VBox
 {
     private int userBudget;
-    private int monitorCount;
-    private String monitorResolution;
     private List<String> selectedConfigs = new ArrayList<String>();
+    private List<String> selectedArchetypes = new ArrayList<String>();
 
     public UserPreferencesGUI(Scene scene, Configurator configurator)
     {
@@ -43,15 +42,6 @@ class UserPreferencesGUI extends VBox
 
         Text budgetText = new Text("Overall budget (include no peripherals and round to the nearest dollar) [Click for more information]:");
         TextField budgetField = new TextField();
-
-        Text preferredMonitorResText = new Text("Enter your expected monitor count & preferred monitor resolution (Click for more information):");
-        TextField preferredMonitorCountField = new TextField("Preferred monitor count");
-        String[] resolutionList =  new String[3];
-        resolutionList[0] = "1920 x 1080 (1080p)";
-        resolutionList[1] = "2560 x 1440 (1440p)";
-        resolutionList[2] = "4096 x 2160 (4K)";
-        ComboBox<String> preferredMonitorResField = new ComboBox<String>(FXCollections.observableArrayList(resolutionList));
-        HBox preferredMonitorResForm = new HBox();
 
         Text configurationVariationText = new Text("Select the configuration(s) you are interested in (Right click each item for more information):");
         VBox configurationVariationOptions = new VBox();
@@ -64,12 +54,19 @@ class UserPreferencesGUI extends VBox
         moreInfoAlert.setHeaderText("Detailed configuration information");
         moreInfoAlert.getDialogPane().setMinHeight(Region.USE_PREF_SIZE); //Ensures alert window always fits the full text
 
+        //This is used to help narrow down the hardware choices later on
+        Text userArchetypesText = new Text("Select which of the following you feel represent you");
+        VBox archetypeOptions = new VBox();
+        CheckBox hardcoreGamerCB = new CheckBox("Hardcore Gamer");
+        CheckBox contentCreatorCB = new CheckBox("Content Creator");
+        CheckBox storageCB = new CheckBox("Need lots of storage");
+
         //GUI node setup
         overallInformationText.wrappingWidthProperty().bind(scene.widthProperty());
+        userArchetypesText.wrappingWidthProperty().bind(scene.widthProperty());
         budgetField.maxWidthProperty().bind(scene.widthProperty().multiply(0.15));
-        preferredMonitorResForm.prefWidthProperty().bind(scene.widthProperty());
-        preferredMonitorResForm.spacingProperty().bind(scene.widthProperty().multiply(0.007));
         configurationVariationOptions.spacingProperty().bind(scene.heightProperty().multiply(0.007));
+        archetypeOptions.spacingProperty().bind(scene.heightProperty().multiply(0.007));
         submitButton.translateYProperty().bind(scene.heightProperty().subtract(submitButton.layoutYProperty()).subtract(submitButton.heightProperty()).multiply(0.95));
         this.spacingProperty().bind(scene.widthProperty().multiply(0.015));
         this.translateXProperty().bind(scene.widthProperty().multiply(0.01));
@@ -86,16 +83,6 @@ class UserPreferencesGUI extends VBox
             budgetField.requestFocus();
             budgetField.selectEnd();
         });
-        preferredMonitorCountField.setTextFormatter(new TextFormatter<>(new IntegerStringConverter()));
-        preferredMonitorCountField.setOnKeyReleased(e ->
-        {
-            //The text formatter ensures that only integers are typed into the budget field.
-            //However, it only applies when the field itself loses focus. So, another node was arbitrarily chosen to receive focus before the budget field gets it back.
-            //The general speed of this operation coupled with the selectEnd() method means that the user will never tell that this switch of GUI focus ever occurs.
-            optimalConfigCB.requestFocus();
-            preferredMonitorCountField.requestFocus();
-            preferredMonitorCountField.selectEnd();
-        });
 
         //Cursor edits
         budgetText.setOnMouseEntered(e ->
@@ -103,14 +90,6 @@ class UserPreferencesGUI extends VBox
             this.setCursor(Cursor.HAND);
         });
         budgetText.setOnMouseExited(e ->
-        {
-            this.setCursor(Cursor.DEFAULT);
-        });
-        preferredMonitorResText.setOnMouseEntered(e ->
-        {
-            this.setCursor(Cursor.HAND);
-        });
-        preferredMonitorResText.setOnMouseExited(e ->
         {
             this.setCursor(Cursor.DEFAULT);
         });
@@ -145,11 +124,6 @@ class UserPreferencesGUI extends VBox
             moreInfoAlert.getDialogPane().setContentText("The number you put in this field should represent the amount you wish to pay the computer configuration itself while excluding the price of any peripherals. Typical peripherals include pointer mice, keyboards, monitors, and headphones.");
             moreInfoAlert.showAndWait();    
         });
-        preferredMonitorResText.setOnMouseClicked(e ->
-        {
-            moreInfoAlert.getDialogPane().setContentText("The program will not include a monitor in the final build, as each monitor has pros and cons which cannot be objectively measured. Instead, the preferred resolution you input & the monitor count will help the program know how much power is going to be needed for your computer to run properly. It is better to overestimate than underestimate.");
-            moreInfoAlert.showAndWait();
-        });
         optimalConfigCB.setOnContextMenuRequested(e ->
         {
             moreInfoAlert.getDialogPane().setContentText("The optimal configuration represents the best balance between price and performance based on your input, including your budget and application preferences.");
@@ -170,7 +144,8 @@ class UserPreferencesGUI extends VBox
         submitButton.setOnMouseEntered(e ->
         {
             this.selectedConfigs.clear();
-            
+            this.selectedArchetypes.clear();
+
             try
             {
                 this.userBudget = Integer.parseInt(budgetField.getText());
@@ -180,16 +155,6 @@ class UserPreferencesGUI extends VBox
                 this.userBudget = -1;
             }
 
-            try
-            {
-                this.monitorCount = Integer.parseInt(preferredMonitorCountField.getText());
-            }
-            catch (NumberFormatException f)
-            {
-                this.monitorCount = -1;
-            }
-
-            this.monitorResolution = preferredMonitorResField.getValue();
             if (optimalConfigCB.isSelected() && this.selectedConfigs.contains(optimalConfigCB.getText()) == false)
             {
                 this.selectedConfigs.add(optimalConfigCB.getText());
@@ -202,11 +167,24 @@ class UserPreferencesGUI extends VBox
             {
                 this.selectedConfigs.add(performanceOrientedConfigCB.getText());
             }
+        
+            if (hardcoreGamerCB.isSelected())
+            {
+                this.selectedArchetypes.add(hardcoreGamerCB.getText());
+            }
+            if (contentCreatorCB.isSelected())
+            {
+                this.selectedArchetypes.add(contentCreatorCB.getText());
+            }
+            if (storageCB.isSelected())
+            {
+                this.selectedArchetypes.add(storageCB.getText());
+            }
         });
 
-        preferredMonitorResForm.getChildren().addAll(preferredMonitorCountField,preferredMonitorResField);
         configurationVariationOptions.getChildren().addAll(configurationVariationText,optimalConfigCB,budgetOrientedConfigCB,performanceOrientedConfigCB);
-        this.getChildren().addAll(overallInformationText, budgetText, budgetField, preferredMonitorResText, preferredMonitorResForm, configurationVariationOptions, submitButton);
+        archetypeOptions.getChildren().addAll(userArchetypesText, hardcoreGamerCB, contentCreatorCB, storageCB);
+        this.getChildren().addAll(overallInformationText, budgetText, budgetField, configurationVariationOptions, archetypeOptions, submitButton);
     }
 
     //Setters & getters
@@ -215,19 +193,13 @@ class UserPreferencesGUI extends VBox
     {
         return this.userBudget;
     }
-
-    public String getMonitorRes()
-    {
-        return this.monitorResolution;
-    }
-
-    public int getMonitorCount()
-    {
-        return this.monitorCount;
-    }
-
     public List<String> getSelectedConfigs()
     {
         return this.selectedConfigs;
+    }
+
+    public List<String> getSelectedArchetypes()
+    {
+        return this.selectedArchetypes;
     }
 }

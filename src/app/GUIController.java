@@ -68,30 +68,35 @@ public class GUIController extends Application
                         userPreferencesGUI.lookup("#userPreferencesSubmitButton").setOnMouseReleased(g ->
                         {
                             int userBudget = userPreferencesGUI.getBudget();
-                            int monitorCount = userPreferencesGUI.getMonitorCount();
-                            String monitorRes = userPreferencesGUI.getMonitorRes();
                             List<String> selectedConfigs = userPreferencesGUI.getSelectedConfigs();
                             String[] selectedConfigsArr = selectedConfigs.toArray(new String[0]);
+                            List<String> selectedArchetypes = userPreferencesGUI.getSelectedArchetypes();
+                            String[] selectedArchetypesArr = selectedArchetypes.toArray(new String[0]);
                             String configString = "";
+                            String archetypeString = "";
 
-                            if (selectedConfigsArr.length > 0 && monitorRes != null && monitorCount > -1 && userBudget > -1)
+                            if (selectedConfigsArr.length > 0 && selectedArchetypesArr.length > 0 && userBudget > -1)
                             {
                                 for (int i = 0; i < selectedConfigsArr.length; i++)
                                 {
                                     configString += selectedConfigsArr[i]+"\n";
                                 }
 
+                                for (int i = 0; i < selectedArchetypesArr.length; i++)
+                                {
+                                    archetypeString += selectedArchetypesArr[i]+"\n";
+                                }
+
                                 confirmationAlert.setTitle("Preference Confirmation");
                                 confirmationAlert.setHeaderText("Please confirm that the preferences below are correct");
-                                confirmationAlert.setContentText("Budget: " + userBudget + "\nMonitor Count: " + monitorCount + "\nPreferred Monitor Resolution: " + monitorRes + "\n\nSelected Configuration(s):\n" + configString);
+                                confirmationAlert.setContentText("Budget: " + userBudget + "\n\nSelected Configurations:\n" + configString + "\nSelected Archetypes:\n" + archetypeString);
                                 confirmationAlert.showAndWait();
 
                                 if (confirmationAlert.getResult() == ButtonType.OK)
                                 {
                                     configurator.setUserBudget(userBudget);
-                                    configurator.setMonitorCount(monitorCount);
-                                    configurator.setMonitorRes(monitorRes);
                                     configurator.setSelectedConfigs(selectedConfigs);
+                                    configurator.setSelectedArchetypes(selectedArchetypes);
                                     BuildGenerationGUI buildGenerationGUI = new BuildGenerationGUI(scene, configurator);
                                     rootPane.getChildren().set(0,buildGenerationGUI);
 

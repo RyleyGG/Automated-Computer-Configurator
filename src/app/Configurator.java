@@ -10,11 +10,14 @@
 import pl.l7ssha.javasteam.*;
 import java.io.*;
 import com.jaunt.JauntException;
+import com.jaunt.*;
 import com.jaunt.ResponseException;
 import com.jaunt.UserAgent; //Web-scraping
+import com.jaunt.component.*;
 
 import java.util.NoSuchElementException;
 import java.util.Scanner;
+import java.util.Arrays;
 import java.util.List;
 import java.util.ArrayList;
 
@@ -27,9 +30,8 @@ public class Configurator
 
     //User preferences
     private int userBudget;
-    private int monitorCount;
-    private String monitorRes;
     private List<String> selectedConfigs;
+    private List<String> selectedArchetypes;
 
     //Product lists
     private List<Product> gpuList = new ArrayList<Product>();
@@ -60,21 +62,21 @@ public class Configurator
                 }
                 catch(JauntException e)
                 {
-                    e.printStackTrace();
+                    //e.printStackTrace();
                 }
                 catch(FileNotFoundException e)
                 {
-                    e.printStackTrace();
+                    //e.printStackTrace();
                 }
                 catch(IOException e)
                 {
-                    e.printStackTrace();
+                    //e.printStackTrace();
                 }
             }
         }
         catch (IOException e)
         {
-            e.printStackTrace();
+            //e.printStackTrace();
         }
 
         return basicSteamAppData;
@@ -173,7 +175,7 @@ public class Configurator
             }
             catch (IOException g)
             {
-                g.printStackTrace();
+                //g.printStackTrace();
             }
         }
 
@@ -196,7 +198,7 @@ public class Configurator
         }
         catch (IOException g)
         {
-            g.printStackTrace();
+            //g.printStackTrace();
         }
 
         return "";
@@ -219,7 +221,7 @@ public class Configurator
             }
             catch (IOException g)
             {
-                g.printStackTrace();
+                //g.printStackTrace();
             }
         }
 
@@ -251,7 +253,7 @@ public class Configurator
         }
         catch (IOException g)
         {
-            g.printStackTrace();
+            //g.printStackTrace();
         }
     }
 
@@ -344,7 +346,7 @@ public class Configurator
         }
         catch (IOException g)
         {
-            g.printStackTrace();
+            //g.printStackTrace();
         }
         
         webApp.parseCachedRequirements(appRequirementList.toArray(new String[0]));
@@ -392,7 +394,7 @@ public class Configurator
         }
         catch (IOException g)
         {
-            g.printStackTrace();
+            //g.printStackTrace();
         }
         
         manualApp.parseCachedRequirements(appRequirementList.toArray(new String[0]));
@@ -503,6 +505,25 @@ public class Configurator
         catch (IOException e)
         {
         }
+    }
+
+    public String getCPUSocket(int id)
+    {
+        UserAgent userAgent = new UserAgent();
+        
+        try
+        {
+            userAgent.sendGET("https://www.cpubenchmark.net/cpu.php?id="+id);
+            String cpuSocketVal = userAgent.getSource();
+            cpuSocketVal = cpuSocketVal.split("Socket:")[1].split("</p>")[0].replace("</strong>","").replace("  "," ").trim();
+            
+            return cpuSocketVal;
+        }
+        catch (ResponseException e)
+        {
+        }
+
+        return null;
     }
 
     public boolean createGPU(String gpuName, String gpuID)
@@ -646,7 +667,7 @@ public class Configurator
                 }
                 catch (IOException g)
                 {
-                    g.printStackTrace();
+                    //g.printStackTrace();
                 }
             }
     
@@ -709,7 +730,7 @@ public class Configurator
                 }
                 catch (IOException g)
                 {
-                    g.printStackTrace();
+                    //g.printStackTrace();
                 }
             }
     
@@ -729,7 +750,7 @@ public class Configurator
             }
             catch (IOException g)
             {
-                g.printStackTrace();
+                //g.printStackTrace();
             }
         }
         catch (ResponseException e)
@@ -737,9 +758,98 @@ public class Configurator
         }
     }
 
+    public Product createMotherboard(String cpuSocket)
+    {
+        UserAgent userAgent = new UserAgent();
+        String socketID = "";
+        //Firstly, finding the CPU socket constraint to ensure compatibility
+        try
+        {
+            userAgent.sendGET("https://motherboarddb.com/motherboards/?search=&market=c");
+            String dirtySocketIDList = userAgent.getSource().split("<select name=\"socket\" class=\"select2-widget form-control\" id=\"id_socket\" multiple=\"multiple\">")[1].split("</select>")[0];
+            for (int i = 0; i < dirtySocketIDList.split("<option").length; i++)
+            {
+                if (dirtySocketIDList.split("<option")[i].contains(cpuSocket) || dirtySocketIDList.split("<option")[i].contains(cpuSocket.replace("LGA", "LGA ")))
+                {
+                    socketID = dirtySocketIDList.split("<option")[i].split("value=\"")[1].split("\"")[0];
+                    break;
+                }
+            }
+        }
+        catch (ResponseException e)
+        {
+        }
+
+        //Then, finding a motherboard (filtered by popularity, first item chosen)
+        try
+        {
+            userAgent.visit("https://motherboarddb.com/advanced-search/");
+            Document doc = userAgent.doc;
+            Form form = doc.getForm(2);
+
+            try
+            {
+                doc.chooseMenuItem("Sockets:", cpuSocket.replace("LGA","LGA ").replace("  "," "));
+                form.submit();           
+                String motherboardPage = userAgent.getSource().split("<a href=\"")[1].split("\"")[0];
+                userAgent.visit("https://motherboarddb.com" + motherboardPage);
+               
+                Product motherboard = new Product("Motherboard", userAgent.doc.findFirst("<title>").getChildText().split(" - Motherboard Specifications")[0], Integer.parseInt(motherboardPage.split("motherboards/")[1].split("/")[0]), 0, 0);
+                return motherboard;
+            }
+            catch (MultipleFound e)
+            {
+            }
+            catch (NotFound e)
+            {
+            }
+        }
+        catch (ResponseException e)
+        {
+        }
+
+        return null;
+    }
+
+    public String[] parseMotherboardSpecs(int ID)
+    {
+        UserAgent userAgent = new UserAgent();
+        String[] returnArr = new String[2];
+        try
+        {
+            userAgent.visit("https://motherboarddb.com/motherboards/"+ID);
+            if (userAgent.getSource().contains("DDR4"))
+            {
+                returnArr[0] = "DDR4";
+            }
+            else
+            {
+                returnArr[1] = "DDR3";
+            }
+
+            if (userAgent.getSource().contains("M.2"))
+            {
+                returnArr[1] = "M.2";
+            }
+            else
+            {
+                returnArr[1] = "SATA";
+            }
+
+        }
+        catch (ResponseException e)
+        {
+        }
+
+        return returnArr;
+    }
+
     public void createComputerBuild()
     {
-
+        for (int i = 0; i < this.selectedConfigs.size(); i++)
+        {
+            ComputerBuild computerBuild = new ComputerBuild(this, this.selectedConfigs.get(i), this.cpuList.toArray(new Product[0]), this.gpuList.toArray(new Product[0]), this.selectedArchetypes.toArray(new String[0]));
+        }
     }
 
     public void saveBuilds(String userKey)
@@ -854,19 +964,14 @@ public class Configurator
         this.userBudget = budget;
     }
 
-    public void setMonitorCount(int monitorCount)
-    {
-        this.monitorCount = monitorCount;
-    }
-
-    public void setMonitorRes(String monitorRes)
-    {
-        this.monitorRes = monitorRes;
-    }
-
     public void setSelectedConfigs(List<String> selectedConfigs)
     {
         this.selectedConfigs = selectedConfigs;
+    }
+
+    public void setSelectedArchetypes(List<String> selectedArchetypes)
+    {
+        this.selectedArchetypes = selectedArchetypes;
     }
 
     public List<Product> getGPUList()
@@ -877,5 +982,10 @@ public class Configurator
     public List<Product> getCPUList()
     {
         return this.cpuList;
+    }
+
+    public int getUserBudget()
+    {
+        return this.userBudget;
     }
 }

@@ -240,11 +240,13 @@ class BuildGenerationGUI extends VBox
                     }
                     catch (IOException e)
                     {
-                        e.printStackTrace();
+                        //e.printStackTrace();
                     }
 
                     this.updateGUI(mainStepText, smallStepText, "Creating Computer Builds", "Generating Griffith Coefficients...");
                     configurator.generateGriffithCoefficients();
+                    this.updateGUI(mainStepText, smallStepText, "Creating Computer Builds", "Generating your computer build(s)...");
+                    configurator.createComputerBuild();
 
 
                     /*
