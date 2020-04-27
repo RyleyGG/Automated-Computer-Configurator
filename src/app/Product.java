@@ -1,3 +1,14 @@
+//**********************************************************
+// Class: Product
+// Author: Ryley G.
+// Date Modified: April 15, 2020
+//
+// Purpose: Represents the products that will eventually go into the user's computer build(s).
+//
+//
+//************************************************************
+
+
 public class Product
 {
     private String category;

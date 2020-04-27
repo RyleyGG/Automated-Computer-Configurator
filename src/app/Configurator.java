@@ -1,7 +1,7 @@
 //**********************************************************
 // Class: Configurator
 // Author: Ryley G.
-// Date Modified: April 3, 2020
+// Date Modified: April 15, 2020
 //
 // Purpose: Primary connection between the GUI and rest of the model, and handles much of the high-level model activity that includes more than one object type
 //
@@ -17,7 +17,6 @@ import java.util.NoSuchElementException;
 import java.util.Scanner;
 import java.util.List;
 import java.util.ArrayList;
-import java.util.Arrays;
 
 
 public class Configurator
@@ -35,12 +34,6 @@ public class Configurator
     //Product lists
     private List<Product> gpuList = new ArrayList<Product>();
     private List<Product> cpuList = new ArrayList<Product>();
-
-
-    public void gatherUserInput()
-    {
-
-    }
 
 
     //Steam application-related
@@ -409,16 +402,6 @@ public class Configurator
 
     //Product & overall computer build
 
-    public void saveProduct(Product product)
-    {
-
-    }
-
-    public void loadProduct(String productID)
-    {
-
-    }
-
     public void filterComponents(String[]... filterOptions)
     {
 
@@ -428,6 +411,7 @@ public class Configurator
     {
         UserAgent userAgent = new UserAgent();
 
+        //Attempting to dynamically gather CPU cost and performance
         try
         {
             userAgent.sendGET("https://www.cpubenchmark.net/cpu.php?id="+cpuID);
@@ -439,7 +423,7 @@ public class Configurator
             this.cacheCPU(cpu);
             return true;
         }
-        catch (ResponseException e)
+        catch (ResponseException e) //If data cannot be dynamically gathered, attempt to use cached data
         {
             String workingDir = System.getProperty("user.dir");
             File cachedCPUData = new File(workingDir + "/cache/products/cpu/" + cpuID + ".txt");
@@ -462,6 +446,7 @@ public class Configurator
                         cpuPerformance = Integer.parseInt(curLine.split(": ")[1]);
                     }
                 }
+                br.close();
 
                 if (cpuCost > 0 && cpuPerformance > 0)
                 {
@@ -524,6 +509,7 @@ public class Configurator
     {
         UserAgent userAgent = new UserAgent();
 
+        //Attempting to dynamically gather GPU cost and performance
         try
         {
             userAgent.sendGET("https://www.videocardbenchmark.net/gpu.php?id="+gpuID);
@@ -536,7 +522,7 @@ public class Configurator
             this.cacheGPU(gpu);
             return true;
         }
-        catch (ResponseException e)
+        catch (ResponseException e) //If data is unable to be dynamically gathered, attempt to use cached data.
         {
             String workingDir = System.getProperty("user.dir");
             File cachedGPUData = new File(workingDir + "/cache/products/gpu/" + gpuID + ".txt");
@@ -559,7 +545,8 @@ public class Configurator
                         gpuPerformance = Integer.parseInt(curLine.split(": ")[1]);
                     }
                 }
-
+                br.close()
+;                
                 if (gpuCost > 0 && gpuPerformance > 0)
                 {
                     Product gpu = new Product("GPU",gpuName,Integer.parseInt(gpuID),gpuCost,gpuPerformance);
@@ -803,5 +790,13 @@ public class Configurator
         this.selectedConfigs = selectedConfigs;
     }
 
+    public List<Product> getGPUList()
+    {
+        return this.gpuList;
+    }
 
+    public List<Product> getCPUList()
+    {
+        return this.cpuList;
+    }
 }

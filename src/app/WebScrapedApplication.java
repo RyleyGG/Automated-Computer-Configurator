@@ -1,5 +1,5 @@
 //**********************************************************
-// Class: Configurator
+// Class: WebScrapedApplication
 // Author: Ryley G.
 // Date Modified: April 3, 2020
 //
@@ -7,16 +7,12 @@
 //
 //************************************************************
 
-import com.jaunt.JauntException;
-import com.jaunt.UserAgent;
-import java.util.Arrays;
 import java.util.List;
 import java.util.ArrayList;
-import java.io.*;
 
 public class WebScrapedApplication extends GenericApplication
 {
-    WebScrapedApplication(String name)
+    public WebScrapedApplication(String name)
     {
         this.name = name;
     }

@@ -1,9 +1,20 @@
+//**********************************************************
+// Class: GenericApplication
+// Author: Ryley G.
+// Date Modified: April 13, 2020
+//
+// Purpose: This class acts as a parent to the web-scraped application and the steam application. It itself also represents the manual input applicaton.
+//
+//************************************************************
+
 import java.io.*;
 
 public class GenericApplication
 {
     protected String name;
     protected String[][] reqList;
+    protected double cpuPerformance;
+    protected double gpuPerformance;
 
     public GenericApplication(String name)
     {
@@ -57,7 +68,7 @@ public class GenericApplication
         }
         catch (IOException g)
         {
-            g.printStackTrace();
+            //g.printStackTrace();
         }
     }
 
@@ -99,5 +110,25 @@ public class GenericApplication
     public String[][] getReqList()
     {
         return this.reqList;
+    }
+
+    public void setCPUPerformance(double cpuPerformance)
+    {
+        this.cpuPerformance = cpuPerformance;
+    }
+
+    public void setGPUPerformance(double gpuPerformance)
+    {
+        this.gpuPerformance = gpuPerformance;
+    }
+
+    public double getCPUPerformance()
+    {
+        return this.cpuPerformance;
+    }
+
+    public double getGPUPerformance()
+    {
+        return this.gpuPerformance;
     }
 }

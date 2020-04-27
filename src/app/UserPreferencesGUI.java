@@ -1,23 +1,18 @@
 //**********************************************************
 // Class: UserPreferencesGUI
 // Author: Ryley G.
-// Date Modified: April 4, 2020
+// Date Modified: April 15, 2020
 //
 // Purpose: Handles various pieces of input from the user pertaining to product preferences, budget, and other items.
 //
 //
 //************************************************************
 
-import javafx.application.Application;
-import javafx.stage.Stage;
 import javafx.scene.Cursor;
 import javafx.scene.Scene;
-import javafx.scene.layout.Pane;
 import javafx.scene.control.Button;
-import javafx.scene.control.ButtonType;
 import javafx.scene.text.*;
 import javafx.scene.control.TextField;
-import javafx.geometry.Pos;
 import javafx.scene.layout.HBox;
 import javafx.scene.layout.VBox;
 import javafx.scene.control.Alert;
@@ -28,7 +23,6 @@ import javafx.scene.control.ComboBox;
 import javafx.collections.FXCollections;
 import javafx.scene.control.TextFormatter;
 import javafx.util.converter.IntegerStringConverter;
-import java.util.Arrays;
 import java.util.List;
 import java.util.ArrayList;
 

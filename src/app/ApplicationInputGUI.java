@@ -1,11 +1,11 @@
 //**********************************************************
 // Class: ApplicationInputGUI
 // Author: Ryley G.
-// Date Modified: April 3, 2020
+// Date Modified: April 15, 2020
 //
 // Purpose: Manage the application input window in the GUI
 //
-// Additional Notes: For testing the Steam API caching, some applications that definitely work include "Garry's Mod" and "Divinity: Original Sin 2"
+// Additional Notes: For testing the Steam API caching, some applications that definitely work include "Garry's Mod", "Tetrapulse", and "Tetrobot and Co."
 //************************************************************
 
 
@@ -35,12 +35,8 @@ import pl.l7ssha.javasteam.*;
 import com.google.gson.JsonSyntaxException;
 import javafx.scene.control.Alert;
 import javafx.scene.control.Alert.AlertType;
-import java.util.Arrays;
-import java.util.List;
-import java.util.ArrayList;
 
 //Web-scraping
-import com.jaunt.JauntException;
 import com.jaunt.ResponseException;
 import com.jaunt.UserAgent;
 

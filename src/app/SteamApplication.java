@@ -7,7 +7,6 @@
 //
 //************************************************************
 
-import java.io.*;
 import pl.l7ssha.javasteam.*;
 
 public class SteamApplication extends GenericApplication

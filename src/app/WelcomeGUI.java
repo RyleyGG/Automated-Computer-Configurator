@@ -1,3 +1,13 @@
+//**********************************************************
+// Class: WelcomeGUI
+// Author: Ryley G.
+// Date Modified: April 6, 2020
+//
+// Purpose: The first GUI that the user comes in contact with.
+//
+//
+//************************************************************
+
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.layout.VBox;

@@ -1,11 +1,9 @@
 //**********************************************************
 // Class: GUIController
 // Author: Ryley G.
-// Date Modified: April 13, 2020
+// Date Modified: April 15, 2020
 //
-// Purpose: Manage the application input window in the GUI
-//
-// Additional Notes: Overall manager of the GUI - specifically, it handles the movement of the GUI from one section to the other as the user permits
+// Purpose: Overall manager of the GUI - specifically, it handles the movement of the GUI from one section to the other as the user permits
 //************************************************************
 
 import javafx.application.Application;
@@ -15,15 +13,12 @@ import javafx.scene.layout.Pane;
 import javafx.scene.control.Button;
 import javafx.scene.control.ButtonType;
 import javafx.scene.text.*;
-import javafx.geometry.Pos;
-import javafx.scene.layout.HBox;
-import javafx.scene.layout.VBox;
 import javafx.scene.control.Alert;
 import javafx.scene.control.Alert.AlertType;
 import javafx.scene.layout.Region;
-import java.util.Arrays;
+
+import java.lang.invoke.MethodHandles.Lookup;
 import java.util.List;
-import java.util.ArrayList;
 
 public class GUIController extends Application
 {
@@ -97,8 +92,9 @@ public class GUIController extends Application
                                     configurator.setMonitorCount(monitorCount);
                                     configurator.setMonitorRes(monitorRes);
                                     configurator.setSelectedConfigs(selectedConfigs);
-                                    ProductGUI productGUI = new ProductGUI(scene, configurator);
-                                    rootPane.getChildren().set(0,productGUI);
+                                    BuildGenerationGUI buildGenerationGUI = new BuildGenerationGUI(scene, configurator);
+                                    rootPane.getChildren().set(0,buildGenerationGUI);
+
                                 }
                             }
                             else
@@ -127,7 +123,7 @@ public class GUIController extends Application
             });
         });
 
-
+ 
         rootPane.getChildren().add(welcomeGUI);
         primaryStage.setScene(scene);
         primaryStage.setTitle("Automated Personal Computer Configurator");
